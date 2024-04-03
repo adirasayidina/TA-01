@@ -6,18 +6,36 @@ using UnityEngine.SceneManagement;
 
 public class OptionMenu : MonoBehaviour
 {
-    public void GinjalMenu()
+    public void ObjectMenu(int codeScene)
     {
-        SceneManager.LoadScene("ObjectScene");
+        if (codeScene == 0)
+            SceneManager.LoadScene("ObjectScene");
+        else
+            SceneManager.LoadScene("ObjectScene");
     }
 
-    public void GinjalBack()
+    public void QuizMenu(int codeScene)
+    {
+        if (codeScene == 0)
+        {
+            StaticClass.QuizCode = 0;
+            SceneManager.LoadScene("Quiz");
+        }
+        else
+        {
+            StaticClass.QuizCode = 1;
+            print(StaticClass.QuizCode);
+            SceneManager.LoadScene("Quiz");
+        }
+    }
+
+    public void TutorialMenu()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void HomeMenu()
     {
         SceneManager.LoadScene("Menu");
-    }
-
-        public void GinjalQuiz()
-    {
-    SceneManager.LoadScene("Quiz");
     }
 }
