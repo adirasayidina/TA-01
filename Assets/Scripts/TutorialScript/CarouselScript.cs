@@ -215,7 +215,7 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         isDragging = false;
 
         float dragDistance = Mathf.Abs(eventData.position.x - dragStartPos.x);
-        float dragSpeed = eventData.delta.x / (Time.unscaledTime - lastDragTime);
+        float dragSpeed = (eventData.position.x - dragStartPos.x) / (Time.unscaledTime - lastDragTime);
 
         if (autoMove)
         {
@@ -228,7 +228,6 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             if (dragDistance > pageSize * swipeThreshold || Mathf.Abs(dragSpeed) > swipeThreshold)
             {
                 int currentPage = Mathf.RoundToInt(contentRectTransform.anchoredPosition.x / -pageSize);
-
                 if (dragSpeed > 0)
                 {
                     MoveToPreviousPage();
@@ -315,15 +314,6 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     {
         if (infiniteLooping)
         {
-            if (currentIndex + 2 == totalPages)
-            {
-                lastPgBtn.SetButtonVisibility(true);
-                notLastPgBtn.SetButtonVisibility(false);
-            } else
-            {
-                lastPgBtn.SetButtonVisibility(false);
-                notLastPgBtn.SetButtonVisibility(true);
-            }
             int nextPage = (currentIndex + 1) % totalPages;
             SetSnapTarget(nextPage);
         }
