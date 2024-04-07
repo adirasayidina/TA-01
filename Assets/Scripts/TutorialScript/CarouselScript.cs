@@ -107,6 +107,8 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     private Vector2 dragStartPos;
     private float lastDragTime;
     private float autoMoveTimerCountdown;
+    public LastPgBtn lastPgBtn;
+    public NotLastPgBtn notLastPgBtn;
 
     private void Start()
     {
@@ -269,6 +271,17 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 
             // Rotate content based on its position
             RotateContent();
+
+            if (currentIndex + 1 == totalPages)
+            {
+                lastPgBtn.SetButtonVisibility(true);
+                notLastPgBtn.SetButtonVisibility(false);
+            }
+            else
+            {
+                lastPgBtn.SetButtonVisibility(false);
+                notLastPgBtn.SetButtonVisibility(true);
+            }
         }
     }
 
@@ -302,6 +315,15 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     {
         if (infiniteLooping)
         {
+            if (currentIndex + 2 == totalPages)
+            {
+                lastPgBtn.SetButtonVisibility(true);
+                notLastPgBtn.SetButtonVisibility(false);
+            } else
+            {
+                lastPgBtn.SetButtonVisibility(false);
+                notLastPgBtn.SetButtonVisibility(true);
+            }
             int nextPage = (currentIndex + 1) % totalPages;
             SetSnapTarget(nextPage);
         }
