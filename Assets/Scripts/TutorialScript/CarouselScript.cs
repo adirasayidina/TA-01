@@ -228,8 +228,6 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             if (dragDistance > pageSize * swipeThreshold || Mathf.Abs(dragSpeed) > swipeThreshold)
             {
                 int currentPage = Mathf.RoundToInt(contentRectTransform.anchoredPosition.x / -pageSize);
-                Debug.Log("curr"+ eventData.position.x + " prev" + dragStartPos.x);
-                Debug.Log("asd" + dragSpeed);
                 if (dragSpeed > 0)
                 {
                     MoveToPreviousPage();
