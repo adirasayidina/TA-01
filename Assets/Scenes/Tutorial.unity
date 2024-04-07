@@ -212,6 +212,8 @@ GameObject:
   - component: {fileID: 81980069}
   - component: {fileID: 81980068}
   - component: {fileID: 81980067}
+  - component: {fileID: 81980072}
+  - component: {fileID: 81980071}
   m_Layer: 5
   m_Name: content_carousel
   m_TagString: Untagged
@@ -249,7 +251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 81980065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f803d9b78921a2d4dadc78d4405f9ade, type: 3}
+  m_Script: {fileID: 11500000, guid: e9bf20411d684d447a4410c8a641aeba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layoutGroupWarning: 
@@ -275,7 +277,9 @@ MonoBehaviour:
   infiniteLooping: 1
   totalPages: 0
   currentIndex: 0
-  gridLayoutGroup: {fileID: 0}
+  gridLayoutGroup: {fileID: 651562749}
+  lastPgBtn: {fileID: 81980072}
+  notLastPgBtn: {fileID: 81980071}
 --- !u!114 &81980068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +348,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81980065}
   m_CullTransparentMesh: 1
+--- !u!114 &81980071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81980065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ebc7df38099c848b60c29c84fc6cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnLanjutkan: {fileID: 2059715008}
+  btnSkip: {fileID: 1381013101}
+--- !u!114 &81980072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81980065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7cc4dfcd2dbd94d8bdad8101352de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiButton: {fileID: 1880268669}
 --- !u!1 &180741642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7cc4dfcd2dbd94d8bdad8101352de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiButton: {fileID: 1880268668}
+  uiButton: {fileID: 0}
 --- !u!114 &1566029717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,8 +1414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ebc7df38099c848b60c29c84fc6cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnLanjutkan: {fileID: 2059715007}
-  btnSkip: {fileID: 1381013100}
+  btnLanjutkan: {fileID: 0}
+  btnSkip: {fileID: 0}
 --- !u!1 &1632836312
 GameObject:
   m_ObjectHideFlags: 0
