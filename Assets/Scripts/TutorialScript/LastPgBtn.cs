@@ -12,4 +12,9 @@ public class LastPgBtn : MonoBehaviour
         // Set the visibility of the button
         uiButton.gameObject.SetActive(isVisible);
     }
+
+    public void setViewedTutorial()
+    {
+        PlayerPrefs.SetInt("FirstTime", 1);
+    }
 }
