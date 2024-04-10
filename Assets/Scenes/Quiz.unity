@@ -4438,6 +4438,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1876075639}
+        m_TargetAssemblyTypeName: SupabaseDataInsertion, Assembly-CSharp
+        m_MethodName: InsertDataToSupabase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1418531841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5992,6 +6004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876075637}
   - component: {fileID: 1876075638}
+  - component: {fileID: 1876075639}
   m_Layer: 5
   m_Name: StartQuiz
   m_TagString: Untagged
@@ -6032,6 +6045,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81b8c0cf81fd4a0c837937da15a8b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1876075639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876075636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a13c3cf1e41f9e41aa415c5d48d69da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1881253920
