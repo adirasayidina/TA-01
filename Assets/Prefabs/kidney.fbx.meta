@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Maya_2018_blue
+    second: {fileID: 2100000, guid: 3be2c0e4381d248c386689caec99c5ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Maya_2018_red
     second: {fileID: 2100000, guid: 506d5bb45150f48a0bd3c780f544224c, type: 2}
   - first:

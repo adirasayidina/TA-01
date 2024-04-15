@@ -5,4 +5,7 @@ using UnityEngine;
 public static class StaticClass 
 {
     public static int QuizCode { get; set; }
+
+    public static bool objClicked;
+    public static bool penjelasanShown;
 }
