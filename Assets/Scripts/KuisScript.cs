@@ -27,12 +27,15 @@ public class KuisScript : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI pilganBenarPnlSalah;
     [SerializeField] private TMPro.TextMeshProUGUI jawabanBenarPnlSalah;
     [SerializeField] private TMPro.TextMeshProUGUI jawabanSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI judulKuis;
     [SerializeField] private TMPro.TextMeshProUGUI infoQuizMateri;
     public Button[] btnPembahasanAll;
     public GameObject pnlBenar;
     public GameObject pnlSalah;
     public GameObject pnlPertanyaan;
     public GameObject pnlNilai;
+    public GameObject btnLihatHasilBenar;
+    public GameObject btnLihatHasilSalah;
 
     void Start()
     {
@@ -42,17 +45,16 @@ public class KuisScript : MonoBehaviour
 
         StaticClass.pilganNormalSprite = normalSprite;
         StaticClass.pilganSelectedSprite = selectedSprite;
+        StaticClass.quizNomor = 0;
 
-        if (StaticClass.quizNomor == 0)
+        print("ini masuk");
+        pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+        infoQuizMateri.text = "Materi: " + StaticClass.quizCode;
+        judulKuis.text = "Kuis - " + StaticClass.quizCode;
+        for (int i = 0; i < 4; i++)
         {
-            print("ini masuk");
-            pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-            infoQuizMateri.text = "Materi: " + StaticClass.quizCode;
-            for (int i = 0; i < 4; i++)
-            {
-                print("test masuk");
-                pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
-            }
+            print("test masuk");
+            pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
         }
     }
     public void ChangeImage(Button button)
@@ -91,25 +93,6 @@ public class KuisScript : MonoBehaviour
 
     public void PertanyaanSelanjutnya()
     {
-        foreach (Button btn in buttonsPilihan)
-            btn.image.sprite = StaticClass.pilganNormalSprite;
-
-        StaticClass.quizNomor++;
-        foreach (TMPro.TextMeshProUGUI nmr in nomor)
-        {
-            nmr.text = StaticClass.quizNomor + 1 + "/10";
-        }
-        pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-
-        for (int i = 0; i < 4; i++)
-        {
-            pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
-        }
-
-    }
-    public void CekJawaban()
-    {
-
         if (StaticClass.quizNomor == 9)
         {
             print(StaticKuis.jawaban);
@@ -125,10 +108,14 @@ public class KuisScript : MonoBehaviour
 
             nilai.text = (totalNilai * 10) + "/100";
 
-            for (int i = 0; i < 10; i++) {
-                if (StaticKuis.jawabanFlag[i]) {
+            for (int i = 0; i < 10; i++)
+            {
+                if (StaticKuis.jawabanFlag[i])
+                {
                     btnPembahasanAll[i].image.sprite = btnCorrect;
-                } else {
+                }
+                else
+                {
                     btnPembahasanAll[i].image.sprite = btnWrong;
                 }
             }
@@ -140,7 +127,31 @@ public class KuisScript : MonoBehaviour
         }
         else
         {
-            string jawaban = "X";
+            foreach (Button btn in buttonsPilihan)
+                btn.image.sprite = StaticClass.pilganNormalSprite;
+
+            StaticClass.quizNomor++;
+            foreach (TMPro.TextMeshProUGUI nmr in nomor)
+            {
+                nmr.text = StaticClass.quizNomor + 1 + "/10";
+            }
+            pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+
+            for (int i = 0; i < 4; i++)
+            {
+                pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
+            }
+        }
+    }
+    public void CekJawaban()
+    {
+
+        if (StaticClass.quizNomor == 9)
+        {
+            btnLihatHasilBenar.SetActive(true);
+            btnLihatHasilSalah.SetActive(true);
+        }
+        string jawaban = "X";
             foreach (Button btn in buttonsPilihan)
             {
                 if (btn.image.sprite == StaticClass.pilganSelectedSprite)
@@ -173,7 +184,6 @@ public class KuisScript : MonoBehaviour
             }
             pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
             PilihJawaban.SetActive(false);
-        }
     }
 }
 

@@ -20,7 +20,7 @@ public class OptionMenu : MonoBehaviour
 
             string[] soalGinjal = {
                 "soal pendek 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
                 "soal 3",
                 "soal 4",
                 "soal 5",
@@ -111,8 +111,8 @@ public class OptionMenu : MonoBehaviour
         string[] ginjal8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] ginjal9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] ginjal10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-
         string[][] pilganGinjal = {ginjal1, ginjal2, ginjal3, ginjal4, ginjal5, ginjal6, ginjal7, ginjal8, ginjal9, ginjal10};
+
         string[] otak1 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] otak2 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] otak3 = {"pilganA", "pilganB", "pilganC", "pilganD"};
@@ -123,7 +123,6 @@ public class OptionMenu : MonoBehaviour
         string[] otak8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] otak9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] otak10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-
         string[][] pilganOtak = {otak1, otak2, otak3, otak4, otak5, otak6, otak7, otak8, otak9, otak10};
 
         string[] jantung1 = {"pilganA", "pilganB", "pilganC", "pilganD"};
@@ -136,7 +135,6 @@ public class OptionMenu : MonoBehaviour
         string[] jantung8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] jantung9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
         string[] jantung10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-
         string[][] pilganJantung = {jantung1, jantung2, jantung3, jantung4, jantung5, jantung6, jantung7, jantung8, jantung9, jantung10};
 
         StaticInfoKuis.pilgan.Add("Ginjal", pilganGinjal);
