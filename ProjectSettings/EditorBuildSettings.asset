@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 9e710932e307149d2adb9df6e7474902
+  - enabled: 1
+    path: Assets/Scenes/ArGinjal.unity
+    guid: d2a5e2ef14eab46749513ac9d5d1288c
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0bedc5ca52bef4cd4aa9c73beacd045b, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 94c0167ea57e248208e2a0b0a5b9338f, type: 2}

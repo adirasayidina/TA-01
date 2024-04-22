@@ -5,40 +5,173 @@ using UnityEngine.UI;
 
 public class KuisScript : MonoBehaviour
 {
-    public Button[] buttons;
+    public Button[] buttonsPilihan;
     public GameObject PilihJawaban;
+    public Sprite normalSprite;
+    public Sprite selectedSprite;
+    public Sprite btnCorrect;
+    public Sprite btnWrong;
 
-    public Dictionary<string, Sprite> normalSpriteDict = new();
-    public Dictionary<string, Sprite> SelectedSpriteDict = new();
-    public Sprite[] normalSprite;
-    public Sprite[] SelectedSprite;
+    // public Text pertanyaan;
+    [SerializeField] private TMPro.TextMeshProUGUI pertanyaan;
+    [SerializeField] private TMPro.TextMeshProUGUI soalBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI soalSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI pembahasan;
 
-    void Start() {
+    [SerializeField] private TMPro.TextMeshProUGUI[] nomor;
+    [SerializeField] private TMPro.TextMeshProUGUI[] pilganPertanyaan;
+    [SerializeField] private TMPro.TextMeshProUGUI nilai;
+    [SerializeField] private TMPro.TextMeshProUGUI pilganSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI pilganBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI jawabanBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI pilganBenarPnlSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI jawabanBenarPnlSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI jawabanSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI infoQuizMateri;
+    public Button[] btnPembahasanAll;
+    public GameObject pnlBenar;
+    public GameObject pnlSalah;
+    public GameObject pnlPertanyaan;
+    public GameObject pnlNilai;
+
+    void Start()
+    {
         print("hi kuis");
-        print(StaticClass.QuizCode);
-        foreach(Sprite spt in normalSprite) {
-            normalSpriteDict.Add(spt.name, spt);
-        }
-        foreach(Sprite spt in SelectedSprite) {
-            SelectedSpriteDict.Add(spt.name[..1], spt);
+        print(StaticClass.quizCode);
+        print(StaticClass.quizNomor);
+
+        StaticClass.pilganNormalSprite = normalSprite;
+        StaticClass.pilganSelectedSprite = selectedSprite;
+
+        if (StaticClass.quizNomor == 0)
+        {
+            print("ini masuk");
+            pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+            infoQuizMateri.text = "Materi: " + StaticClass.quizCode;
+            for (int i = 0; i < 4; i++)
+            {
+                print("test masuk");
+                pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
+            }
         }
     }
     public void ChangeImage(Button button)
     {
-        if (button.image.sprite == normalSpriteDict[button.name])
+        if (button.image.sprite == StaticClass.pilganNormalSprite)
         {
-            foreach (Button btn in buttons)
+            foreach (Button btn in buttonsPilihan)
             {
-                if (btn.image.sprite == SelectedSpriteDict[btn.name])
-                    btn.image.sprite = normalSpriteDict[btn.name];
+                if (btn.image.sprite == StaticClass.pilganSelectedSprite)
+                    btn.image.sprite = StaticClass.pilganNormalSprite;
             }
-                button.image.sprite = SelectedSpriteDict[button.name];
-                PilihJawaban.SetActive(true);
+            button.image.sprite = StaticClass.pilganSelectedSprite;
+            PilihJawaban.SetActive(true);
         }
         else
         {
-            button.image.sprite = normalSpriteDict[button.name];
+            button.image.sprite = StaticClass.pilganNormalSprite;
             PilihJawaban.SetActive(false);
+        }
+    }
+
+    // public void NextQ()
+    // {
+    //     StaticClass.quizNomor++;
+    //     soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+
+    // }
+
+    public void TutupPembahasanSoal()
+    {
+        if (StaticKuis.jawabanFlag[StaticClass.quizNomor])
+            pnlBenar.SetActive(true);
+        else
+            pnlSalah.SetActive(true);
+    }
+
+    public void PertanyaanSelanjutnya()
+    {
+        foreach (Button btn in buttonsPilihan)
+            btn.image.sprite = StaticClass.pilganNormalSprite;
+
+        StaticClass.quizNomor++;
+        foreach (TMPro.TextMeshProUGUI nmr in nomor)
+        {
+            nmr.text = StaticClass.quizNomor + 1 + "/10";
+        }
+        pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+
+        for (int i = 0; i < 4; i++)
+        {
+            pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
+        }
+
+    }
+    public void CekJawaban()
+    {
+
+        if (StaticClass.quizNomor == 9)
+        {
+            print(StaticKuis.jawaban);
+            print(StaticKuis.jawabanFlag);
+
+            int totalNilai = 0;
+            foreach (bool flag in StaticKuis.jawabanFlag)
+            {
+                if (flag)
+                    totalNilai++;
+
+            }
+
+            nilai.text = (totalNilai * 10) + "/100";
+
+            for (int i = 0; i < 10; i++) {
+                if (StaticKuis.jawabanFlag[i]) {
+                    btnPembahasanAll[i].image.sprite = btnCorrect;
+                } else {
+                    btnPembahasanAll[i].image.sprite = btnWrong;
+                }
+            }
+
+            pnlPertanyaan.SetActive(false);
+            pnlBenar.SetActive(false);
+            pnlSalah.SetActive(false);
+            pnlNilai.SetActive(true);
+        }
+        else
+        {
+            string jawaban = "X";
+            foreach (Button btn in buttonsPilihan)
+            {
+                if (btn.image.sprite == StaticClass.pilganSelectedSprite)
+                {
+                    jawaban = btn.name[3..];
+                    break;
+                }
+            }
+            print("ini jawaban " + jawaban);
+            StaticKuis.jawaban[StaticClass.quizNomor] = jawaban;
+            pnlPertanyaan.SetActive(false);
+
+            if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
+            {
+                StaticKuis.jawabanFlag[StaticClass.quizNomor] = true;
+                soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+                pilganBenar.text = jawaban;
+                jawabanBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+                pnlBenar.SetActive(true);
+            }
+            else
+            {
+                StaticKuis.jawabanFlag[StaticClass.quizNomor] = false;
+                soalSalah.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+                pilganSalah.text = jawaban;
+                pilganBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
+                jawabanBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(pilganBenarPnlSalah.text) - 65];
+                jawabanSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+                pnlSalah.SetActive(true);
+            }
+            pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
         }
     }
 }
