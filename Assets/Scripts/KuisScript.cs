@@ -172,6 +172,7 @@ public class KuisScript : MonoBehaviour
                 pnlSalah.SetActive(true);
             }
             pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
+            PilihJawaban.SetActive(false);
         }
     }
 }
