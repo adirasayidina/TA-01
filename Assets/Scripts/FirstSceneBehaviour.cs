@@ -9,5 +9,9 @@ public class FirstSceneBehaviour : MonoBehaviour
         {
             SceneManager.LoadScene("Tutorial");
         }
+        else if (!PlayerPrefs.HasKey("Nama"))
+        {
+            SceneManager.LoadScene("IsiNama");
+        }
     }
 }

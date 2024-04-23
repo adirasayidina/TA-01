@@ -238,7 +238,7 @@ public class KuisScript : MonoBehaviour
     public IEnumerator insertDataToSupabase()
     {
         WWWForm form = new WWWForm();
-        form.AddField("nama", "novita");
+        form.AddField("nama", PlayerPrefs.GetString("Nama"));
         form.AddField("materi", StaticClass.quizCode);
         form.AddField("nilai", StaticKuis.nilai);
         form.AddField("waktu_mulai", StaticKuis.mulai.ToString("yyyy-MM-dd HH:mm:ss") + "+00");
