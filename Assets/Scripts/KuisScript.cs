@@ -11,8 +11,6 @@ public class KuisScript : MonoBehaviour
     public Sprite selectedSprite;
     public Sprite btnCorrect;
     public Sprite btnWrong;
-
-    // public Text pertanyaan;
     [SerializeField] private TMPro.TextMeshProUGUI pertanyaan;
     [SerializeField] private TMPro.TextMeshProUGUI soalBenar;
     [SerializeField] private TMPro.TextMeshProUGUI soalSalah;
@@ -36,6 +34,20 @@ public class KuisScript : MonoBehaviour
     public GameObject pnlNilai;
     public GameObject btnLihatHasilBenar;
     public GameObject btnLihatHasilSalah;
+
+    // Panel Pembahasan Akhir
+    public GameObject pnlPembahasan;
+    public GameObject pnlPembahasanAkhirBnr;
+    public GameObject pnlPembahasanAkhirSlh;
+    [SerializeField] private TMPro.TextMeshProUGUI[] txtNomorPnlAkhir;
+    [SerializeField] private TMPro.TextMeshProUGUI txtAbjadBenarPnlAkhirBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI txtPilganBenarPnlAkhirBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI txtPembahasanPnlAkhirBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI txtPilganBenarPnlAkhirSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI txtAbjadBenarPnlAkhirSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI txtPilganSalahPnlAkhirSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI txtAbjadSalahPnlAkhirSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI txtPembahasanPnlAkhirSalah;
 
     void Start()
     {
@@ -76,12 +88,34 @@ public class KuisScript : MonoBehaviour
         }
     }
 
-    // public void NextQ()
-    // {
-    //     StaticClass.quizNomor++;
-    //     soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+    public void OpenPembahasanAkhir(int nomorSoal)
+    {
+        foreach (TMPro.TextMeshProUGUI txt in txtNomorPnlAkhir)
+            txt.text = nomorSoal + 1 + "/10";
+        string materi = StaticClass.quizCode;
+        string abjadPilganBenar = StaticKuis.jawabanFlag[nomorSoal] ? StaticKuis.jawaban[nomorSoal] : StaticInfoKuis.jawabanKuis[materi][nomorSoal];
+        string pilganBenar = StaticInfoKuis.pilgan[materi][nomorSoal][char.Parse(abjadPilganBenar) - 65];
+        string pembahasan = StaticInfoKuis.pembahasan[materi][nomorSoal];
 
-    // }
+        txtPilganBenarPnlAkhirBenar.text = pilganBenar;
+        txtPilganBenarPnlAkhirSalah.text = pilganBenar;
+        txtPembahasanPnlAkhirBenar.text = pembahasan;
+        txtPembahasanPnlAkhirSalah.text = pembahasan;
+
+        if (!StaticKuis.jawabanFlag[nomorSoal])
+        {
+            string abjadPilganSalah = StaticKuis.jawaban[nomorSoal]; // jawaban pengguna yg salah untuk panel pembahasan salah
+            string pilganSalah = StaticInfoKuis.pilgan[materi][nomorSoal][char.Parse(abjadPilganSalah) - 65];
+            txtPilganSalahPnlAkhirSalah.text = pilganSalah;
+            txtAbjadSalahPnlAkhirSalah.text = abjadPilganSalah;
+            pnlPembahasanAkhirSlh.SetActive(true);
+        }
+        else
+        {
+            pnlPembahasanAkhirBnr.SetActive(true);
+        }
+        pnlPembahasan.SetActive(false);
+    }
 
     public void TutupPembahasanSoal()
     {
@@ -152,38 +186,38 @@ public class KuisScript : MonoBehaviour
             btnLihatHasilSalah.SetActive(true);
         }
         string jawaban = "X";
-            foreach (Button btn in buttonsPilihan)
+        foreach (Button btn in buttonsPilihan)
+        {
+            if (btn.image.sprite == StaticClass.pilganSelectedSprite)
             {
-                if (btn.image.sprite == StaticClass.pilganSelectedSprite)
-                {
-                    jawaban = btn.name[3..];
-                    break;
-                }
+                jawaban = btn.name[3..];
+                break;
             }
-            print("ini jawaban " + jawaban);
-            StaticKuis.jawaban[StaticClass.quizNomor] = jawaban;
-            pnlPertanyaan.SetActive(false);
+        }
+        print("ini jawaban " + jawaban);
+        StaticKuis.jawaban[StaticClass.quizNomor] = jawaban;
+        pnlPertanyaan.SetActive(false);
 
-            if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
-            {
-                StaticKuis.jawabanFlag[StaticClass.quizNomor] = true;
-                soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-                pilganBenar.text = jawaban;
-                jawabanBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
-                pnlBenar.SetActive(true);
-            }
-            else
-            {
-                StaticKuis.jawabanFlag[StaticClass.quizNomor] = false;
-                soalSalah.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-                pilganSalah.text = jawaban;
-                pilganBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
-                jawabanBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(pilganBenarPnlSalah.text) - 65];
-                jawabanSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
-                pnlSalah.SetActive(true);
-            }
-            pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
-            PilihJawaban.SetActive(false);
+        if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
+        {
+            StaticKuis.jawabanFlag[StaticClass.quizNomor] = true;
+            soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+            pilganBenar.text = jawaban;
+            jawabanBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            pnlBenar.SetActive(true);
+        }
+        else
+        {
+            StaticKuis.jawabanFlag[StaticClass.quizNomor] = false;
+            soalSalah.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
+            pilganSalah.text = jawaban;
+            pilganBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
+            jawabanBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(pilganBenarPnlSalah.text) - 65];
+            jawabanSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            pnlSalah.SetActive(true);
+        }
+        pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
+        PilihJawaban.SetActive(false);
     }
 }
 
