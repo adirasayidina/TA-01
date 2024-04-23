@@ -2,6 +2,7 @@ Library/**
 Temp/**
 .vsconfig
 Logs/**
+Key/**
 
 # ===========================
 # Default Collab Ignore Rules
