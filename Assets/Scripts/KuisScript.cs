@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
+using UnityEngine.Networking;
 
 public class KuisScript : MonoBehaviour
 {
@@ -69,6 +73,12 @@ public class KuisScript : MonoBehaviour
             pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
         }
     }
+
+    public void initTime()
+    {
+        StaticKuis.mulai = DateTime.Now;
+    }
+
     public void ChangeImage(Button button)
     {
         if (button.image.sprite == StaticClass.pilganNormalSprite)
@@ -129,31 +139,6 @@ public class KuisScript : MonoBehaviour
     {
         if (StaticClass.quizNomor == 9)
         {
-            print(StaticKuis.jawaban);
-            print(StaticKuis.jawabanFlag);
-
-            int totalNilai = 0;
-            foreach (bool flag in StaticKuis.jawabanFlag)
-            {
-                if (flag)
-                    totalNilai++;
-
-            }
-
-            nilai.text = (totalNilai * 10) + "/100";
-
-            for (int i = 0; i < 10; i++)
-            {
-                if (StaticKuis.jawabanFlag[i])
-                {
-                    btnPembahasanAll[i].image.sprite = btnCorrect;
-                }
-                else
-                {
-                    btnPembahasanAll[i].image.sprite = btnWrong;
-                }
-            }
-
             pnlPertanyaan.SetActive(false);
             pnlBenar.SetActive(false);
             pnlSalah.SetActive(false);
@@ -179,12 +164,6 @@ public class KuisScript : MonoBehaviour
     }
     public void CekJawaban()
     {
-
-        if (StaticClass.quizNomor == 9)
-        {
-            btnLihatHasilBenar.SetActive(true);
-            btnLihatHasilSalah.SetActive(true);
-        }
         string jawaban = "X";
         foreach (Button btn in buttonsPilihan)
         {
@@ -218,6 +197,72 @@ public class KuisScript : MonoBehaviour
         }
         pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
         PilihJawaban.SetActive(false);
+
+        if (StaticClass.quizNomor == 9)
+        {
+            print(StaticKuis.jawaban);
+            print(StaticKuis.jawabanFlag);
+
+            int totalNilai = 0;
+            foreach (bool flag in StaticKuis.jawabanFlag)
+            {
+                if (flag)
+                    totalNilai++;
+
+            }
+
+            StaticKuis.nilai = totalNilai * 10;
+            nilai.text = StaticKuis.nilai + "/100";
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (StaticKuis.jawabanFlag[i])
+                {
+                    btnPembahasanAll[i].image.sprite = btnCorrect;
+                }
+                else
+                {
+                    btnPembahasanAll[i].image.sprite = btnWrong;
+                }
+            }
+
+            btnLihatHasilBenar.SetActive(true);
+            btnLihatHasilSalah.SetActive(true);
+            StaticKuis.selesai = DateTime.Now;
+            TimeSpan difference = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
+            StaticKuis.durasi = Convert.ToInt32(difference.TotalSeconds);
+            StartCoroutine(insertDataToSupabase());
+        }
+    }
+
+    public IEnumerator insertDataToSupabase()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("nama", "novita");
+        form.AddField("materi", StaticClass.quizCode);
+        form.AddField("nilai", StaticKuis.nilai);
+        form.AddField("waktu_mulai", StaticKuis.mulai.ToString("yyyy-MM-dd HH:mm:ss") + "+00");
+        form.AddField("waktu_selesai", StaticKuis.selesai.ToString("yyyy-MM-dd HH:mm:ss") + "+00");
+        form.AddField("durasi", StaticKuis.durasi);
+        for (int i = 0; i < 10; i++)
+        {
+            form.AddField("no_" + (i+1), StaticKuis.jawabanFlag[i].ToString());
+            form.AddField("jawaban_no_" + (i+1), StaticKuis.jawaban[i]);
+        }
+
+        UnityWebRequest webRequest = UnityWebRequest.Post("https://rfifnkbwxbvvapcgpuzn.supabase.co/rest/v1/hasil_kuis", form);
+        webRequest.SetRequestHeader("apikey", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmaWZua2J3eGJ2dmFwY2dwdXpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTI3MTc0NzcsImV4cCI6MjAyODI5MzQ3N30.51_kdsYavU44NwNEgGyvGx96_7v9V7dR7Y0AsdnqIBg");
+
+        // Send the request
+        yield return webRequest.SendWebRequest();
+
+        // Wait until the request is done
+        while (!webRequest.isDone) { }
+
+        Debug.Log("API response: " + webRequest.downloadHandler.text);
+
+        // Clean up the request
+        webRequest.Dispose();
     }
 }
 
