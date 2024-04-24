@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4873108831069757069, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: GinjalTag1
       objectReference: {fileID: 0}
     - target: {fileID: -1043056941542226798, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_Layer
@@ -194,9 +194,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1679768370894055662, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
+      propertyPath: m_TagString
+      value: GinjalTag3
+      objectReference: {fileID: 0}
     - target: {fileID: 5251042915371082136, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251042915371082136, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
+      propertyPath: m_TagString
+      value: GinjalTag5
       objectReference: {fileID: 0}
     - target: {fileID: 5251042915371082136, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -216,15 +224,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8963191193152479422, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: GinjalTag6
       objectReference: {fileID: 0}
     - target: {fileID: 9150739885141869696, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 9150739885141869696, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
+      propertyPath: m_TagString
+      value: GinjalTag4
+      objectReference: {fileID: 0}
     - target: {fileID: 9174829915239546985, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9174829915239546985, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
+      propertyPath: m_TagString
+      value: GinjalTag2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -266,6 +282,7 @@ MonoBehaviour:
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag1
 --- !u!1 &2802933321906726566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1679768370894055662, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -299,11 +316,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 0}
   btnCloseUI: {fileID: 0}
-  ginjalPart: {fileID: 0}
+  ginjalPart: {fileID: 2802933321906726566}
   redCol: 0
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag3
 --- !u!4 &3900961783702481315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -347,6 +365,7 @@ MonoBehaviour:
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag6
 --- !u!1 &5690916454639308321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9174829915239546985, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -385,6 +404,7 @@ MonoBehaviour:
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag2
 --- !u!1 &5716277522340629192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9150739885141869696, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -423,6 +443,7 @@ MonoBehaviour:
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag4
 --- !u!1 &8752405965075050448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5251042915371082136, guid: 65e010a57147e4219b452a7328a2e83a, type: 3}
@@ -461,3 +482,4 @@ MonoBehaviour:
   blueCol: 0
   greenCol: 0
   flashingIn: 1
+  targetTag: GinjalTag5

@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - GinjalTag
+  - GinjalTag1
+  - GinjalTag2
+  - GinjalTag3
+  - GinjalTag4
+  - GinjalTag5
+  - GinjalTag6
+  - GinjalTag7
   layers:
   - Default
   - TransparentFX

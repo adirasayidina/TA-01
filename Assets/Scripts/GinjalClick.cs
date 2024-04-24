@@ -12,6 +12,9 @@ public class GinjalClick : MonoBehaviour
     public int blueCol;
     public int greenCol;
     public bool flashingIn = true;
+    public string targetTag;
+    private GameObject[] objectsWithTag;
+    private GameObject instantiatedObject;
     private void Start()
     {
         // _renderer = GetComponent<Renderer>();
@@ -19,10 +22,16 @@ public class GinjalClick : MonoBehaviour
         // print("masuk mulai");
         material.EnableKeyword("_EMISSION");
         // print(material.GetColor("_EmissionColor"));
+        //instantiatedObject = Instantiate(prefabObject, Vector3.zero, Quaternion.identity);
+        // Set the instantiated object inactive initially
+        //instantiatedObject.SetActive(false);
     }
 
     public void OnMouseDown()
     {
+        //ginjalPart = GameObject.FindGameObjectWithTag(targetTag);
+        //material = ginjalPart.GetComponent<Renderer>().material;
+        //material.EnableKeyword("_EMISSION");
         print("masuk ginjal click");
         print(txt);
         print(btnCloseUI);
@@ -41,6 +50,28 @@ public class GinjalClick : MonoBehaviour
             StartCoroutine(FlashObject());
             print("masuk sini");
             print("masuk sini");
+            print("masuk sini");
+        }
+
+    }
+
+    public void OnMouseDown2(string tag)
+    {
+        ginjalPart = GameObject.FindGameObjectWithTag(tag);
+        material = ginjalPart.GetComponent<Renderer>().material;
+        material.EnableKeyword("_EMISSION");
+        print("masuk ginjal click");
+        print(txt);
+        print(btnCloseUI);
+        print(ginjalPart.name);
+
+        if (!StaticClass.objClicked)
+        {
+            txt.SetActive(true);
+            btnCloseUI.SetActive(true);
+            StaticClass.objClicked = true;
+            MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
+            camMono.StartCoroutine(FlashObject());
             print("masuk sini");
         }
 
