@@ -986,7 +986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b7cc4dfcd2dbd94d8bdad8101352de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnMulaiBelajar: {fileID: 0}
+  btnMulaiBelajar: {fileID: 1928536806}
   fieldNama: {fileID: 2129992735}
 --- !u!114 &1566029717
 MonoBehaviour:
@@ -1096,7 +1096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1928536804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1404,7 +1404,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1566029716}
+        m_TargetAssemblyTypeName: LastPgBtn, Assembly-CSharp
+        m_MethodName: SetButtonValidity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}

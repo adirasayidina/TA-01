@@ -17,6 +17,13 @@ public class LastPgBtn : MonoBehaviour
         btnMulaiBelajar.gameObject.SetActive(isVisible);
     }
 
+
+    public void SetButtonValidity()
+    {
+        btnMulaiBelajar.gameObject.SetActive(!string.IsNullOrWhiteSpace(fieldNama.text));
+        //targetButton.interactable = !string.IsNullOrWhiteSpace(fieldNama.text);
+    }
+
     public void setViewedTutorial()
     {
         PlayerPrefs.SetInt("FirstTime", 1);
