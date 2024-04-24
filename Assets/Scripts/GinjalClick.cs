@@ -26,25 +26,12 @@ public class GinjalClick : MonoBehaviour
 
     public void OnMouseDown()
     {
-        print("masuk ginjal click");
-        print(txt);
-        print(btnCloseUI);
-        print(ginjalPart.name);
-
         if (!StaticClass.objClicked)
         {
-            // StaticClass.objClicked = false;
-            // foreach (GameObject oTxt in otherTxt)
-            // {
-            //     oTxt.SetActive(false);
-            // }
             txt.SetActive(true);
             btnCloseUI.SetActive(true);
             StaticClass.objClicked = true;
             StartCoroutine(FlashObject());
-            print("masuk sini");
-            print("masuk sini");
-            print("masuk sini");
         }
 
     }
@@ -53,11 +40,7 @@ public class GinjalClick : MonoBehaviour
     {
         ginjalPart = GameObject.FindGameObjectWithTag(tag);
         material = ginjalPart.GetComponent<Renderer>().material;
-        material.EnableKeyword("_EMISSION");
-        print("masuk ginjal click");
-        print(txt);
-        print(btnCloseUI);
-        print(ginjalPart.name);
+        material.EnableKeyword("_EMISSION"); 
 
         if (!StaticClass.objClicked)
         {
@@ -66,31 +49,9 @@ public class GinjalClick : MonoBehaviour
             StaticClass.objClicked = true;
             MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
             camMono.StartCoroutine(FlashObject());
-            print("masuk sini");
         }
 
     }
-
-    // public void KlikMateri()
-    // {
-    //     if (!StaticClass.objClicked)
-    //     {
-    //         // StaticClass.objClicked = false;
-    //         // foreach (GameObject oTxt in otherTxt)
-    //         // {
-    //         //     oTxt.SetActive(false);
-    //         // }
-    //         txt.SetActive(true);
-    //         btnCloseUI.SetActive(true);
-
-    //         if (!StaticClass.objClicked)
-    //         {
-    //             StaticClass.objClicked = true;
-    //             StartCoroutine(FlashObject());
-    //         }
-    //     }
-
-    // }
 
     IEnumerator FlashObject()
     {
