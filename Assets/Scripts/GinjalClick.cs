@@ -21,8 +21,13 @@ public class GinjalClick : MonoBehaviour
         // print(material.GetColor("_EmissionColor"));
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
+        print("masuk ginjal click");
+        print(txt);
+        print(btnCloseUI);
+        print(ginjalPart.name);
+
         if (!StaticClass.objClicked)
         {
             // StaticClass.objClicked = false;
@@ -32,15 +37,35 @@ public class GinjalClick : MonoBehaviour
             // }
             txt.SetActive(true);
             btnCloseUI.SetActive(true);
-
-            if (!StaticClass.objClicked)
-            {
-                StaticClass.objClicked = true;
-                StartCoroutine(FlashObject());
-            }
+            StaticClass.objClicked = true;
+            StartCoroutine(FlashObject());
+            print("masuk sini");
+            print("masuk sini");
+            print("masuk sini");
         }
 
     }
+
+    // public void KlikMateri()
+    // {
+    //     if (!StaticClass.objClicked)
+    //     {
+    //         // StaticClass.objClicked = false;
+    //         // foreach (GameObject oTxt in otherTxt)
+    //         // {
+    //         //     oTxt.SetActive(false);
+    //         // }
+    //         txt.SetActive(true);
+    //         btnCloseUI.SetActive(true);
+
+    //         if (!StaticClass.objClicked)
+    //         {
+    //             StaticClass.objClicked = true;
+    //             StartCoroutine(FlashObject());
+    //         }
+    //     }
+
+    // }
 
     IEnumerator FlashObject()
     {
