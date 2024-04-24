@@ -8,6 +8,7 @@ public class OptionMenu : MonoBehaviour
 {
     void Start()
     {
+        print(StaticKuis.nama);
         if (StaticInfoKuis.jawabanKuis.Count < 1)
         {
             string[] ginjal = { "A", "C", "D", "A", "B", "C", "A", "C", "D", "A" };
