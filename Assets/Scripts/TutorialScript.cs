@@ -8,7 +8,7 @@ using Image = UnityEngine.UI.Image;
 using UnityEngine.SceneManagement;
 
 
-public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
+public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 {
     [Header("Important Information")]
     [Tooltip("Ensure that a GridLayoutGroup is assigned to CONTENT. The correct layout group is crucial for the proper functioning of the carousel.")]
