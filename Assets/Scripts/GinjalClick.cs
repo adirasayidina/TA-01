@@ -22,16 +22,10 @@ public class GinjalClick : MonoBehaviour
         // print("masuk mulai");
         material.EnableKeyword("_EMISSION");
         // print(material.GetColor("_EmissionColor"));
-        //instantiatedObject = Instantiate(prefabObject, Vector3.zero, Quaternion.identity);
-        // Set the instantiated object inactive initially
-        //instantiatedObject.SetActive(false);
     }
 
     public void OnMouseDown()
     {
-        //ginjalPart = GameObject.FindGameObjectWithTag(targetTag);
-        //material = ginjalPart.GetComponent<Renderer>().material;
-        //material.EnableKeyword("_EMISSION");
         print("masuk ginjal click");
         print(txt);
         print(btnCloseUI);
