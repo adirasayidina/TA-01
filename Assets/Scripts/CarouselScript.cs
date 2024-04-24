@@ -5,8 +5,10 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
 using Image = UnityEngine.UI.Image;
+using UnityEngine.SceneManagement;
 
-public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
+
+public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 {
     [Header("Important Information")]
     [Tooltip("Ensure that a GridLayoutGroup is assigned to CONTENT. The correct layout group is crucial for the proper functioning of the carousel.")]
@@ -107,8 +109,15 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     private Vector2 dragStartPos;
     private float lastDragTime;
     private float autoMoveTimerCountdown;
-    public LastPgBtn lastPgBtn;
-    public NotLastPgBtn notLastPgBtn;
+
+    [Header("Several Needed Object")]
+    public Image btnLanjutkan;
+    public Image btnSkip;
+    public Image btnMulaiBelajarTutorial;
+    public Image btnMulaiBelajarIsiNama;
+    public InputField fieldNama;
+    public GameObject pnlTutorial;
+    public GameObject pnlIsiNama;
 
     private void Start()
     {
@@ -273,13 +282,13 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 
             if (currentIndex + 1 == totalPages)
             {
-                lastPgBtn.SetButtonVisibility(true);
-                notLastPgBtn.SetButtonVisibility(false);
+                SetLastPageButtonVisibility(true);
+                SetNotLastPageButtonVisibility(false);
             }
             else
             {
-                lastPgBtn.SetButtonVisibility(false);
-                notLastPgBtn.SetButtonVisibility(true);
+                SetLastPageButtonVisibility(false);
+                SetNotLastPageButtonVisibility(true);
             }
         }
     }
@@ -345,6 +354,43 @@ public class CarouselScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
                 Color targetColor = i == currentIndex ? activeDotColor : inactiveDotColor;
                 dotImage.color = Color.Lerp(dotImage.color, targetColor, Time.deltaTime * dotColorTransitionSpeed);
             }
+        }
+    }
+
+    public void SetNotLastPageButtonVisibility(bool isVisible)
+    {
+        btnLanjutkan.gameObject.SetActive(isVisible);
+        btnSkip.gameObject.SetActive(isVisible);
+    }
+
+    public void SetLastPageButtonVisibility(bool isVisible)
+    {
+        btnMulaiBelajarTutorial.gameObject.SetActive(isVisible);
+    }
+
+
+    public void SetButtonValidity()
+    {
+        btnMulaiBelajarIsiNama.gameObject.SetActive(!string.IsNullOrWhiteSpace(fieldNama.text));
+    }
+
+    public void setName()
+    {
+        PlayerPrefs.SetString("Nama", fieldNama.text);
+        PlayerPrefs.SetInt("FirstTime", 1);
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void checkName()
+    {
+        if (!PlayerPrefs.HasKey("Nama"))
+        {
+            pnlTutorial.SetActive(false);
+            pnlIsiNama.SetActive(true);
+        }
+        else
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 }

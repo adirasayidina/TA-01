@@ -8,8 +8,11 @@ public class OptionMenu : MonoBehaviour
 {
     void Start()
     {
-        print(StaticKuis.nama);
-        if (StaticInfoKuis.jawabanKuis.Count < 1)
+        if (!PlayerPrefs.HasKey("FirstTime"))
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
+        else if (StaticInfoKuis.jawabanKuis.Count < 1)
         {
             string[] ginjal = { "A", "C", "D", "A", "B", "C", "A", "C", "D", "A" };
             string[] otak = { "A", "C", "D", "A", "B", "C", "A", "C", "D", "A" };
