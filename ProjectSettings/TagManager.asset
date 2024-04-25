@@ -12,6 +12,12 @@ TagManager:
   - GinjalTag5
   - GinjalTag6
   - GinjalTag7
+  - OtakTag
+  - OtakCorpus
+  - OtakFrontal
+  - OtakOccipital
+  - OtakParietal
+  - OtakTemporal
   layers:
   - Default
   - TransparentFX

@@ -155,7 +155,7 @@ public class OptionMenu : MonoBehaviour
         else if (codeScene == 1)
         {
             StaticClass.quizCode = "Otak";
-            SceneManager.LoadScene("ObjectScene");
+            SceneManager.LoadScene("ArOtak");
         }
         else if (codeScene == 2)
         {
