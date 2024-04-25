@@ -160,7 +160,7 @@ public class OptionMenu : MonoBehaviour
         else if (codeScene == 2)
         {
             StaticClass.quizCode = "Jantung";
-            SceneManager.LoadScene("ObjectScene");
+            SceneManager.LoadScene("ArJantung");
         }
     }
 

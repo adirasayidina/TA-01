@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArOtak.unity
     guid: d09a691b1c1354651be4ec1bec654f28
+  - enabled: 1
+    path: Assets/Scenes/ArJantung.unity
+    guid: 94b154087afb9e14c9492aa5a0882bcd
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0bedc5ca52bef4cd4aa9c73beacd045b, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 94c0167ea57e248208e2a0b0a5b9338f, type: 2}
