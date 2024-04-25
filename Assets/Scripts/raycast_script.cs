@@ -41,33 +41,33 @@ public class raycast_script : MonoBehaviour
         if (Input.touchCount == 1 && !StaticClass.objClicked)
         {
             Touch touch = Input.GetTouch(0);
-            //switch (touch.phase)
-            //{
-            //    //case TouchPhase.Began:
-            //    //    oldTouchPosition = touch.position;
-            //    //    break;
+
+            if (touch.phase == TouchPhase.Began)
+                oldTouchPosition = touch.position;
             if (touch.phase == TouchPhase.Moved)
             {
                 if (objectsWithTag != null)
                 {
                     foreach (GameObject objs in objectsWithTag)
                     {
-                        rotationY = Quaternion.Euler(0f, (-touch.deltaPosition.x / Mathf.Abs(touch.deltaPosition.x)) * rotatespeed, 0f);
+                        // kekiri positif
+                        // kekanan negatif
+                        float rotateY = 1;
+
+                        if (touch.deltaPosition.x == 0)
+                        {
+                            NewTouchPosition = touch.position;
+                            Vector2 rotDirection = oldTouchPosition - NewTouchPosition;
+                            if (rotDirection.x < 0)
+                                rotateY = -1;
+                        }
+                        else
+                            rotateY = -touch.deltaPosition.x / Mathf.Abs(touch.deltaPosition.x) * rotatespeed;
+                        rotationY = Quaternion.Euler(0f, rotateY, 0f);
                         objs.transform.rotation = rotationY * objs.transform.rotation;
                     }
                 }
             }
-                    
-                    //NewTouchPosition = touch.position;
-                    //Vector2 rotDirection = oldTouchPosition - NewTouchPosition;
-                    //Debug.Log(rotDirection);
-                    //if (rotDirection.x < 0)
-                    //    RotateRight();
-                    //if (rotDirection.x > 0)
-                    //    RotateLeft();
-                    //break;
-                    //}
-            
         }
         if (Input.touchCount > 1 && !StaticClass.objClicked)
         {
@@ -127,12 +127,12 @@ public class raycast_script : MonoBehaviour
 
     void RotateLeft()
     {
-        transform.rotation = Quaternion.Euler(0f, -rotatespeed, 0f) * transform.rotation;
+        transform.rotation = Quaternion.Euler(0f, -rotatespeed, 0f);
     }
 
     void RotateRight()
     {
-        transform.rotation = Quaternion.Euler(0f, rotatespeed, 0f) * transform.rotation;
+        transform.rotation = Quaternion.Euler(0f, rotatespeed, 0f);
     }
 
     private float GetAverageScale()
