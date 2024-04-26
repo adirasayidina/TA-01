@@ -18,6 +18,7 @@ TagManager:
   - OtakOccipital
   - OtakParietal
   - OtakTemporal
+  - GinjalParent1
   layers:
   - Default
   - TransparentFX
