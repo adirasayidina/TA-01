@@ -91,6 +91,12 @@ public class raycast_script : MonoBehaviour
 
                 // Apply the zoom to tagged objects
                 GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(targetTag);
+                if (targetTag == "OtakTag") {
+                    zoomSpeed = 0.00001f;
+                }
+                print(initialScale);
+                print(pinchAmount);
+                print(zoomSpeed);
                 foreach (GameObject obj in taggedObjects)
                 {
                     float newScale = initialScale - pinchAmount * zoomSpeed;
