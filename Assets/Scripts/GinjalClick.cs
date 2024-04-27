@@ -26,21 +26,20 @@ public class GinjalClick : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (!StaticClass.objClicked)
-        {
-            txt.SetActive(true);
-            btnCloseUI.SetActive(true);
-            StaticClass.objClicked = true;
-            StartCoroutine(FlashObject());
-        }
-
+        StartFlash();
     }
 
     public void OnMouseDown2(string tag)
     {
         ginjalPart = GameObject.FindGameObjectsWithTag(tag);
         print(ginjalPart.Length);
-        foreach (GameObject gjl in ginjalPart)
+        StartFlash();
+
+    }
+
+    private void StartFlash()
+    {
+         foreach (GameObject gjl in ginjalPart)
         {
             material = gjl.GetComponent<Renderer>().material;
             material.EnableKeyword("_EMISSION");
@@ -54,7 +53,6 @@ public class GinjalClick : MonoBehaviour
                 camMono.StartCoroutine(FlashObject());
             }
         }
-
     }
 
     IEnumerator FlashObject()
