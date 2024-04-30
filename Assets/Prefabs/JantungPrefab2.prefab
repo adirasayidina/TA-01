@@ -265,7 +265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 0}
   btnCloseUI: {fileID: 0}
-  ginjalPart: []
+  ginjalPart:
+  - {fileID: 0}
   redCol: 0
   blueCol: 0
   greenCol: 0

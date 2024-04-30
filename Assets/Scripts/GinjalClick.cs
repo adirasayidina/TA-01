@@ -29,6 +29,11 @@ public class GinjalClick : MonoBehaviour
         StartFlash();
     }
 
+    public void SetObjectClicked()
+    {
+        StaticClass.objClicked = true;
+    }
+
     public void OnMouseDown2(string tag)
     {
         ginjalPart = GameObject.FindGameObjectsWithTag(tag);
@@ -42,20 +47,20 @@ public class GinjalClick : MonoBehaviour
         int i = 0;
         txt.SetActive(true);
         btnCloseUI.SetActive(true);
-        StaticClass.objClicked = true;
-        foreach (GameObject gjl in ginjalPart)
+        if (!StaticClass.objClicked)
         {
-            
-            material = gjl.GetComponent<Renderer>().material;
-            material.EnableKeyword("_EMISSION");
+            StaticClass.objClicked = true;
+            foreach (GameObject gjl in ginjalPart)
+            {
 
-            //if (!StaticClass.objClicked)
-            //{
+                material = gjl.GetComponent<Renderer>().material;
+                material.EnableKeyword("_EMISSION");
+
                 print("aa" + i++);
-                
+
                 MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
                 camMono.StartCoroutine(FlashObject(material));
-            //}
+            }
 
         }
     }

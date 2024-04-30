@@ -105,41 +105,41 @@ public class OptionMenu : MonoBehaviour
             StaticInfoKuis.pembahasan.Add("Jantung", pembahasanJantung);
         }
 
-        string[] ginjal1 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal2 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal3 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal4 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal5 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal6 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal7 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] ginjal10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[][] pilganGinjal = {ginjal1, ginjal2, ginjal3, ginjal4, ginjal5, ginjal6, ginjal7, ginjal8, ginjal9, ginjal10};
+        string[] ginjal1 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal2 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal3 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal4 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal5 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal6 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal7 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal8 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal9 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[][] pilganGinjal = { ginjal1, ginjal2, ginjal3, ginjal4, ginjal5, ginjal6, ginjal7, ginjal8, ginjal9, ginjal10 };
 
-        string[] otak1 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak2 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak3 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak4 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak5 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak6 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak7 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] otak10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[][] pilganOtak = {otak1, otak2, otak3, otak4, otak5, otak6, otak7, otak8, otak9, otak10};
+        string[] otak1 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak2 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak3 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak4 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak5 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak6 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak7 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak8 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak9 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[][] pilganOtak = { otak1, otak2, otak3, otak4, otak5, otak6, otak7, otak8, otak9, otak10 };
 
-        string[] jantung1 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung2 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung3 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung4 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung5 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung6 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung7 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung8 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung9 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[] jantung10 = {"pilganA", "pilganB", "pilganC", "pilganD"};
-        string[][] pilganJantung = {jantung1, jantung2, jantung3, jantung4, jantung5, jantung6, jantung7, jantung8, jantung9, jantung10};
+        string[] jantung1 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung2 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung3 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung4 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung5 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung6 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung7 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung8 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung9 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[][] pilganJantung = { jantung1, jantung2, jantung3, jantung4, jantung5, jantung6, jantung7, jantung8, jantung9, jantung10 };
 
         StaticInfoKuis.pilgan.Add("Ginjal", pilganGinjal);
         StaticInfoKuis.pilgan.Add("Otak", pilganOtak);
@@ -160,6 +160,22 @@ public class OptionMenu : MonoBehaviour
         else if (codeScene == 2)
         {
             StaticClass.quizCode = "Jantung";
+            SceneManager.LoadScene("ArJantung");
+        }
+    }
+
+    public void KembaliKeAR()
+    {
+        if (StaticClass.quizCode == "Ginjal")
+        {
+            SceneManager.LoadScene("ArGinjal");
+        }
+        else if (StaticClass.quizCode == "Otak")
+        {
+            SceneManager.LoadScene("ArOtak");
+        }
+        else if (StaticClass.quizCode == "Jantung")
+        {
             SceneManager.LoadScene("ArJantung");
         }
     }
