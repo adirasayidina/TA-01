@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class KuisScript : MonoBehaviour
 {
@@ -23,12 +24,12 @@ public class KuisScript : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI[] nomor;
     [SerializeField] private TMPro.TextMeshProUGUI[] pilganPertanyaan;
     [SerializeField] private TMPro.TextMeshProUGUI nilai;
-    [SerializeField] private TMPro.TextMeshProUGUI pilganSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI abjadBenar;
     [SerializeField] private TMPro.TextMeshProUGUI pilganBenar;
-    [SerializeField] private TMPro.TextMeshProUGUI jawabanBenar;
+    [SerializeField] private TMPro.TextMeshProUGUI abjadBenarPnlSalah;
     [SerializeField] private TMPro.TextMeshProUGUI pilganBenarPnlSalah;
-    [SerializeField] private TMPro.TextMeshProUGUI jawabanBenarPnlSalah;
-    [SerializeField] private TMPro.TextMeshProUGUI jawabanSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI abjadSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI pilganSalah;
     [SerializeField] private TMPro.TextMeshProUGUI judulKuis;
     [SerializeField] private TMPro.TextMeshProUGUI infoQuizMateri;
     public Button[] btnPembahasanAll;
@@ -36,8 +37,6 @@ public class KuisScript : MonoBehaviour
     public GameObject pnlSalah;
     public GameObject pnlPertanyaan;
     public GameObject pnlNilai;
-    public GameObject btnLihatHasilBenar;
-    public GameObject btnLihatHasilSalah;
 
     // Panel Pembahasan Akhir
     public GameObject pnlPembahasan;
@@ -52,7 +51,10 @@ public class KuisScript : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI txtPilganSalahPnlAkhirSalah;
     [SerializeField] private TMPro.TextMeshProUGUI txtAbjadSalahPnlAkhirSalah;
     [SerializeField] private TMPro.TextMeshProUGUI txtPembahasanPnlAkhirSalah;
+    [SerializeField] private TMPro.TextMeshProUGUI[] txtPertanyaanSelanjutnya;
 
+    public GameObject[] contentsHeight;
+    public GameObject contentsPembHeight;
     void Start()
     {
         print("hi kuis");
@@ -67,11 +69,10 @@ public class KuisScript : MonoBehaviour
         pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
         infoQuizMateri.text = "Materi: " + StaticClass.quizCode;
         judulKuis.text = "Kuis - " + StaticClass.quizCode;
+        foreach (GameObject ct in contentsHeight)
+            ct.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height[StaticClass.quizCode][StaticClass.quizNomor]);
         for (int i = 0; i < 4; i++)
-        {
-            print("test masuk");
             pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
-        }
     }
 
     public void initTime()
@@ -106,11 +107,16 @@ public class KuisScript : MonoBehaviour
         string abjadPilganBenar = StaticKuis.jawabanFlag[nomorSoal] ? StaticKuis.jawaban[nomorSoal] : StaticInfoKuis.jawabanKuis[materi][nomorSoal];
         string pilganBenar = StaticInfoKuis.pilgan[materi][nomorSoal][char.Parse(abjadPilganBenar) - 65];
         string pembahasan = StaticInfoKuis.pembahasan[materi][nomorSoal];
+        string pertanyaan = StaticInfoKuis.soal[materi][nomorSoal];
 
+        contentsPembHeight.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height["Pemb"+StaticClass.quizCode][StaticClass.quizNomor]);
         txtPilganBenarPnlAkhirBenar.text = pilganBenar;
+        txtAbjadBenarPnlAkhirBenar.text = abjadPilganBenar;
         txtPilganBenarPnlAkhirSalah.text = pilganBenar;
-        txtPembahasanPnlAkhirBenar.text = pembahasan;
-        txtPembahasanPnlAkhirSalah.text = pembahasan;
+        txtAbjadBenarPnlAkhirSalah.text = abjadPilganBenar;
+        txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
+        txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
+
 
         if (!StaticKuis.jawabanFlag[nomorSoal])
         {
@@ -121,9 +127,7 @@ public class KuisScript : MonoBehaviour
             pnlPembahasanAkhirSlh.SetActive(true);
         }
         else
-        {
             pnlPembahasanAkhirBnr.SetActive(true);
-        }
         pnlPembahasan.SetActive(false);
     }
 
@@ -139,6 +143,10 @@ public class KuisScript : MonoBehaviour
     {
         if (StaticClass.quizNomor == 9)
         {
+            // foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
+            // {
+            //     selanjutnya.txt = 'Lihat Nilai';
+            // }
             pnlPertanyaan.SetActive(false);
             pnlBenar.SetActive(false);
             pnlSalah.SetActive(false);
@@ -150,16 +158,14 @@ public class KuisScript : MonoBehaviour
                 btn.image.sprite = StaticClass.pilganNormalSprite;
 
             StaticClass.quizNomor++;
+            foreach (GameObject ct in contentsHeight)
+                ct.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height[StaticClass.quizCode][StaticClass.quizNomor]);
             foreach (TMPro.TextMeshProUGUI nmr in nomor)
-            {
                 nmr.text = StaticClass.quizNomor + 1 + "/10";
-            }
             pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
 
             for (int i = 0; i < 4; i++)
-            {
                 pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
-            }
         }
     }
     public void CekJawaban()
@@ -181,18 +187,18 @@ public class KuisScript : MonoBehaviour
         {
             StaticKuis.jawabanFlag[StaticClass.quizNomor] = true;
             soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-            pilganBenar.text = jawaban;
-            jawabanBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            abjadBenar.text = jawaban;
+            pilganBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
             pnlBenar.SetActive(true);
         }
         else
         {
             StaticKuis.jawabanFlag[StaticClass.quizNomor] = false;
             soalSalah.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-            pilganSalah.text = jawaban;
-            pilganBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
-            jawabanBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(pilganBenarPnlSalah.text) - 65];
-            jawabanSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            abjadSalah.text = jawaban;
+            abjadBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
+            pilganBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(abjadBenarPnlSalah.text) - 65];
+            pilganSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
             pnlSalah.SetActive(true);
         }
         pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
@@ -208,7 +214,6 @@ public class KuisScript : MonoBehaviour
             {
                 if (flag)
                     totalNilai++;
-
             }
 
             StaticKuis.nilai = totalNilai * 10;
@@ -217,17 +222,13 @@ public class KuisScript : MonoBehaviour
             for (int i = 0; i < 10; i++)
             {
                 if (StaticKuis.jawabanFlag[i])
-                {
                     btnPembahasanAll[i].image.sprite = btnCorrect;
-                }
                 else
-                {
                     btnPembahasanAll[i].image.sprite = btnWrong;
-                }
             }
 
-            btnLihatHasilBenar.SetActive(true);
-            btnLihatHasilSalah.SetActive(true);
+            foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
+                selanjutnya.text = "Lihat Nilai";
             StaticKuis.selesai = DateTime.Now;
             TimeSpan difference = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
             StaticKuis.durasi = Convert.ToInt32(difference.TotalSeconds);
@@ -246,8 +247,8 @@ public class KuisScript : MonoBehaviour
         form.AddField("durasi", StaticKuis.durasi);
         for (int i = 0; i < 10; i++)
         {
-            form.AddField("no_" + (i+1), StaticKuis.jawabanFlag[i].ToString());
-            form.AddField("jawaban_no_" + (i+1), StaticKuis.jawaban[i]);
+            form.AddField("no_" + (i + 1), StaticKuis.jawabanFlag[i].ToString());
+            form.AddField("jawaban_no_" + (i + 1), StaticKuis.jawaban[i]);
         }
 
         UnityWebRequest webRequest = UnityWebRequest.Post("https://rfifnkbwxbvvapcgpuzn.supabase.co/rest/v1/hasil_kuis", form);
