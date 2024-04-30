@@ -18,6 +18,14 @@ TagManager:
   - OtakOccipital
   - OtakParietal
   - OtakTemporal
+  - Heart
+  - Aorta
+  - PulmonaryArtery
+  - PulmonaryVein
+  - SuperiorVenaCava
+  - InferiorVenaCava
+  - RightPartOfHeart
+  - LeftPartOfHeart
   layers:
   - Default
   - TransparentFX

@@ -39,23 +39,28 @@ public class GinjalClick : MonoBehaviour
 
     private void StartFlash()
     {
-         foreach (GameObject gjl in ginjalPart)
+        int i = 0;
+        txt.SetActive(true);
+        btnCloseUI.SetActive(true);
+        StaticClass.objClicked = true;
+        foreach (GameObject gjl in ginjalPart)
         {
+            
             material = gjl.GetComponent<Renderer>().material;
             material.EnableKeyword("_EMISSION");
 
-            if (!StaticClass.objClicked)
-            {
-                txt.SetActive(true);
-                btnCloseUI.SetActive(true);
-                StaticClass.objClicked = true;
+            //if (!StaticClass.objClicked)
+            //{
+                print("aa" + i++);
+                
                 MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
-                camMono.StartCoroutine(FlashObject());
-            }
+                camMono.StartCoroutine(FlashObject(material));
+            //}
+
         }
     }
 
-    IEnumerator FlashObject()
+    IEnumerator FlashObject(Material material)
     {
         // print("masuk flash obj");
         while (StaticClass.objClicked)
