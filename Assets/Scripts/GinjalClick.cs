@@ -44,7 +44,6 @@ public class GinjalClick : MonoBehaviour
 
     private void StartFlash()
     {
-        int i = 0;
         txt.SetActive(true);
         btnCloseUI.SetActive(true);
         if (!StaticClass.objClicked)
@@ -55,11 +54,7 @@ public class GinjalClick : MonoBehaviour
 
                 material = gjl.GetComponent<Renderer>().material;
                 material.EnableKeyword("_EMISSION");
-
-                print("aa" + i++);
-
-                MonoBehaviour camMono = Camera.main.GetComponent<MonoBehaviour>();
-                camMono.StartCoroutine(FlashObject(material));
+                StartCoroutine(FlashObject(material));
             }
 
         }
@@ -77,9 +72,9 @@ public class GinjalClick : MonoBehaviour
                     flashingIn = false;
                 else
                 {
-                    redCol += 25;
-                    greenCol += 25;
-                    blueCol += 25;
+                    redCol += 25/ ginjalPart.Length;
+                    greenCol += 25/ ginjalPart.Length;
+                    blueCol += 25/ ginjalPart.Length;
                     material.SetColor("_EmissionColor", new Color32((byte)redCol, (byte)greenCol, (byte)blueCol, 255));
                     material.EnableKeyword("_EMISSION");
                 }
@@ -90,9 +85,9 @@ public class GinjalClick : MonoBehaviour
                     flashingIn = true;
                 else
                 {
-                    redCol -= 25;
-                    greenCol -= 25;
-                    blueCol -= 25;
+                    redCol -= 25/ ginjalPart.Length;
+                    greenCol -= 25/ ginjalPart.Length;
+                    blueCol -= 25/ ginjalPart.Length;
                     material.SetColor("_EmissionColor", new Color32((byte)redCol, (byte)greenCol, (byte)blueCol, 255));
                     material.EnableKeyword("_EMISSION");
                 }
