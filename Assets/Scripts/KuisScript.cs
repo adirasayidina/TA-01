@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using static System.Net.Mime.MediaTypeNames;
 
 public class KuisScript : MonoBehaviour
 {
@@ -16,6 +17,22 @@ public class KuisScript : MonoBehaviour
     public Sprite selectedSprite;
     public Sprite btnCorrect;
     public Sprite btnWrong;
+    [Tooltip("[Soal] Gambar buat soal")]
+    public UnityEngine.UI.Image imageSoal;
+    [Tooltip("[Soal] Gambar soal buat pembahasan benar")]
+    public UnityEngine.UI.Image imageSoalPembahasanBenar;
+    [Tooltip("[Soal] Gambar soal buat pembahasan salah")]
+    public UnityEngine.UI.Image imageSoalPembahasanSalah;
+    [Tooltip("[Pembahasan] Gambar buat pembahasan, ini beda sama gambar soal")]
+    public UnityEngine.UI.Image imageSoalPembahasanContent;
+    [Tooltip("[Soal] Gambar soal buat pembahasan akhir benar, ini gambar soal tapi buat yang di pembahasan akhir")]
+    public UnityEngine.UI.Image imageSoalPembahasanAkhirBenar;
+    [Tooltip("[Soal] Gambar soal buat pembahasan akhir salah, ini gambar soal tapi buat yang di pembahasan akhir")]
+    public UnityEngine.UI.Image imageSoalPembahasanAkhirSalah;
+    [Tooltip("[Pembahasan] Gambar pembahasan buat pembahasan akhir benar, sama kyk imageSoalPembahasanContent")]
+    public UnityEngine.UI.Image imageSoalPembahasanAkhirBenarContent;
+    [Tooltip("[Pembahasan] Gambar pembahasan buat pembahasan akhir salah, sama kyk imageSoalPembahasanContent")]
+    public UnityEngine.UI.Image imageSoalPembahasanAkhirSalahContent;
     [SerializeField] private TMPro.TextMeshProUGUI pertanyaan;
     [SerializeField] private TMPro.TextMeshProUGUI soalBenar;
     [SerializeField] private TMPro.TextMeshProUGUI soalSalah;
@@ -55,6 +72,7 @@ public class KuisScript : MonoBehaviour
 
     public GameObject[] contentsHeight;
     public GameObject contentsPembHeight;
+    public GameObject[] contentsPembHeight2;
     void Start()
     {
         print("hi kuis");
@@ -69,6 +87,7 @@ public class KuisScript : MonoBehaviour
         pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
         infoQuizMateri.text = "Materi: " + StaticClass.quizCode;
         judulKuis.text = "Kuis - " + StaticClass.quizCode;
+        setGambarSoal(imageSoal, pertanyaan, -355f, 50f, StaticInfoKuis.soalGambar[StaticClass.quizCode][StaticClass.quizNomor]);
         foreach (GameObject ct in contentsHeight)
             ct.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height[StaticClass.quizCode][StaticClass.quizNomor]);
         for (int i = 0; i < 4; i++)
@@ -108,15 +127,21 @@ public class KuisScript : MonoBehaviour
         string pilganBenar = StaticInfoKuis.pilgan[materi][nomorSoal][char.Parse(abjadPilganBenar) - 65];
         string pembahasan = StaticInfoKuis.pembahasan[materi][nomorSoal];
         string pertanyaan = StaticInfoKuis.soal[materi][nomorSoal];
+        int height = StaticInfoKuis.height["Pemb" + StaticClass.quizCode][nomorSoal];
 
-        contentsPembHeight.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height["Pemb"+StaticClass.quizCode][StaticClass.quizNomor]);
+        contentsPembHeight.GetComponent<RectTransform>().sizeDelta = new Vector2(0, height);
+        foreach (GameObject ct in contentsPembHeight2)
+            ct.GetComponent<RectTransform>().sizeDelta = new Vector2(718, height);
         txtPilganBenarPnlAkhirBenar.text = pilganBenar;
         txtAbjadBenarPnlAkhirBenar.text = abjadPilganBenar;
         txtPilganBenarPnlAkhirSalah.text = pilganBenar;
         txtAbjadBenarPnlAkhirSalah.text = abjadPilganBenar;
         txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
         txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
-
+        setGambarSoal(imageSoalPembahasanAkhirBenar, txtPembahasanPnlAkhirBenar, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
+        setGambarSoal(imageSoalPembahasanAkhirSalah, txtPembahasanPnlAkhirSalah, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
+        setGambarPembahasan(imageSoalPembahasanAkhirBenarContent, -height + 820, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][nomorSoal]);
+        setGambarPembahasan(imageSoalPembahasanAkhirSalahContent, -height + 820, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][nomorSoal]);
 
         if (!StaticKuis.jawabanFlag[nomorSoal])
         {
@@ -156,14 +181,13 @@ public class KuisScript : MonoBehaviour
         {
             foreach (Button btn in buttonsPilihan)
                 btn.image.sprite = StaticClass.pilganNormalSprite;
-
             StaticClass.quizNomor++;
+            setGambarSoal(imageSoal, pertanyaan, -355f, 50f, StaticInfoKuis.soalGambar[StaticClass.quizCode][StaticClass.quizNomor]);
             foreach (GameObject ct in contentsHeight)
                 ct.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height[StaticClass.quizCode][StaticClass.quizNomor]);
             foreach (TMPro.TextMeshProUGUI nmr in nomor)
                 nmr.text = StaticClass.quizNomor + 1 + "/10";
             pertanyaan.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
-
             for (int i = 0; i < 4; i++)
                 pilganPertanyaan[i].text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][i];
         }
@@ -189,6 +213,7 @@ public class KuisScript : MonoBehaviour
             soalBenar.text = StaticInfoKuis.soal[StaticClass.quizCode][StaticClass.quizNomor];
             abjadBenar.text = jawaban;
             pilganBenar.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            setGambarSoal(imageSoalPembahasanBenar, soalBenar, -405f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][StaticClass.quizNomor]);
             pnlBenar.SetActive(true);
         }
         else
@@ -199,9 +224,13 @@ public class KuisScript : MonoBehaviour
             abjadBenarPnlSalah.text = StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor];
             pilganBenarPnlSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(abjadBenarPnlSalah.text) - 65];
             pilganSalah.text = StaticInfoKuis.pilgan[StaticClass.quizCode][StaticClass.quizNomor][char.Parse(jawaban) - 65];
+            setGambarSoal(imageSoalPembahasanSalah, soalSalah, -405f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][StaticClass.quizNomor]);
             pnlSalah.SetActive(true);
         }
         pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
+        print("hello:" + StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][StaticClass.quizNomor]);
+        // Sebenarnya set gambar pembahasan, tapi lebih relevan pake method ini
+        setGambarSoal(imageSoalPembahasanContent, pembahasan, -605f, 0f, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][StaticClass.quizNomor]);
         PilihJawaban.SetActive(false);
 
         if (StaticClass.quizNomor == 9)
@@ -233,6 +262,39 @@ public class KuisScript : MonoBehaviour
             TimeSpan difference = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
             StaticKuis.durasi = Convert.ToInt32(difference.TotalSeconds);
             StartCoroutine(insertDataToSupabase());
+        }
+    }
+
+    private void setGambarSoal(UnityEngine.UI.Image img, TMPro.TextMeshProUGUI txt, float yPosImg, float yPosNoImg, string imgPath)
+    {
+        if (imgPath != null)
+        {
+            img.gameObject.SetActive(true);
+            img.sprite = Resources.Load<Sprite>(imgPath);
+            RectTransform rectTransform = txt.rectTransform;
+            rectTransform.localPosition = new Vector3(0f, yPosImg, 0f);
+        }
+        else
+        {
+            img.gameObject.SetActive(false);
+            RectTransform rectTransform = txt.rectTransform;
+            rectTransform.localPosition = new Vector3(0f, yPosNoImg, 0f);
+        }
+    }
+
+    private void setGambarPembahasan(UnityEngine.UI.Image img, float yPosImg, string imgPath)
+    {
+        print(imgPath);
+        if (imgPath != null)
+        {
+            img.gameObject.SetActive(true);
+            img.sprite = Resources.Load<Sprite>(imgPath);
+            RectTransform rectTransform = img.rectTransform;
+            rectTransform.localPosition = new Vector3(0f, yPosImg, 0f);
+        }
+        else
+        {
+            img.gameObject.SetActive(false);
         }
     }
 

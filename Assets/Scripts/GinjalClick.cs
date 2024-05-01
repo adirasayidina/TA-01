@@ -72,9 +72,9 @@ public class GinjalClick : MonoBehaviour
                     flashingIn = false;
                 else
                 {
-                    redCol += 25/ ginjalPart.Length;
-                    greenCol += 25/ ginjalPart.Length;
-                    blueCol += 25/ ginjalPart.Length;
+                    redCol += 25 / ginjalPart.Length;
+                    greenCol += 25 / ginjalPart.Length;
+                    blueCol += 25 / ginjalPart.Length;
                     material.SetColor("_EmissionColor", new Color32((byte)redCol, (byte)greenCol, (byte)blueCol, 255));
                     material.EnableKeyword("_EMISSION");
                 }
@@ -85,9 +85,9 @@ public class GinjalClick : MonoBehaviour
                     flashingIn = true;
                 else
                 {
-                    redCol -= 25/ ginjalPart.Length;
-                    greenCol -= 25/ ginjalPart.Length;
-                    blueCol -= 25/ ginjalPart.Length;
+                    redCol -= 25 / ginjalPart.Length;
+                    greenCol -= 25 / ginjalPart.Length;
+                    blueCol -= 25 / ginjalPart.Length;
                     material.SetColor("_EmissionColor", new Color32((byte)redCol, (byte)greenCol, (byte)blueCol, 255));
                     material.EnableKeyword("_EMISSION");
                 }

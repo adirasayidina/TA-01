@@ -27,7 +27,9 @@ public static class StaticKuis {
 public static class StaticInfoKuis {
     public static Dictionary<string, string[]> jawabanKuis = new Dictionary<string, string[]>();
     public static Dictionary<string, string[]> soal = new Dictionary<string, string[]>();
+    public static Dictionary<string, string[]> soalGambar = new Dictionary<string, string[]>();
     public static Dictionary<string, string[]> pembahasan = new Dictionary<string, string[]>();
+    public static Dictionary<string, string[]> pembahasanGambar = new Dictionary<string, string[]>();
     public static Dictionary<string, int[]> height = new Dictionary<string, int[]>();
     public static Dictionary<string, string[][]> pilgan = new Dictionary<string, string[][]>();
 }

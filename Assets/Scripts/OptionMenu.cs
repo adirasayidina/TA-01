@@ -16,7 +16,7 @@ public class OptionMenu : MonoBehaviour
         {
             string[] ginjal = { "C", "C", "B", "A", "A", "D", "A", "C", "D", "A" };
             string[] otak = { "C", "B", "D", "D", "C", "A", "C", "A", "C", "B" };
-            string[] jantung = { "A", "C", "D", "A", "B", "C", "A", "C", "D", "A" };
+            string[] jantung = { "C", "A", "D", "C", "A", "B", "A", "B", "D", "B" };
 
             StaticInfoKuis.jawabanKuis.Add("Ginjal", ginjal);
             StaticInfoKuis.jawabanKuis.Add("Otak", otak);
@@ -47,21 +47,62 @@ public class OptionMenu : MonoBehaviour
                 "soal 10"
             };
             string[] soalJantung = {
-                "soal pendek 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
-                "soal 3",
-                "soal 4",
-                "soal 5",
-                "soal 6",
-                "soal 7",
-                "soal 8",
-                "soal 9",
-                "soal 10"
+                "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut?",
+                "Nama bagian jantung yang ditunjuk adalah",
+                "Bagian jantung mana yang bertanggung jawab untuk memompa darah yang mengandung oksigen ke paru-paru?",
+                "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah?",
+                "Nama bagian jantung yang ditunjuk adalah",
+                "Bagian berikut merupakan bagian dari Aorta, kecuali",
+                "Darah yang mengalir melalui vena cava inferior berasal dari vena-vena berikut, kecuali",
+                "Bagian jantung mana yang bertanggung jawab untuk menerima darah yang mengandung oksigen dari paru-paru?",
+                "Apa yang dibawa oleh superior vena cava?",
+                "Nama bagian jantung yang ditunjuk adalah"
             };
 
             StaticInfoKuis.soal.Add("Ginjal", soalGinjal);
             StaticInfoKuis.soal.Add("Otak", soalOtak);
             StaticInfoKuis.soal.Add("Jantung", soalJantung);
+
+            string[] soalGambarGinjal = {
+                null, // no 1
+                null, // no 2
+                null, // no 3
+                null, // no 4
+                null, // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                null, // no 10
+            };
+            string[] soalGambarOtak = {
+                null, // no 1
+                null, // no 2
+                null, // no 3
+                null, // no 4
+                null, // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                null, // no 10
+            };
+            string[] soalGambarJantung = {
+                null, // no 1
+                "Jantung No 2", // no 2
+                null, // no 3
+                null, // no 4
+                "Jantung No 5", // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                "Jantung No 10", // no 10
+            };
+
+            StaticInfoKuis.soalGambar.Add("Ginjal", soalGambarGinjal);
+            StaticInfoKuis.soalGambar.Add("Otak", soalGambarOtak);
+            StaticInfoKuis.soalGambar.Add("Jantung", soalGambarJantung);
 
             string[] pembahasanGinjal = {
                 "pembahasan pendek 1",
@@ -89,20 +130,61 @@ public class OptionMenu : MonoBehaviour
             };
             string[] pembahasanJantung = {
                 "pembahasan pendek 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
+                "Nama bagian jantung yang ditunjuk adalah arteri pulmonalis. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung.",
                 "pembahasan 3",
                 "pembahasan 4",
-                "pembahasan 5",
+                "Nama bagian jantung yang ditunjuk adalah serambi kanan. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung.",
                 "pembahasan 6",
                 "pembahasan 7",
                 "pembahasan 8",
                 "pembahasan 9",
-                "pembahasan 10"
+                "Nama bagian jantung yang ditunjuk adalah vena pulmonalis. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung."
             };
 
             StaticInfoKuis.pembahasan.Add("Ginjal", pembahasanGinjal);
             StaticInfoKuis.pembahasan.Add("Otak", pembahasanOtak);
             StaticInfoKuis.pembahasan.Add("Jantung", pembahasanJantung);
+            
+            string[] pembahasanGambarGinjal = {
+                null, // no 1
+                null, // no 2
+                null, // no 3
+                null, // no 4
+                null, // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                null, // no 10
+            };
+            string[] pembahasanGambarOtak = {
+                null, // no 1
+                null, // no 2
+                null, // no 3
+                null, // no 4
+                null, // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                null, // no 10
+            };
+            string[] pembahasanGambarJantung = {
+                null, // no 1
+                "Jantung Pembahasan", // no 2
+                null, // no 3
+                null, // no 4
+                "Jantung Pembahasan", // no 5
+                null, // no 6
+                null, // no 7
+                null, // no 8
+                null, // no 9
+                "Jantung Pembahasan", // no 10
+            };
+
+            StaticInfoKuis.pembahasanGambar.Add("Ginjal", pembahasanGambarGinjal);
+            StaticInfoKuis.pembahasanGambar.Add("Otak", pembahasanGambarOtak);
+            StaticInfoKuis.pembahasanGambar.Add("Jantung", pembahasanGambarJantung);
         }
 
         string[] ginjal1 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
@@ -129,16 +211,16 @@ public class OptionMenu : MonoBehaviour
         string[] otak10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
         string[][] pilganOtak = { otak1, otak2, otak3, otak4, otak5, otak6, otak7, otak8, otak9, otak10 };
 
-        string[] jantung1 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung2 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung3 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung4 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung5 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung6 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung7 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung8 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung9 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] jantung10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] jantung1 = { "Aorta", "Vena pulmonalis", "Arteri pulmonalis", "Vena cava superior" };
+        string[] jantung2 = { "Arteri pulmonalis", "Vena pulmonalis", "Vena cava superior", "Vena cava inferior" };
+        string[] jantung3 = { "Serambi Kiri", "Bilik Kiri", "Serambi Kanan", "Bilik Kanan" };
+        string[] jantung4 = { "Vena cava superior", "Vena pulmonalis", "Vena cava inferior", "Arteri pulmonalis" };
+        string[] jantung5 = { "Serambi kanan", "Serambi kiri", "Bilik kanan", "Bilik kiri" };
+        string[] jantung6 = { "Descending Aorta", "Inferior Aorta", "Arkus Aorta", "Ascending Aorta" };
+        string[] jantung7 = { "Vena subklavia", "Vena ginjal", "Vena adrenal", "Vena hepatik" };
+        string[] jantung8 = { "Bilik Kiri", "Serambi Kiri", "Bilik Kanan", "Serambi Kanan" };
+        string[] jantung9 = { "Darah kaya oksigen dari paru-paru", "Darah kaya oksigen dari aorta", "Darah mengandung oksigen dari tubuh bagian bawah", "Darah mengandung oksigen dari tubuh bagian atas" };
+        string[] jantung10 = { "Arteri pulmonalis", "Vena pulmonalis", "Vena cava superior", "Vena cava inferior" };
         string[][] pilganJantung = { jantung1, jantung2, jantung3, jantung4, jantung5, jantung6, jantung7, jantung8, jantung9, jantung10 };
 
         StaticInfoKuis.pilgan.Add("Ginjal", pilganGinjal);
@@ -146,10 +228,10 @@ public class OptionMenu : MonoBehaviour
         StaticInfoKuis.pilgan.Add("Jantung", pilganJantung);
 
         // height soal biasa
-        // normal height = 556.88
-        int[] heightGinjal = {738,557,557,557,557,557,557,557,557,557};
-        int[] heightOtak = {557,557,557,557,557,557,653,617,1071,557};
-        int[] heightJantung = {557,557,557,557,557,557,557,557,557,557};
+        // normal height = 540.8
+        int[] heightGinjal = {738,540,540,540,540,540,540,540,540,540};
+        int[] heightOtak = {540,540,540,540,540,540,653,617,1071,540};
+        int[] heightJantung = {540,617,540,540,617,540,540,540,540,617};
         StaticInfoKuis.height.Add("Ginjal", heightGinjal);
         StaticInfoKuis.height.Add("Otak", heightOtak);
         StaticInfoKuis.height.Add("Jantung", heightJantung);
@@ -158,7 +240,7 @@ public class OptionMenu : MonoBehaviour
         // normal height 657 (yg pnl salah, ambil min)
         int[] heightPembGinjal = {657,657,657,657,657,657,657,657,657,657};
         int[] heightPembOtak = {657,657,657,657,657,657,657,657,657,657};
-        int[] heightPembJantung = {657,657,657,657,657,657,657,657,657,657};
+        int[] heightPembJantung = {657,1390,657,657,1390,657,657,657,657,1390};
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);
