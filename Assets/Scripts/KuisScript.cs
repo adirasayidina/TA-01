@@ -73,6 +73,7 @@ public class KuisScript : MonoBehaviour
     public GameObject[] contentsHeight;
     public GameObject contentsPembHeight;
     public GameObject[] contentsPembHeight2;
+    public ScrollRect[] scrollViewAll;
     void Start()
     {
         print("hi kuis");
@@ -136,12 +137,16 @@ public class KuisScript : MonoBehaviour
         txtAbjadBenarPnlAkhirBenar.text = abjadPilganBenar;
         txtPilganBenarPnlAkhirSalah.text = pilganBenar;
         txtAbjadBenarPnlAkhirSalah.text = abjadPilganBenar;
-        txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
-        txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPenbahasan:\n" + pembahasan;
+        txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
+        txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
         setGambarSoal(imageSoalPembahasanAkhirBenar, txtPembahasanPnlAkhirBenar, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
         setGambarSoal(imageSoalPembahasanAkhirSalah, txtPembahasanPnlAkhirSalah, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
         setGambarPembahasan(imageSoalPembahasanAkhirBenarContent, -height + 820, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][nomorSoal]);
         setGambarPembahasan(imageSoalPembahasanAkhirSalahContent, -height + 820, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][nomorSoal]);
+        foreach (ScrollRect scr in scrollViewAll)
+        {
+            scr.verticalNormalizedPosition = 1f;
+        }
 
         if (!StaticKuis.jawabanFlag[nomorSoal])
         {
@@ -228,9 +233,9 @@ public class KuisScript : MonoBehaviour
             pnlSalah.SetActive(true);
         }
         pembahasan.text = StaticInfoKuis.pembahasan[StaticClass.quizCode][StaticClass.quizNomor];
-        print("hello:" + StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][StaticClass.quizNomor]);
         // Sebenarnya set gambar pembahasan, tapi lebih relevan pake method ini
         setGambarSoal(imageSoalPembahasanContent, pembahasan, -605f, 0f, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][StaticClass.quizNomor]);
+        contentsPembHeight.GetComponent<RectTransform>().sizeDelta = new Vector2(0, StaticInfoKuis.height["PembTengah" + StaticClass.quizCode][StaticClass.quizNomor]);
         PilihJawaban.SetActive(false);
 
         if (StaticClass.quizNomor == 9)

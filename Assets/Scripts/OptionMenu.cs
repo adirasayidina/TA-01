@@ -47,16 +47,16 @@ public class OptionMenu : MonoBehaviour
                 "soal 10"
             };
             string[] soalJantung = {
-                "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut?",
-                "Nama bagian jantung yang ditunjuk adalah",
+                "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut…",
+                "Nama bagian jantung yang ditunjuk adalah…",
                 "Bagian jantung mana yang bertanggung jawab untuk memompa darah yang mengandung oksigen ke paru-paru?",
-                "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah?",
-                "Nama bagian jantung yang ditunjuk adalah",
-                "Bagian berikut merupakan bagian dari Aorta, kecuali",
-                "Darah yang mengalir melalui vena cava inferior berasal dari vena-vena berikut, kecuali",
+                "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah…",
+                "Nama bagian jantung yang ditunjuk adalah…",
+                "Bagian berikut merupakan bagian dari Aorta, kecuali…",
+                "Darah yang mengalir melalui vena cava inferior berasal dari vena-vena berikut, kecuali…",
                 "Bagian jantung mana yang bertanggung jawab untuk menerima darah yang mengandung oksigen dari paru-paru?",
-                "Apa yang dibawa oleh superior vena cava?",
-                "Nama bagian jantung yang ditunjuk adalah"
+                "Apa yang dibawa oleh vena cava superior?",
+                "Nama bagian jantung yang ditunjuk adalah…"
             };
 
             StaticInfoKuis.soal.Add("Ginjal", soalGinjal);
@@ -129,15 +129,15 @@ public class OptionMenu : MonoBehaviour
                 "pembahasan 10"
             };
             string[] pembahasanJantung = {
-                "pembahasan pendek 1",
+                "Arteri pulmonalis adalah pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung menuju paru-paru. Arteri pulmonalis merupakan satu-satunya arteri yang tidak mengandung oksigen pada tubuh manusia. Setelah mencapai paru-paru, darah melepaskan karbon dioksida dan mengambil oksigen, menjadi teroksigenasi sebelum kembali ke jantung melalui vena-vena paru-paru.",
                 "Nama bagian jantung yang ditunjuk adalah arteri pulmonalis. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung.",
-                "pembahasan 3",
-                "pembahasan 4",
+                "Serambi kiri jantung bertanggung jawab menerima darah yang kaya oksigen dari paru-paru melalui vena pulmonalis dan memompanya ke bilik kiri untuk didistribusikan ke seluruh tubuh.\n\nBilik kiri jantung berperan dalam memompa darah kaya oksigen ke seluruh tubuh melalui aorta, sehingga memberikan oksigen dan nutrisi yang dibutuhkan oleh jaringan dan organ tubuh.\n\nSerambi kanan jantung menerima darah yang mengandung karbon dioksida dari seluruh tubuh melalui vena cava superior dan inferior, lalu memompanya ke bilik kanan untuk dipompa ke paru-paru untuk proses pertukaran gas.\n\nBilik kanan jantung bertugas memompa darah yang mengandung karbon dioksida ke paru-paru melalui arteri pulmonalis untuk dipenuhi kembali dengan oksigen dan melepaskan karbon dioksida melalui proses pernapasan.",
+                "Vena cava inferior adalah vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung. Vena cava inferior mengumpulkan darah dari bagian bawah tubuh, termasuk kaki, panggul, dan organ-organ dalam rongga perut, dan membawanya ke atrium kanan jantung. \nSedangkan vena besar yang membawa darah yang tidak mengandung oksigen dari bagian atas tubuh kembali ke jantung adalah vena cava superior. Vena ini menerima darah yang kembali dari kepala, lengan, dan bagian atas tubuh lainnya.",
                 "Nama bagian jantung yang ditunjuk adalah serambi kanan. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung.",
-                "pembahasan 6",
-                "pembahasan 7",
-                "pembahasan 8",
-                "pembahasan 9",
+                "Aorta adalah arteri terbesar di tubuh manusia. Bagian-bagian utama aorta adalah ascending aorta, arkus aorta, dan descending aorta. Ascending aorta dimulai dari katup aorta ventrikel kiri dan memiliki panjang sekitar 5 cm. Ascending aorta bertanggung jawab membawa darah langsung dari jantung dan memberikan sirkulasi ke hampir seluruh jaringan tubuh. Arkus aorta (aortic arch) melengkung di atas jantung dan mengeluarkan cabang-cabang yang memasok darah ke kepala, leher, dan anggota tubuh bagian atas. Descending Aorta merupakan lanjutan dari arkus aorta yang berlanjut ke bawah melalui daerah dada dan perut dan akan memasok darah ke seluruh tubuh.",
+                "Vena cava inferior adalah vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh (perut, panggul, dan kaki) kembali ke serambi kanan jantung. Darah yang mengalir melalui vena cava inferior berasal dari berbagai vena di bagian bawah tubuh. Namun, vena subklavia tidak termasuk salah satunya.",
+                "Bilik kiri jantung berperan dalam memompa darah kaya oksigen ke seluruh tubuh melalui aorta, sehingga memberikan oksigen dan nutrisi yang dibutuhkan oleh jaringan dan organ tubuh.\n\nSerambi kiri jantung bertanggung jawab menerima darah yang kaya oksigen dari paru-paru melalui vena pulmonalis dan memompanya ke bilik kiri untuk didistribusikan ke seluruh tubuh.\n\nBilik kanan jantung bertugas memompa darah yang mengandung karbon dioksida ke paru-paru melalui arteri pulmonalis untuk dipenuhi kembali dengan oksigen dan melepaskan karbon dioksida melalui proses pernapasan.\n\nSerambi kanan jantung menerima darah yang mengandung karbon dioksida dari seluruh tubuh melalui vena cava superior dan inferior, lalu memompanya ke bilik kanan untuk dipompa ke paru-paru untuk proses pertukaran gas.",
+                "Vena cava superior adalah vena besar yang membawa darah yang mengandung oksigen dari tubuh bagian atas kembali ke jantung, tepatnya ke atrium kanan jantung. Darah yang mengalir melalui vena cava superior berasal dari bagian atas tubuh, seperti kepala, lengan, dan dada atas.",
                 "Nama bagian jantung yang ditunjuk adalah vena pulmonalis. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung."
             };
 
@@ -236,11 +236,20 @@ public class OptionMenu : MonoBehaviour
         StaticInfoKuis.height.Add("Otak", heightOtak);
         StaticInfoKuis.height.Add("Jantung", heightJantung);
 
+        // height pembahasan tengah (yang habis jawab soal)
+        // normal height 1061
+        int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061 };
+        int[] heightPembTengahOtak = { 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061 };
+        int[] heightPembTengahJantung = { 1061, 1061, 1321, 1061, 1061, 1061, 1061, 1321, 1061, 1061 };
+        StaticInfoKuis.height.Add("PembTengahGinjal", heightPembTengahGinjal);
+        StaticInfoKuis.height.Add("PembTengahOtak", heightPembTengahOtak);
+        StaticInfoKuis.height.Add("PembTengahJantung", heightPembTengahJantung);
+
         // height pembahasan akhir (pertanyaan+pembahasan)
         // normal height 657 (yg pnl salah, ambil min)
         int[] heightPembGinjal = {657,657,657,657,657,657,657,657,657,657};
         int[] heightPembOtak = {657,657,657,657,657,657,657,657,657,657};
-        int[] heightPembJantung = {657,1390,657,657,1390,657,657,657,657,1390};
+        int[] heightPembJantung = {757,1390,1457,990,1390,990,657,1457,657,1390};
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);

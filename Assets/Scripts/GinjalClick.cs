@@ -39,7 +39,6 @@ public class GinjalClick : MonoBehaviour
         ginjalPart = GameObject.FindGameObjectsWithTag(tag);
         print(ginjalPart.Length);
         StartFlash();
-
     }
 
     private void StartFlash()
