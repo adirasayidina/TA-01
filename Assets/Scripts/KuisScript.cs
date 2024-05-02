@@ -142,7 +142,7 @@ public class KuisScript : MonoBehaviour
         txtAbjadBenarPnlAkhirSalah.text = abjadPilganBenar;
         txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
         txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
-        if (materi == "Otak" && (nomorSoal == 2 || nomorSoal == 5)) {
+        if (materi == "Otak" && (nomorSoal == 2 || nomorSoal == 4)) {
             txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nA." + StaticInfoKuis.pilgan[materi][nomorSoal][0]+ "\nB." + StaticInfoKuis.pilgan[materi][nomorSoal][1] + "\nC." + StaticInfoKuis.pilgan[materi][nomorSoal][2] + "\nD." + StaticInfoKuis.pilgan[materi][nomorSoal][3] + "\n\nPembahasan:\n" + pembahasan;
             txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nA." + StaticInfoKuis.pilgan[materi][nomorSoal][0]+ "\nB." + StaticInfoKuis.pilgan[materi][nomorSoal][1] + "\nC." + StaticInfoKuis.pilgan[materi][nomorSoal][2] + "\nD." + StaticInfoKuis.pilgan[materi][nomorSoal][3] + "\n\nPembahasan:\n" + pembahasan;
         }

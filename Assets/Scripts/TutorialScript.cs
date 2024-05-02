@@ -193,7 +193,7 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     private void CalculateTotalPages()
     {
         int itemCount = gridLayoutGroup.transform.childCount;
-        totalPages = Mathf.CeilToInt((float)itemCount / gridLayoutGroup.constraintCount);
+        totalPages = Mathf.CeilToInt((float)itemCount / gridLayoutGroup.constraintCount) -1;
     }
 
     private void SetSnapTarget(int page)

@@ -264,8 +264,8 @@ public class OptionMenu : MonoBehaviour
 
         // height pembahasan akhir (pertanyaan+pembahasan)
         // normal height 657 (yg pnl salah, ambil min)
-        int[] heightPembGinjal = { 1124, 1390, 657, 657, 1690, 657, 657, 657, 657, 1330 };
-        int[] heightPembOtak = { 657, 1390, 700, 1390, 657, 700, 857, 657, 957, 1357 };
+        int[] heightPembGinjal = { 1124, 1390, 657, 757, 1590, 657, 657, 657, 657, 1430 };
+        int[] heightPembOtak = { 657, 1390, 1050, 1090, 957, 1000, 1357, 657, 1557, 1857 };
         int[] heightPembJantung = { 757, 1390, 1457, 990, 1390, 990, 657, 1457, 657, 1390 };
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
