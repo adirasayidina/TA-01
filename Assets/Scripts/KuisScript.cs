@@ -41,6 +41,7 @@ public class KuisScript : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI[] nomor;
     [SerializeField] private TMPro.TextMeshProUGUI[] pilganPertanyaan;
     [SerializeField] private TMPro.TextMeshProUGUI nilai;
+    [SerializeField] private TMPro.TextMeshProUGUI durasiTotal;
     [SerializeField] private TMPro.TextMeshProUGUI abjadBenar;
     [SerializeField] private TMPro.TextMeshProUGUI pilganBenar;
     [SerializeField] private TMPro.TextMeshProUGUI abjadBenarPnlSalah;
@@ -69,6 +70,7 @@ public class KuisScript : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI txtAbjadSalahPnlAkhirSalah;
     [SerializeField] private TMPro.TextMeshProUGUI txtPembahasanPnlAkhirSalah;
     [SerializeField] private TMPro.TextMeshProUGUI[] txtPertanyaanSelanjutnya;
+    [SerializeField] private TMPro.TextMeshProUGUI[] txtDurasiPerSoal;
 
     public GameObject[] contentsHeight;
     public GameObject contentsPembHeight;
@@ -151,6 +153,10 @@ public class KuisScript : MonoBehaviour
         foreach (ScrollRect scr in scrollViewAll)
         {
             scr.verticalNormalizedPosition = 1f;
+        }
+        foreach (TMPro.TextMeshProUGUI durasiPerSoal in txtDurasiPerSoal)
+        {
+            durasiPerSoal.text = "Durasi pengerjaan: " + StaticKuis.durasi_per_soal[nomorSoal] + " detik";
         }
 
         if (!StaticKuis.jawabanFlag[nomorSoal])
@@ -263,11 +269,13 @@ public class KuisScript : MonoBehaviour
 
             for (int i = 0; i < 10; i++)
             {
+                StaticKuis.durasi_soal_saja += StaticKuis.durasi_per_soal[i];
                 if (StaticKuis.jawabanFlag[i])
                     btnPembahasanAll[i].image.sprite = btnCorrect;
                 else
                     btnPembahasanAll[i].image.sprite = btnWrong;
             }
+            durasiTotal.text = "Durasi pengerjaan: " + StaticKuis.durasi_soal_saja + " detik";
 
             foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
                 selanjutnya.text = "Lihat Nilai";
@@ -325,7 +333,6 @@ public class KuisScript : MonoBehaviour
             form.AddField("no_" + (i + 1), StaticKuis.jawabanFlag[i].ToString());
             form.AddField("jawaban_no_" + (i + 1), StaticKuis.jawaban[i]);
             form.AddField("durasi_no_" + (i + 1), StaticKuis.durasi_per_soal[i]);
-            StaticKuis.durasi_soal_saja += StaticKuis.durasi_per_soal[i];
         }
         form.AddField("durasi_soal_saja", StaticKuis.durasi_soal_saja);
         form.AddField("attempt_no", PlayerPrefs.GetInt("QuizAttempt" + StaticClass.quizCode));
