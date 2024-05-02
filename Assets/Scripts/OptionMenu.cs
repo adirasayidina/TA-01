@@ -4,8 +4,25 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using static System.Net.Mime.MediaTypeNames;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
+using Image = UnityEngine.UI.Image;
+
 public class OptionMenu : MonoBehaviour
 {
+
+    public GameObject Menu;
+    public GameObject PanelInputKode;
+    public GameObject SalahKode;
+    public GameObject BtnMulai;
+    public InputField InputKode;
+    public Image imgMateri;
+    public Sprite imgOtak;
+    public Sprite imgJantung;
+
     void Start()
     {
         if (!PlayerPrefs.HasKey("FirstTime"))
@@ -144,7 +161,7 @@ public class OptionMenu : MonoBehaviour
             StaticInfoKuis.pembahasan.Add("Ginjal", pembahasanGinjal);
             StaticInfoKuis.pembahasan.Add("Otak", pembahasanOtak);
             StaticInfoKuis.pembahasan.Add("Jantung", pembahasanJantung);
-            
+
             string[] pembahasanGambarGinjal = {
                 null, // no 1
                 "GinjalPemb", // no 2
@@ -229,9 +246,9 @@ public class OptionMenu : MonoBehaviour
 
         // height soal biasa
         // normal height = 540.8
-        int[] heightGinjal = {770,590,540,540,590,540,540,540,540,590};
-        int[] heightOtak = {540,590,540,540,540,540,653,540,617,1071};
-        int[] heightJantung = {540,617,540,540,617,540,540,540,540,617};
+        int[] heightGinjal = { 770, 590, 540, 540, 590, 540, 540, 540, 540, 590 };
+        int[] heightOtak = { 540, 590, 540, 540, 540, 540, 653, 540, 617, 1071 };
+        int[] heightJantung = { 540, 617, 540, 540, 617, 540, 540, 540, 540, 617 };
         StaticInfoKuis.height.Add("Ginjal", heightGinjal);
         StaticInfoKuis.height.Add("Otak", heightOtak);
         StaticInfoKuis.height.Add("Jantung", heightJantung);
@@ -247,9 +264,9 @@ public class OptionMenu : MonoBehaviour
 
         // height pembahasan akhir (pertanyaan+pembahasan)
         // normal height 657 (yg pnl salah, ambil min)
-        int[] heightPembGinjal = {1124,1390,657,657,1690,657,657,657,657,1330};
-        int[] heightPembOtak = {657,1390,700,1390,657,700,857,657,957,1357};
-        int[] heightPembJantung = {757,1390,1457,990,1390,990,657,1457,657,1390};
+        int[] heightPembGinjal = { 1124, 1390, 657, 657, 1690, 657, 657, 657, 657, 1330 };
+        int[] heightPembOtak = { 657, 1390, 700, 1390, 657, 700, 857, 657, 957, 1357 };
+        int[] heightPembJantung = { 757, 1390, 1457, 990, 1390, 990, 657, 1457, 657, 1390 };
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);
@@ -264,12 +281,63 @@ public class OptionMenu : MonoBehaviour
         else if (codeScene == 1)
         {
             StaticClass.quizCode = "Otak";
-            SceneManager.LoadScene("ArOtak");
+            if (PlayerPrefs.HasKey("UnlockOtak"))
+                SceneManager.LoadScene("ArOtak");
+            else
+            {
+                imgMateri.sprite = imgOtak;
+                PanelInputKode.SetActive(true);
+                Menu.SetActive(false);
+            }
         }
         else if (codeScene == 2)
         {
             StaticClass.quizCode = "Jantung";
+            if (PlayerPrefs.HasKey("UnlockJantung"))
+                SceneManager.LoadScene("ArJantung");
+            else
+            {
+                imgMateri.sprite = imgJantung;
+                PanelInputKode.SetActive(true);
+                Menu.SetActive(false);
+            }
+        }
+    }
+
+    public void OnChangeInput()
+    {
+        SalahKode.SetActive(false);
+        if (InputKode.text.Length > 0)
+            BtnMulai.SetActive(true);
+        else
+            BtnMulai.SetActive(false);
+    }
+
+    public void OnClickInput()
+    {
+        if (StaticClass.quizCode == "Jantung" && InputKode.text == "SMAN104JAKARTA")
+        {
+            PlayerPrefs.SetInt("UnlockJantung", 1);
+            Menu.SetActive(true);
+            PanelInputKode.SetActive(false);
             SceneManager.LoadScene("ArJantung");
+        }
+        else if (StaticClass.quizCode == "Jantung")
+        {
+            SalahKode.SetActive(true);
+            BtnMulai.SetActive(false);
+        }
+        else if (StaticClass.quizCode == "Otak" && InputKode.text == "SMAN104JAKARTA")
+        {
+            PlayerPrefs.SetInt("UnlockOtak", 1);
+            Menu.SetActive(true);
+            PanelInputKode.SetActive(false);
+            SceneManager.LoadScene("ArOtak");
+        }
+        else if (StaticClass.quizCode == "Otak")
+        {
+            SalahKode.SetActive(true);
+            BtnMulai.SetActive(false);
         }
     }
 
