@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4443,20 +4443,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Korteks ginjal (renal cortex) merupakan lapisan luar ginjal. Korteks mengelilingi
-    bagian dalam organ, yang disebut renal medulla. Korteks ginjal sendiri ditutupi
-    oleh kapsul ginjal, yaitu lapisan jaringan pelindung yang lebih keras.
+  m_text: 'Korteks ginjal (renal cortex) merupakan lapisan luar ginjal. Korteks ginjal
+    mengelilingi dan melindungi bagian dalam organ ginjal (medula). Korteks ginjal
+    sendiri ditutupi oleh kapsul ginjal, yaitu lapisan jaringan pelindung yang lebih
+    keras.
 
 
-    Korteks
-    ginjal adalah tempat dimulainya nefron (unit penyaring darah) (nefron dimulai
-    dari korteks hingga medula). Setiap ginjal mempunyai 1 juta nefron. Unit penyaringan
-    pada nefron adalah glomerulus, dan glomerulus melekat pada tubulus yang membuang
-    limbah dan mengembalikan zat-zat yang dibutuhkan ke tubuh Anda. Di korteks ginjal,
-    tubulusnya berbelit-belit, sedangkan bentuk tubulus pada renal medulla lebih
-    lurus.
+    Korteks ginjal adalah tempat dimulainya nefron (unit penyaring darah)
+    (nefron dimulai dari korteks hingga medula). Setiap ginjal mempunyai 1 juta nefron.
+    Unit penyaringan pada nefron adalah glomerulus, dan glomerulus melekat pada tubulus
+    yang membuang limbah dan mengembalikan zat-zat yang dibutuhkan ke tubuh Anda.
+    Di korteks ginjal, tubulusnya berbelit-belit, sedangkan bentuk tubulus pada renal
+    medulla lebih lurus.
 
-'
+
+    Karena korteks ginjal merupakan tempat di mana nefron,
+    glomerulus, dan tubulus, maka selain berfungsi untuk mengelilingi dan melindungi
+    organ ginjal, korteks ginjal juga memiliki fungsi untuk melakukan penyaringan
+    darah (menyaring cairan berlebih dari darah) yang disebut ultrafiltrasi.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9618,18 +9622,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Korteks ginjal (renal cortex) merupakan lapisan luar ginjal. Korteks mengelilingi
-    bagian dalam organ, yang disebut renal medulla. Korteks ginjal sendiri ditutupi
-    oleh kapsul ginjal, yaitu lapisan jaringan pelindung yang lebih keras.
+  m_text: 'Korteks ginjal (renal cortex) merupakan lapisan luar ginjal. Korteks ginjal
+    mengelilingi dan melindungi bagian dalam organ ginjal (medula). Korteks ginjal
+    sendiri ditutupi oleh kapsul ginjal, yaitu lapisan jaringan pelindung yang lebih
+    keras.
 
 
-    Korteks
-    ginjal adalah tempat dimulainya nefron (unit penyaring darah) (nefron dimulai
-    dari korteks hingga medula). Setiap ginjal mempunyai 1 juta nefron. Unit penyaringan
-    pada nefron adalah glomerulus, dan glomerulus melekat pada tubulus yang membuang
-    limbah dan mengembalikan zat-zat yang dibutuhkan ke tubuh Anda. Di korteks ginjal,
-    tubulusnya berbelit-belit, sedangkan bentuk tubulus pada renal medulla lebih
-    lurus.'
+    Korteks ginjal adalah tempat dimulainya nefron (unit penyaring darah)
+    (nefron dimulai dari korteks hingga medula). Setiap ginjal mempunyai 1 juta nefron.
+    Unit penyaringan pada nefron adalah glomerulus, dan glomerulus melekat pada tubulus
+    yang membuang limbah dan mengembalikan zat-zat yang dibutuhkan ke tubuh Anda.
+    Di korteks ginjal, tubulusnya berbelit-belit, sedangkan bentuk tubulus pada renal
+    medulla lebih lurus.
+
+
+    Karena korteks ginjal merupakan tempat di mana nefron,
+    glomerulus, dan tubulus, maka selain berfungsi untuk mengelilingi dan melindungi
+    organ ginjal, korteks ginjal juga memiliki fungsi untuk melakukan penyaringan
+    darah (menyaring cairan berlebih dari darah) yang disebut ultrafiltrasi.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

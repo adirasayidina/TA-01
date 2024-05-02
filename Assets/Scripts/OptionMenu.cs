@@ -14,8 +14,8 @@ public class OptionMenu : MonoBehaviour
         }
         else if (StaticInfoKuis.jawabanKuis.Count < 1)
         {
-            string[] ginjal = { "C", "C", "B", "A", "A", "D", "A", "C", "D", "A" };
-            string[] otak = { "C", "B", "D", "D", "C", "A", "C", "A", "C", "B" };
+            string[] ginjal = { "C", "D", "C", "B", "B", "A", "A", "A", "D", "B" };
+            string[] otak = { "C", "A", "B", "D", "D", "C", "C", "A", "A", "C" };
             string[] jantung = { "C", "A", "D", "C", "A", "B", "A", "B", "D", "B" };
 
             StaticInfoKuis.jawabanKuis.Add("Ginjal", ginjal);
@@ -23,28 +23,28 @@ public class OptionMenu : MonoBehaviour
             StaticInfoKuis.jawabanKuis.Add("Jantung", jantung);
 
             string[] soalGinjal = {
-                "Berikut pernyataan mengenai ginjal\n\nA. Membantu menjaga keseimbangan bahan kimia (seperti natrium, kalium, dan kalsium) dalam tubuh.\nB. Menyaring limbah dan air berlebih pada darah dan berfungsi sebagai tempat penyimpanan urin sebelum dikeluarkan dari tubuh\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
-                "Pembuluh/saluran yang berfungsi untuk menyalurkan urin ke kandung kemih adalah",
-                "Pembuluh darah yang membawa darah yang akan disaring menuju ginjal adalah",
-                "Jumlah nefron pada setiap ginjal adalah",
+                "Berikut pernyataan mengenai ginjal\n\nA. Membantu menjaga keseimbangan bahan kimia (seperti natrium, kalium, dan kalsium) dalam tubuh.\nB. Menyaring limbah dan air berlebih pada darah dan berfungsi sebagai tempat penyimpanan urine yang nantinya akan langsung dikeluarkan dari tubuh\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
+                "Nama bagian ginjal yang ditunjuk adalah...",
+                "Pembuluh/saluran yang berfungsi untuk menyalurkan urin ke kandung kemih adalah...",
+                "Pembuluh darah yang membawa darah yang akan disaring menuju ginjal adalah...",
+                "Fungsi bagian ginjal yang ditunjuk adalah...",
+                "Jumlah nefron pada setiap ginjal adalah...",
+                "Fungsi dari lengkung henle adalah...",
                 "Berikut pernyataan mengenai nefron\n\nA. Terletak mulai dari korteks hingga medula\nB. Unit penyaringan pada nefron adalah glomerulus\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
-                "Bagian ginjal yang berfungsi untuk mengatur konsentrasi urin adalah",
-                "Fungsi dari lengkung henle adalah",
-                "soal 8",
-                "soal 9",
-                "soal 10"
+                "Bagian ginjal yang berfungsi untuk mengatur konsentrasi urin adalah...",
+                "Nama bagian ginjal yang ditunjuk adalah..."
             };
             string[] soalOtak = {
-                "Bagian otak yang menghubungkan hemisfer kiri dan hemisfer kanan disebut…",
+                "Bagian otak yang menghubungkan hemisfer kiri dan hemisfer kanan disebut...",
+                "Nama bagian otak besar yang ditunjuk adalah...",
                 "Berikut fungsi dari lobus oksipital,",
                 "Bagian otak ini terletak pada bagian bawah otak, di bawah lobus parietal dan bagian belakang lobus frontal.",
                 "Berikut fungsi dari lobus parietal,",
                 "Salah satu fungsi bagian otak ini adalah mengolah informasi visual (optik) yang tiba di kedua belahan otak menjadi visual dalam satu kesatuan.",
-                "Bagian dari otak besar yang paling rawan mengalami cedera otak traumatis adalah",
                 "Berikut pernyataan mengenai lobus frontal\n\nA. Lobus frontal merupakan bagian otak besar yang memiliki ukuran paling besar.\nB. Lobus frontal berfungsi untuk mengendalikan fungsi intelektual, tetapi tidak untuk mengendalikan kepribadian.\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
+                "Bagian dari otak besar yang paling rawan mengalami cedera otak traumatis adalah...",
                 "Berikut pernyataan mengenai lobus parietal\n\nA. Berfungsi untuk merasakan suhu dan pengartikulasian emosi serta pikiran.\nB. Pada lobus parietal terdapat area sensorik penting yang disebut girus postsentralis.\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
                 "Berikut pernyataan tentang otak\n\nA. Otak besar adalah bagian terbesar dari otak dan mengontrol pemikiran, pembelajaran, pemecahan masalah, emosi, memori, ucapan, membaca, menulis, dan gerakan sukarela.\nB. Otak kecil mengontrol gerakan motorik halus, keseimbangan, dan postur. otak kecil menghubungkan otak dengan sumsum tulang belakang karena terletak di belakang otak.\nC. Batang otak mengontrol pernapasan, detak jantung, serta saraf dan otot yang digunakan untuk melihat, mendengar, berjalan, berbicara, dan makan.\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
-                "soal 10"
             };
             string[] soalJantung = {
                 "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut…",
@@ -65,19 +65,19 @@ public class OptionMenu : MonoBehaviour
 
             string[] soalGambarGinjal = {
                 null, // no 1
-                null, // no 2
+                "GinjalSoal1", // no 2
                 null, // no 3
                 null, // no 4
-                null, // no 5
+                "GinjalSoal3", // no 5
                 null, // no 6
                 null, // no 7
                 null, // no 8
                 null, // no 9
-                null, // no 10
+                "GinjalSoal2", // no 10
             };
             string[] soalGambarOtak = {
                 null, // no 1
-                null, // no 2
+                "OtakSoal", // no 2
                 null, // no 3
                 null, // no 4
                 null, // no 5
@@ -105,28 +105,28 @@ public class OptionMenu : MonoBehaviour
             StaticInfoKuis.soalGambar.Add("Jantung", soalGambarJantung);
 
             string[] pembahasanGinjal = {
-                "pembahasan pendek 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
-                "pembahasan 3",
-                "pembahasan 4",
-                "pembahasan 5",
-                "pembahasan 6",
-                "pembahasan 7",
-                "pembahasan 8",
-                "pembahasan 9",
-                "pembahasan 10"
+                "Fungsi dari ginjal adalah membantu menjaga keseimbangan bahan kimia (seperti natrium, kalium, dan kalsium) dalam tubuh dengan menyaring limbah dan air berlebih pada darah yang nantinya akan disalurkan melalui ureter menuju kandung kemih yang akan menampung urine sebelum dikeluarkan dari tubuh.\n\nGinjal akan menampung urine untuk disalurkan ke kandung kemih",
+                "Nama bagian ginjal yang ditunjuk adalah medula. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian ginjal.",
+                "Ureter berfungsi untuk menyalurkan urin ke kandung kemih.\n\nSedangkan, vena ginjal berfungsi untuk membawa darah dari ginjal dan ureter ke vena cava inferior, arteri ginjal berfungsi untuk membawa darah yang akan disaring menuju ginjal, dan uretra merupakan saluran pada kandung kemih untuk mengeluarkan urine dari tubuh.",
+                "Arteri ginjal berfungsi untuk membawa darah yang akan disaring menuju ginjal.\n\nSedangkan vena ginjal berfungsi untuk membawa darah dari ginjal dan ureter ke vena cava inferior, ureter berfungsi untuk menyalurkan urin ke kandung kemih, dan uretra merupakan saluran pada kandung kemih untuk mengeluarkan urine dari tubuh.",
+                "Nama bagian ginjal yang ditunjuk adalah korteks yang berfungsi untuk mengelilingi dan melindungi organ ginjal dan melakukan penyaringan darah (menyaring cairan berlebih dari darah) yang disebut ultrafiltrasi. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian ginjal.",
+                "Dalam satu ginjal terdapat kurang lebih sebanyak satu juta nefron yang berfungsi untuk penyaringan darah.",
+                "Lengkung henle yang berada pada medula memiliki fungsi untuk melakukan reabsorpsi atau proses penyerapan kembali air dan natrium klorida dari cairan urine.",
+                "Nefron sebagai organ yang melakukan penyaringan darah terletak dari nefron hingga medula dan memiliki glomerulus sebagai unit penyaringan darah.",
+                "Fungsi utama medula adalah mengatur konsentrasi urin dengan cara melakukan reabsorpsi atau proses penyerapan kembali air dan natrium klorida dari cairan urine yang dilakukan oleh lengkung henle yang ada pada medula.",
+                "Nama bagian ginjal yang ditunjuk adalah arteri ginjal. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian ginjal."
             };
             string[] pembahasanOtak = {
-                "pembahasan pendek 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus eros, eleifend ut congue mollis, mattis id justo. Nam malesuada, diam eget varius gravida, augue libero sagittis odio, at tristique enim nisi eu nibh. Integer sollicitudin cursus volutpat. Suspendisse tempus, metus quis scelerisque auctor, libero justo laoreet leo, ac iaculis augue turpis vel nibh. Praesent ultrices tincidunt arcu vel volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla placerat hendrerit lacus, in rhoncus elit ullamcorper eget. Nunc congue ullamcorper suscipit. Etiam quam mi, dignissim ac sodales in, rhoncus eget ipsum. Proin eu neque velit. Praesent eu neque at lorem eleifend vulputate vitae at augue. Nam malesuada ligula turpis. Ut et tellus in felis facilisis sodales in vel tortor.",
-                "pembahasan 3",
-                "pembahasan 4",
-                "pembahasan 5",
-                "pembahasan 6",
-                "pembahasan 7",
-                "pembahasan 8",
-                "pembahasan 9",
-                "pembahasan 10"
+                "Fungsi dari corpus callosum adalah bertindak sebagai jalur utama untuk menghubungkan hemisfer kiri dan hemisfer kanan.\n\nCorpus callosum mentransfer informasi dari satu hemisfer ke hemisfer lainnya dengan menghubungkan lobus frontal, parietal, dan oksipital dari kedua hemisfer.",
+                "Nama bagian otak besar yang ditunjuk adalah lobus frontal. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian otak besar.",
+                "Lobus oksipital berfungsi mengendalikan input visual dan prosesnya. Proses visual meliputi warna, ukuran, jarak, kedalaman, bentuk, dan pengenalan wajah dengan menghubungkan gambar visual dengan dan rangsangan sensorik lainnya (seperti sentuhan dan pendengaran).\n\nLobus oksipital juga mengintegrasikan gerakan mata dengan mengarahkan dan memfokuskan mata.",
+                "Lobus temporal terletak pada bagian bawah otak, di bawah lobus parietal dan bagian belakang lobus frontal. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian otak besar.",
+                "Lobus parietal (parietal lobe) berfungsi mengendalikan sensasi, seperti sentuhan, tekanan, rasa sakit, suhu, dan tekstur.\n\nSelain itu, lobus parietal juga berfungsi dalam memahami pembicaraan dan mengartikulasikan pikiran dan emosi.\n\nLobus parietal juga menginterpretasikan tekstur saat objek tersebut dipegang.",
+                "Fungsi dari corpus callosum adalah bertindak sebagai jalur utama untuk menghubungkan hemisfer kiri dan hemisfer kanan.\n\nCorpus callosum mentransfer informasi dari satu hemisfer ke hemisfer lainnya dengan menghubungkan lobus frontal, parietal, dan oksipital dari kedua hemisfer.\n\nContoh dari tugas corpus callosum adalah mengolah informasi visual (optik) yang tiba di kedua belahan otak menjadi visual dalam satu kesatuan.",
+                "Lobus frontal adalah lobus terbesar di otak manusia yang memiliki fungsi untuk mengendalikan kontrol motorik yang tepat (gerakan terencana, gerakan mata), ucapan ekspresif, perilaku, memori, emosi, kepribadian, dan berperan dalam fungsi intelektual (proses berpikir, penalaran, pemecahan masalah yang kompleks, pengambilan keputusan, penilaian, dan perencanaan).\n\nSelain itu, lobus frontal memulai impuls motorik volunter untuk pergerakan otot rangka, menganalisis pengalaman sensorik, dan memberikan respons yang berkaitan dengan kepribadian.",
+                "Lobus frontal adalah lobus terbesar di otak manusia dan juga merupakan wilayah yang paling umum menyebabkan cedera otak traumatis.",
+                "Lobus parietal (parietal lobe) berfungsi mengendalikan sensasi, seperti sentuhan, tekanan, rasa sakit, suhu, dan tekstur.\n\nPada lobus parietal terdapat area sensorik penting yang disebut girus postsentralis.\n\nGirus postsentralis akan memberikan respon rangsangan dari reseptor kulit dan otot di seluruh tubuh.\n\nSelain itu, lobus parietal juga berfungsi dalam memahami pembicaraan dan mengartikulasikan pikiran dan emosi.\n\nLobus parietal juga menginterpretasikan tekstur saat objek tersebut dipegang.",
+                "Otak terdiri dari tiga bagian utama: otak besar, otak kecil, dan batang otak.\n\nOtak besar adalah bagian terbesar dari otak dan mengontrol pemikiran, pembelajaran, pemecahan masalah, emosi, memori, ucapan, membaca, menulis, dan gerakan sukarela.\n\nOtak kecil mengontrol gerakan motorik halus, keseimbangan, dan postur.\n\nBatang otak mengontrol pernapasan, detak jantung, serta saraf dan otot yang digunakan untuk melihat, mendengar, berjalan, berbicara, dan makan. Batang otak menghubungkan otak dengan sumsum tulang belakang. Otak dan sumsum tulang belakang membentuk sistem saraf pusat."
             };
             string[] pembahasanJantung = {
                 "Arteri pulmonalis adalah pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung menuju paru-paru. Arteri pulmonalis merupakan satu-satunya arteri yang tidak mengandung oksigen pada tubuh manusia. Setelah mencapai paru-paru, darah melepaskan karbon dioksida dan mengambil oksigen, menjadi teroksigenasi sebelum kembali ke jantung melalui vena-vena paru-paru.",
@@ -147,21 +147,21 @@ public class OptionMenu : MonoBehaviour
             
             string[] pembahasanGambarGinjal = {
                 null, // no 1
-                null, // no 2
+                "GinjalPemb", // no 2
                 null, // no 3
                 null, // no 4
-                null, // no 5
+                "GinjalPemb", // no 5
                 null, // no 6
                 null, // no 7
                 null, // no 8
                 null, // no 9
-                null, // no 10
+                "GinjalPemb", // no 10
             };
             string[] pembahasanGambarOtak = {
                 null, // no 1
-                null, // no 2
+                "OtakPemb", // no 2
                 null, // no 3
-                null, // no 4
+                "OtakPemb", // no 4
                 null, // no 5
                 null, // no 6
                 null, // no 7
@@ -188,27 +188,27 @@ public class OptionMenu : MonoBehaviour
         }
 
         string[] ginjal1 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
-        string[] ginjal2 = { "Vena ginjal", "Arteri ginjal", "Ureter", "Uretra" };
+        string[] ginjal2 = { "Ureter", "Korteks", "Vena ginjal", "Medula" };
         string[] ginjal3 = { "Vena ginjal", "Arteri ginjal", "Ureter", "Uretra" };
-        string[] ginjal4 = { "1 juta", "Milyaran", "10 juta", "2 juta" };
-        string[] ginjal5 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
-        string[] ginjal6 = { "Ureter", "Korteks", "Nefron", "Medula" };
+        string[] ginjal4 = { "Vena ginjal", "Arteri ginjal", "Ureter", "Uretra" };
+        string[] ginjal5 = { "Tempat penyimpanan urine", "Ultrafiltrasi", "Reabsorpsi", "Penyaluran urine dari ginjal ke vena cava interior" };
+        string[] ginjal6 = { "1 juta", "Milyaran", "10 juta", "2 juta" };
         string[] ginjal7 = { "Reabsorpsi", "Penyaluran urine ke ginjal", "Menampung urine", "Penyaluran urine dari ginjal" };
-        string[] ginjal8 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] ginjal9 = { "pilganA", "pilganB", "pilganC", "pilganD" };
-        string[] ginjal10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] ginjal8 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
+        string[] ginjal9 = { "Ureter", "Korteks", "Nefron", "Medula" };
+        string[] ginjal10 = { "Ureter", "Arteri ginjal", "Vena ginjal", "Medula" };
         string[][] pilganGinjal = { ginjal1, ginjal2, ginjal3, ginjal4, ginjal5, ginjal6, ginjal7, ginjal8, ginjal9, ginjal10 };
 
         string[] otak1 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
-        string[] otak2 = { "Menyimpan memori visual", "Memproses pengenalan wajah", "Menyatukan input visual pada kedua hemisfer", "Semua benar" };
-        string[] otak3 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
-        string[] otak4 = { "Mengendalikan rasa sentuhan", "Merasakan tekstur", "Merasakan suhu", "Semua benar" };
-        string[] otak5 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
+        string[] otak2 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
+        string[] otak3 = { "Menyimpan memori visual", "Memproses pengenalan wajah", "Menyatukan input visual pada kedua hemisfer", "Semua benar" };
+        string[] otak4 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
+        string[] otak5 = { "Mengendalikan rasa sentuhan", "Merasakan tekstur", "Merasakan suhu", "Semua benar" };
         string[] otak6 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
         string[] otak7 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
-        string[] otak8 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
-        string[] otak9 = { "A, B, dan C benar", "A dan B benar, C salah", "A dan C benar, B salah", "B dan C benar, A salah" };
-        string[] otak10 = { "pilganA", "pilganB", "pilganC", "pilganD" };
+        string[] otak8 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
+        string[] otak9 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
+        string[] otak10 = { "A, B, dan C benar", "A dan B benar, C salah", "A dan C benar, B salah", "B dan C benar, A salah" };
         string[][] pilganOtak = { otak1, otak2, otak3, otak4, otak5, otak6, otak7, otak8, otak9, otak10 };
 
         string[] jantung1 = { "Aorta", "Vena pulmonalis", "Arteri pulmonalis", "Vena cava superior" };
@@ -229,8 +229,8 @@ public class OptionMenu : MonoBehaviour
 
         // height soal biasa
         // normal height = 540.8
-        int[] heightGinjal = {738,540,540,540,540,540,540,540,540,540};
-        int[] heightOtak = {540,540,540,540,540,540,653,617,1071,540};
+        int[] heightGinjal = {770,590,540,540,590,540,540,540,540,590};
+        int[] heightOtak = {540,590,540,540,540,540,653,540,617,1071};
         int[] heightJantung = {540,617,540,540,617,540,540,540,540,617};
         StaticInfoKuis.height.Add("Ginjal", heightGinjal);
         StaticInfoKuis.height.Add("Otak", heightOtak);
@@ -238,7 +238,7 @@ public class OptionMenu : MonoBehaviour
 
         // height pembahasan tengah (yang habis jawab soal)
         // normal height 1061
-        int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061 };
+        int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1161, 1061, 1061, 1061, 1061, 1061 };
         int[] heightPembTengahOtak = { 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061 };
         int[] heightPembTengahJantung = { 1061, 1061, 1321, 1061, 1061, 1061, 1061, 1321, 1061, 1061 };
         StaticInfoKuis.height.Add("PembTengahGinjal", heightPembTengahGinjal);
@@ -247,8 +247,8 @@ public class OptionMenu : MonoBehaviour
 
         // height pembahasan akhir (pertanyaan+pembahasan)
         // normal height 657 (yg pnl salah, ambil min)
-        int[] heightPembGinjal = {657,657,657,657,657,657,657,657,657,657};
-        int[] heightPembOtak = {657,657,657,657,657,657,657,657,657,657};
+        int[] heightPembGinjal = {1124,1390,657,657,1690,657,657,657,657,1330};
+        int[] heightPembOtak = {657,1390,700,1390,657,700,857,657,957,1357};
         int[] heightPembJantung = {757,1390,1457,990,1390,990,657,1457,657,1390};
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);

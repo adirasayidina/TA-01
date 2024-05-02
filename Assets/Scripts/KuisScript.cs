@@ -139,6 +139,10 @@ public class KuisScript : MonoBehaviour
         txtAbjadBenarPnlAkhirSalah.text = abjadPilganBenar;
         txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
         txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nPembahasan:\n" + pembahasan;
+        if (materi == "Otak" && (nomorSoal == 2 || nomorSoal == 5)) {
+            txtPembahasanPnlAkhirBenar.text = pertanyaan + "\n\nA." + StaticInfoKuis.pilgan[materi][nomorSoal][0]+ "\nB." + StaticInfoKuis.pilgan[materi][nomorSoal][1] + "\nC." + StaticInfoKuis.pilgan[materi][nomorSoal][2] + "\nD." + StaticInfoKuis.pilgan[materi][nomorSoal][3] + "\n\nPembahasan:\n" + pembahasan;
+            txtPembahasanPnlAkhirSalah.text = pertanyaan + "\n\nA." + StaticInfoKuis.pilgan[materi][nomorSoal][0]+ "\nB." + StaticInfoKuis.pilgan[materi][nomorSoal][1] + "\nC." + StaticInfoKuis.pilgan[materi][nomorSoal][2] + "\nD." + StaticInfoKuis.pilgan[materi][nomorSoal][3] + "\n\nPembahasan:\n" + pembahasan;
+        }
         setGambarSoal(imageSoalPembahasanAkhirBenar, txtPembahasanPnlAkhirBenar, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
         setGambarSoal(imageSoalPembahasanAkhirSalah, txtPembahasanPnlAkhirSalah, -425f, 0f, StaticInfoKuis.soalGambar[StaticClass.quizCode][nomorSoal]);
         setGambarPembahasan(imageSoalPembahasanAkhirBenarContent, -height + 820, StaticInfoKuis.pembahasanGambar[StaticClass.quizCode][nomorSoal]);
