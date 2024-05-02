@@ -378,6 +378,9 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     {
         PlayerPrefs.SetString("Nama", fieldNama.text);
         PlayerPrefs.SetInt("FirstTime", 1);
+        PlayerPrefs.SetInt("QuizAttemptGinjal", 1);
+        PlayerPrefs.SetInt("QuizAttemptOtak", 1);
+        PlayerPrefs.SetInt("QuizAttemptJantung", 1);
         SceneManager.LoadScene("Menu");
     }
 

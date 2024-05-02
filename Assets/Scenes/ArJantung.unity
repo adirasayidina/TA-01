@@ -17147,6 +17147,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b8c0cf81fd4a0c837937da15a8b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
+  PanelInputKode: {fileID: 0}
+  SalahKode: {fileID: 0}
+  BtnMulai: {fileID: 0}
+  InputKode: {fileID: 0}
+  imgMateri: {fileID: 0}
+  imgOtak: {fileID: 0}
+  imgJantung: {fileID: 0}
 --- !u!114 &1506313611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23624,15 +23632,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537790169589955435, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8537790169589955435, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8537790169589955435, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8537790169589955435, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_LocalPosition.x

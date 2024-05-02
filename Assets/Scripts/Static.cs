@@ -19,7 +19,10 @@ public static class StaticKuis {
     public static int quizCode;
     public static DateTime mulai;
     public static DateTime selesai;
-    public static int durasi;
+    public static DateTime tempTime;
+    public static int durasi_soal_saja;
+    public static int durasi_keseluruhan;
+    public static int[] durasi_per_soal = new int[10];
     public static bool[] jawabanFlag = new bool[10];
     public static string[] jawaban = new string[10];
 }

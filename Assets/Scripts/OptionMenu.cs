@@ -64,16 +64,16 @@ public class OptionMenu : MonoBehaviour
                 "Berikut pernyataan tentang otak\n\nA. Otak besar adalah bagian terbesar dari otak dan mengontrol pemikiran, pembelajaran, pemecahan masalah, emosi, memori, ucapan, membaca, menulis, dan gerakan sukarela.\nB. Otak kecil mengontrol gerakan motorik halus, keseimbangan, dan postur. otak kecil menghubungkan otak dengan sumsum tulang belakang karena terletak di belakang otak.\nC. Batang otak mengontrol pernapasan, detak jantung, serta saraf dan otot yang digunakan untuk melihat, mendengar, berjalan, berbicara, dan makan.\n\nPilih jawaban yang sesuai dengan pernyataan di atas.",
             };
             string[] soalJantung = {
-                "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut…",
-                "Nama bagian jantung yang ditunjuk adalah…",
+                "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut...",
+                "Nama bagian jantung yang ditunjuk adalah...",
                 "Bagian jantung mana yang bertanggung jawab untuk memompa darah yang mengandung oksigen ke paru-paru?",
-                "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah…",
-                "Nama bagian jantung yang ditunjuk adalah…",
-                "Bagian berikut merupakan bagian dari Aorta, kecuali…",
-                "Darah yang mengalir melalui vena cava inferior berasal dari vena-vena berikut, kecuali…",
+                "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah...",
+                "Nama bagian jantung yang ditunjuk adalah...",
+                "Bagian berikut merupakan bagian dari Aorta, kecuali...",
+                "Darah yang mengalir melalui vena cava inferior berasal dari vena-vena berikut, kecuali...",
                 "Bagian jantung mana yang bertanggung jawab untuk menerima darah yang mengandung oksigen dari paru-paru?",
                 "Apa yang dibawa oleh vena cava superior?",
-                "Nama bagian jantung yang ditunjuk adalah…"
+                "Nama bagian jantung yang ditunjuk adalah..."
             };
 
             StaticInfoKuis.soal.Add("Ginjal", soalGinjal);

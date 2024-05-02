@@ -98,6 +98,7 @@ public class KuisScript : MonoBehaviour
     public void initTime()
     {
         StaticKuis.mulai = DateTime.Now;
+        StaticKuis.tempTime = DateTime.Now;
     }
 
     public void ChangeImage(Button button)
@@ -188,6 +189,7 @@ public class KuisScript : MonoBehaviour
         }
         else
         {
+            StaticKuis.tempTime = DateTime.Now;
             foreach (Button btn in buttonsPilihan)
                 btn.image.sprite = StaticClass.pilganNormalSprite;
             StaticClass.quizNomor++;
@@ -215,6 +217,8 @@ public class KuisScript : MonoBehaviour
         print("ini jawaban " + jawaban);
         StaticKuis.jawaban[StaticClass.quizNomor] = jawaban;
         pnlPertanyaan.SetActive(false);
+        TimeSpan difference = (DateTime.Now).Subtract(StaticKuis.tempTime);
+        StaticKuis.durasi_per_soal[StaticClass.quizNomor] = Convert.ToInt32(difference.TotalSeconds);
 
         if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
         {
@@ -268,8 +272,8 @@ public class KuisScript : MonoBehaviour
             foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
                 selanjutnya.text = "Lihat Nilai";
             StaticKuis.selesai = DateTime.Now;
-            TimeSpan difference = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
-            StaticKuis.durasi = Convert.ToInt32(difference.TotalSeconds);
+            TimeSpan difference2 = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
+            StaticKuis.durasi_keseluruhan = Convert.ToInt32(difference2.TotalSeconds);
             StartCoroutine(insertDataToSupabase());
         }
     }
@@ -315,12 +319,17 @@ public class KuisScript : MonoBehaviour
         form.AddField("nilai", StaticKuis.nilai);
         form.AddField("waktu_mulai", StaticKuis.mulai.ToString("yyyy-MM-dd HH:mm:ss") + "+00");
         form.AddField("waktu_selesai", StaticKuis.selesai.ToString("yyyy-MM-dd HH:mm:ss") + "+00");
-        form.AddField("durasi", StaticKuis.durasi);
+        form.AddField("durasi_keseluruhan", StaticKuis.durasi_keseluruhan);
         for (int i = 0; i < 10; i++)
         {
             form.AddField("no_" + (i + 1), StaticKuis.jawabanFlag[i].ToString());
             form.AddField("jawaban_no_" + (i + 1), StaticKuis.jawaban[i]);
+            form.AddField("durasi_no_" + (i + 1), StaticKuis.durasi_per_soal[i]);
+            StaticKuis.durasi_soal_saja += StaticKuis.durasi_per_soal[i];
         }
+        form.AddField("durasi_soal_saja", StaticKuis.durasi_soal_saja);
+        form.AddField("attempt_no", PlayerPrefs.GetInt("QuizAttempt" + StaticClass.quizCode));
+        PlayerPrefs.SetInt("QuizAttempt" + StaticClass.quizCode, PlayerPrefs.GetInt("QuizAttempt" + StaticClass.quizCode) + 1);
 
         UnityWebRequest webRequest = UnityWebRequest.Post("https://rfifnkbwxbvvapcgpuzn.supabase.co/rest/v1/hasil_kuis", form);
         webRequest.SetRequestHeader("apikey", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmaWZua2J3eGJ2dmFwY2dwdXpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTI3MTc0NzcsImV4cCI6MjAyODI5MzQ3N30.51_kdsYavU44NwNEgGyvGx96_7v9V7dR7Y0AsdnqIBg");
