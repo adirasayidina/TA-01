@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -679,8 +679,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 719.2149}
+  m_AnchoredPosition: {x: -0.00014101046, y: -0.00002482342}
+  m_SizeDelta: {x: 0, y: 801.1062}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &81114186
 GameObject:
@@ -9621,8 +9621,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067558566}
   m_HandleRect: {fileID: 2067558564}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6628894
+  m_Value: 1.0000002
+  m_Size: 0.59511995
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13404,6 +13404,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b8c0cf81fd4a0c837937da15a8b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
+  PanelInputKode: {fileID: 0}
+  SalahKode: {fileID: 0}
+  BtnMulai: {fileID: 0}
+  InputKode: {fileID: 0}
+  imgMateri: {fileID: 0}
+  imgOtak: {fileID: 0}
+  imgJantung: {fileID: 0}
 --- !u!114 &1506313611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17393,8 +17401,8 @@ RectTransform:
   m_Father: {fileID: 1757547891}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3371105}
-  m_AnchorMax: {x: 1, y: 0.99999994}
+  m_AnchorMin: {x: 0, y: 0.40488005}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

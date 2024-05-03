@@ -9,12 +9,7 @@ using Debug = UnityEngine.Debug;
 
 public class raycast_script : MonoBehaviour
 {
-    public GameObject obj;
     public string targetTag;
-    Vector2 firstTouch;
-    Vector2 secondTouch;
-    float distCurrent;
-    float distPrev;
     bool firstClick = true;
     public float rotatespeed = 0.05f;
     private Vector2 oldTouchPosition;
@@ -103,42 +98,11 @@ public class raycast_script : MonoBehaviour
                     obj.transform.localScale = new Vector3(newScale, newScale, newScale);
                 }
             }
-            //firstTouch = Input.GetTouch(0).position;
-            //print(firstTouch);
-            //secondTouch = Input.GetTouch(1).position;
-            //print(secondTouch);
-            //distCurrent = secondTouch.magnitude - firstTouch.magnitude;
-            //if (firstClick)
-            //{
-            //    firstClick = false;
-            //    distPrev = distCurrent;
-            //}
-            //if (distCurrent != distPrev)
-            //{
-            //    foreach (GameObject objs in objectsWithTag)
-            //    {
-            //        Debug.Log("Object name: " + objs.name);
-            //        Vector3 scale_value = objs.transform.localScale * (distCurrent / distPrev);
-            //        distPrev = distCurrent;
-            //        objs.transform.localScale += scale_value;
-            //    }
-
-            //}
         }
         else if (!StaticClass.objClicked)
         {
             firstClick = true;
         }
-    }
-
-    void RotateLeft()
-    {
-        transform.rotation = Quaternion.Euler(0f, -rotatespeed, 0f);
-    }
-
-    void RotateRight()
-    {
-        transform.rotation = Quaternion.Euler(0f, rotatespeed, 0f);
     }
 
     private float GetAverageScale()

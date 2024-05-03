@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1208,8 +1208,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2053167353}
   m_HandleRect: {fileID: 2053167352}
   m_Direction: 2
-  m_Value: 0.49988613
-  m_Size: 0.9711249
+  m_Value: 0.4998899
+  m_Size: 0.9711247
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4392,7 +4392,7 @@ RectTransform:
   m_Father: {fileID: 739527218}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.014437646}
+  m_AnchorMin: {x: 0, y: 0.014437641}
   m_AnchorMax: {x: 1, y: 0.9855624}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -7441,7 +7441,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 24.158981, y: 8.458923, z: 25.376831, w: 10.150696}
+  m_margin: {x: 30, y: 8.458923, z: 25.376831, w: 10.150696}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20161,8 +20161,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 434739114}
   m_HandleRect: {fileID: 434739113}
   m_Direction: 2
-  m_Value: 0.5
-  m_Size: 0.9711247
+  m_Value: 0.5000019
+  m_Size: 0.9711248
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20614,7 +20614,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 24.158981, y: 8.458923, z: 25.376831, w: 10.150696}
+  m_margin: {x: 30, y: 8.458923, z: 25.376831, w: 10.150696}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -21677,7 +21677,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 24.158981, y: 8.458923, z: 25.376831, w: 10.150696}
+  m_margin: {x: 30, y: 8.458923, z: 25.376831, w: 10.150696}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -23290,7 +23290,7 @@ RectTransform:
   m_Father: {fileID: 264574823}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.014434268}
+  m_AnchorMin: {x: 0, y: 0.014434467}
   m_AnchorMax: {x: 1, y: 0.98555917}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}

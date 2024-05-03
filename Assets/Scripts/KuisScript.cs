@@ -184,10 +184,6 @@ public class KuisScript : MonoBehaviour
     {
         if (StaticClass.quizNomor == 9)
         {
-            // foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
-            // {
-            //     selanjutnya.txt = 'Lihat Nilai';
-            // }
             pnlPertanyaan.SetActive(false);
             pnlBenar.SetActive(false);
             pnlSalah.SetActive(false);

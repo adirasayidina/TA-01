@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -819,8 +819,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 205.51898}
+  m_SizeDelta: {x: -41.3622, y: -622.107}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45898770
 MonoBehaviour:
@@ -1036,8 +1036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_AnchoredPosition: {x: 0, y: -0.00029992042}
+  m_SizeDelta: {x: 0, y: 529.5088}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &81114186
 GameObject:
@@ -1376,8 +1376,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 330.82617}
+  m_SizeDelta: {x: -41.3622, y: -872.7213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83833180
 MonoBehaviour:
@@ -1687,7 +1687,7 @@ RectTransform:
   m_Father: {fileID: 696656263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3189177}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -1850,7 +1850,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 312414314}
   m_HandleRect: {fileID: 312414313}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2452,8 +2452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 311.64658}
+  m_SizeDelta: {x: -41.3622, y: -834.362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198416143
 MonoBehaviour:
@@ -2727,8 +2727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 342.33392}
+  m_SizeDelta: {x: -41.3622, y: -895.7369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211920457
 MonoBehaviour:
@@ -4150,8 +4150,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 104351218}
   m_HandleRect: {fileID: 104351216}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6810823
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4326,7 +4326,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_SizeDelta: {x: 0, y: 451.4053}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &319541829
 GameObject:
@@ -4454,8 +4454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 131.35764}
+  m_SizeDelta: {x: -41.3622, y: -473.7842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347257257
 MonoBehaviour:
@@ -4477,22 +4477,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bilik kanan (atrium dexter) bertanggung jawab untuk menerima darah yang
-    mengandung karbon dioksida dari serambi kanan dan memompanya ke dalam arteri
-    pulmonalis untuk dioksigenasi kembali di paru-paru. Dinding otot bilik kanan
-    tidak sekuat dinding otot bilik kiri karena bilik kanan hanya perlu memompa darah
-    ke paru-paru, yang merupakan jarak yang lebih pendek dan tekanan yang lebih rendah
-    dibandingkan dengan memompa darah ke seluruh tubuh.
+  m_text: 'Pada bagian yang dihighlight, serambi kabab berada pada bagian atas, sedangkan
+    bilik kanan berada pada bagian bawah.
 
 
-    Serambi kanan (ventriculus
-    dexter) adalah salah satu ruang jantung yang berfungsi sebagai tempat penerimaan
-    darah yang telah mengalami pertukaran gas di jaringan tubuh dan mengandung lebih
-    banyak karbon dioksida. Serambi kanan menerima darah dari dua vena utama, yaitu
-    vena cava superior dan vena cava inferior, yang membawa darah dari seluruh tubuh
-    ke jantung. Setelah menerima darah, serambi kanan akan mengontraksi untuk mendorong
+    Serambi kanan (ventriculus dexter)
+    adalah salah satu ruang jantung yang berfungsi sebagai tempat penerimaan darah
+    yang telah mengalami pertukaran gas di jaringan tubuh dan mengandung lebih banyak
+    karbon dioksida. Serambi kanan menerima darah dari dua vena utama, yaitu vena
+    cava superior dan vena cava inferior, yang membawa darah dari seluruh tubuh ke
+    jantung. Setelah menerima darah, serambi kanan akan mengontraksi untuk mendorong
     darah ke dalam bilik kanan (ventrikel kanan), yang kemudian akan memompanya ke
-    paru-paru melalui arteri pulmonalis untuk dioksigenasi kembali.'
+    paru-paru melalui arteri pulmonalis untuk dioksigenasi kembali.
+
+
+    Bilik kanan
+    (atrium dexter) bertanggung jawab untuk menerima darah yang mengandung karbon
+    dioksida dari serambi kanan dan memompanya ke dalam arteri pulmonalis untuk dioksigenasi
+    kembali di paru-paru. Dinding otot bilik kanan tidak sekuat dinding otot bilik
+    kiri karena bilik kanan hanya perlu memompa darah ke paru-paru, yang merupakan
+    jarak yang lebih pendek dan tekanan yang lebih rendah dibandingkan dengan memompa
+    darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5298,7 +5303,7 @@ RectTransform:
   m_Father: {fileID: 1457502447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4982409}
+  m_AnchorMin: {x: 0, y: 0.41956246}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -5375,8 +5380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_AnchoredPosition: {x: 0, y: 0.00014204907}
+  m_SizeDelta: {x: 0, y: 460.9887}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &436316213
 GameObject:
@@ -5413,8 +5418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 205.51898}
+  m_SizeDelta: {x: -41.3622, y: -622.1069}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436316215
 MonoBehaviour:
@@ -6096,7 +6101,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -396.45435, y: 0}
-  m_SizeDelta: {x: 792, y: 700}
+  m_SizeDelta: {x: 792, y: 461.5785}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &486650672
 GameObject:
@@ -6134,10 +6139,10 @@ RectTransform:
   m_Father: {fileID: 425744215}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -230.45}
+  m_SizeDelta: {x: 792.91, y: 461.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486650674
 MonoBehaviour:
@@ -6796,8 +6801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 174.39066}
+  m_SizeDelta: {x: -41.3622, y: -559.8503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538093234
 MonoBehaviour:
@@ -6939,8 +6944,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 206.79764}
+  m_SizeDelta: {x: -41.3622, y: -624.6643}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544944360
 MonoBehaviour:
@@ -7202,8 +7207,8 @@ RectTransform:
   m_Father: {fileID: 89913436}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.49824077}
-  m_AnchorMax: {x: 1, y: 0.99999994}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.9968941}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7317,8 +7322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 210.63358}
+  m_SizeDelta: {x: -41.3622, y: -632.3361}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627742697
 MonoBehaviour:
@@ -7676,7 +7681,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2079814746}
   m_HandleRect: {fileID: 2079814745}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -8285,7 +8290,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_SizeDelta: {x: 0, y: 444.5541}
   m_Pivot: {x: 0, y: 1}
 --- !u!64 &735990750
 MeshCollider:
@@ -8384,8 +8389,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1387415059}
   m_HandleRect: {fileID: 1387415058}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5017592
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8465,7 +8470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0000019073486, y: -58.451385}
+  m_AnchoredPosition: {x: 0.0000019073486, y: -58.45117}
   m_SizeDelta: {x: 193.5675, y: 116.9027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755967973
@@ -9339,7 +9344,7 @@ RectTransform:
   m_Father: {fileID: 1398850274}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4982409}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -10205,10 +10210,10 @@ RectTransform:
   m_Father: {fileID: 1700663562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -474.99997}
+  m_SizeDelta: {x: 792.91, y: 950.1699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860679300
 MonoBehaviour:
@@ -10375,8 +10380,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286696687}
   m_HandleRect: {fileID: 1286696686}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5017592
+  m_Value: 1.0000013
+  m_Size: 0.6698253
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10575,8 +10580,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_AnchoredPosition: {x: -0.00027592754, y: -0.00037186113}
+  m_SizeDelta: {x: 0, y: 711.7507}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &931161219
 GameObject:
@@ -10736,10 +10741,10 @@ RectTransform:
   m_Father: {fileID: 77414276}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -281.1112}
+  m_SizeDelta: {x: 792.91, y: 562.3923}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951284603
 MonoBehaviour:
@@ -11188,8 +11193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 225.1099}
+  m_SizeDelta: {x: -41.3622, y: -661.2887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994402159
 MonoBehaviour:
@@ -11380,7 +11385,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 425488645}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5017592
+  m_Size: 0.58043754
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11981,8 +11986,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 588071840}
   m_HandleRect: {fileID: 588071838}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5017592
+  m_Value: 0
+  m_Size: 0.9968941
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12206,8 +12211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 231.09186}
+  m_SizeDelta: {x: -41.3622, y: -673.2527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1074488121
 MonoBehaviour:
@@ -12559,10 +12564,10 @@ RectTransform:
   m_Father: {fileID: 318969321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -474.99997}
+  m_SizeDelta: {x: 792.91, y: 950.1699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115553946
 MonoBehaviour:
@@ -12830,8 +12835,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067558566}
   m_HandleRect: {fileID: 2067558564}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5017592
+  m_Value: 1.0000058
+  m_Size: 0.9000528
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14333,7 +14338,7 @@ RectTransform:
   m_Father: {fileID: 357430182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4982409}
+  m_AnchorMin: {x: 0, y: 0.33017468}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -15432,7 +15437,7 @@ RectTransform:
   m_Father: {fileID: 1394626975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4982409}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -15584,8 +15589,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: -43.8605}
+  m_SizeDelta: {x: -41.3622, y: -123.3476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415123855
 MonoBehaviour:
@@ -15921,7 +15926,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1802959522}
   m_HandleRect: {fileID: 1802959521}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -16602,8 +16607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: -281}
-  m_SizeDelta: {x: 792.91, y: 1324}
+  m_AnchoredPosition: {x: 0.0007324219, y: -47.043}
+  m_SizeDelta: {x: 792.91, y: 856.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475950578
 MonoBehaviour:
@@ -16937,10 +16942,10 @@ RectTransform:
   m_Father: {fileID: 728032466}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -474.99997}
+  m_SizeDelta: {x: 792.91, y: 950.1699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491564028
 MonoBehaviour:
@@ -17643,7 +17648,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 196950889}
   m_HandleRect: {fileID: 196950887}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17770,7 +17775,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 787518802}
   m_HandleRect: {fileID: 787518800}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -18443,8 +18448,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -475.08496}
-  m_SizeDelta: {x: 792.91, y: 950.1699}
+  m_AnchoredPosition: {x: 0, y: -222.96103}
+  m_SizeDelta: {x: 792.91, y: 445.9221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590854057
 MonoBehaviour:
@@ -18563,8 +18568,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 236.20642}
+  m_SizeDelta: {x: -41.3622, y: -683.4818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605405813
 MonoBehaviour:
@@ -18586,16 +18591,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bilik kiri (atrium sinister) bertanggung jawab untuk menerima darah yang
-    mengandung oksigen dari serambi kiri dan memompanya ke dalam aorta, arteri utama
-    yang membawa darah yang kaya oksigen ke seluruh tubuh. Bilik kiri memiliki dinding
-    otot jantung yang lebih tebal dibanding bilik kanan karena bilik kiri perlu untuk
-    mengembangkan tekanan yang cukup untuk mendorong darah ke seluruh tubuh.\n\nSerambi
-    kiri (ventriculus sinister) adalah salah satu bagian dari struktur jantung yang
-    berperan dalam sirkulasi darah. Serambi kiri bertugas untuk menerima darah yang
-    telah dioksigenasi dari paru-paru melalui vena pulmonalis. Setelah menerima darah,
-    serambi kiri akan mengontraksi untuk mendorong darah ke dalam bilik kiri (ventrikel
-    kiri), yang kemudian akan memompanya ke seluruh tubuh melalui aorta.\r"
+  m_text: 'Pada bagian yang dihighlight, serambi kiri berada pada bagian atas, sedangkan
+    bilik kiri berada pada bagian bawah.
+
+
+    Serambi kiri (ventriculus sinister)
+    adalah salah satu bagian dari struktur jantung yang berperan dalam sirkulasi
+    darah. Serambi kiri bertugas untuk menerima darah yang telah dioksigenasi dari
+    paru-paru melalui vena pulmonalis. Setelah menerima darah, serambi kiri akan
+    mengontraksi untuk mendorong darah ke dalam bilik kiri (ventrikel kiri), yang
+    kemudian akan memompanya ke seluruh tubuh melalui aorta.
+
+
+    Bilik kiri (atrium
+    sinister) bertanggung jawab untuk menerima darah yang mengandung oksigen dari
+    serambi kiri dan memompanya ke dalam aorta, arteri utama yang membawa darah yang
+    kaya oksigen ke seluruh tubuh. Bilik kiri memiliki dinding otot jantung yang
+    lebih tebal dibanding bilik kanan karena bilik kiri perlu untuk mengembangkan
+    tekanan yang cukup untuk mendorong darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18708,10 +18721,10 @@ RectTransform:
   m_Father: {fileID: 921273828}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0007324219, y: 0.000030517578}
-  m_SizeDelta: {x: 792.91, y: 950.17}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0007324219, y: -474.99997}
+  m_SizeDelta: {x: 792.91, y: 950.1699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615267525
 MonoBehaviour:
@@ -18830,7 +18843,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -396.45435, y: 0}
-  m_SizeDelta: {x: 792, y: 700}
+  m_SizeDelta: {x: 792, y: 457.4678}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1638723928
 GameObject:
@@ -18865,7 +18878,7 @@ RectTransform:
   m_Father: {fileID: 1685527262}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3189177}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -19494,7 +19507,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 460146519}
   m_HandleRect: {fileID: 460146518}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -19572,8 +19585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 950.1721}
+  m_AnchoredPosition: {x: -0.0009270419, y: -0.00007274822}
+  m_SizeDelta: {x: 0, y: 821.3697}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1702332514
 GameObject:
@@ -19716,7 +19729,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1531151997}
   m_HandleRect: {fileID: 1531151995}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -19816,8 +19829,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: 62.31077}
+  m_SizeDelta: {x: -41.3622, y: -335.6905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711673313
 MonoBehaviour:
@@ -19839,16 +19852,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bilik kiri (atrium sinister) bertanggung jawab untuk menerima darah yang
-    mengandung oksigen dari serambi kiri dan memompanya ke dalam aorta, arteri utama
-    yang membawa darah yang kaya oksigen ke seluruh tubuh. Bilik kiri memiliki dinding
-    otot jantung yang lebih tebal dibanding bilik kanan karena bilik kiri perlu untuk
-    mengembangkan tekanan yang cukup untuk mendorong darah ke seluruh tubuh.\n\nSerambi
-    kiri (ventriculus sinister) adalah salah satu bagian dari struktur jantung yang
-    berperan dalam sirkulasi darah. Serambi kiri bertugas untuk menerima darah yang
-    telah dioksigenasi dari paru-paru melalui vena pulmonalis. Setelah menerima darah,
-    serambi kiri akan mengontraksi untuk mendorong darah ke dalam bilik kiri (ventrikel
-    kiri), yang kemudian akan memompanya ke seluruh tubuh melalui aorta.\r"
+  m_text: 'Pada bagian yang dihighlight, serambi kiri berada pada bagian atas, sedangkan
+    bilik kiri berada pada bagian bawah.
+
+
+    Serambi kiri (ventriculus sinister)
+    adalah salah satu bagian dari struktur jantung yang berperan dalam sirkulasi
+    darah. Serambi kiri bertugas untuk menerima darah yang telah dioksigenasi dari
+    paru-paru melalui vena pulmonalis. Setelah menerima darah, serambi kiri akan
+    mengontraksi untuk mendorong darah ke dalam bilik kiri (ventrikel kiri), yang
+    kemudian akan memompanya ke seluruh tubuh melalui aorta.
+
+
+    Bilik kiri (atrium
+    sinister) bertanggung jawab untuk menerima darah yang mengandung oksigen dari
+    serambi kiri dan memompanya ke dalam aorta, arteri utama yang membawa darah yang
+    kaya oksigen ke seluruh tubuh. Bilik kiri memiliki dinding otot jantung yang
+    lebih tebal dibanding bilik kanan karena bilik kiri perlu untuk mengembangkan
+    tekanan yang cukup untuk mendorong darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19987,8 +20008,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 810096057}
   m_HandleRect: {fileID: 810096055}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5017592
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -21835,8 +21856,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0884094, y: -52.767242}
-  m_SizeDelta: {x: -41.3622, y: -105.5345}
+  m_AnchoredPosition: {x: -1.0884094, y: -1.62146}
+  m_SizeDelta: {x: -41.3622, y: -207.826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910738301
 MonoBehaviour:
@@ -21858,22 +21879,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bilik kanan (atrium dexter) bertanggung jawab untuk menerima darah yang
-    mengandung karbon dioksida dari serambi kanan dan memompanya ke dalam arteri
-    pulmonalis untuk dioksigenasi kembali di paru-paru. Dinding otot bilik kanan
-    tidak sekuat dinding otot bilik kiri karena bilik kanan hanya perlu memompa darah
-    ke paru-paru, yang merupakan jarak yang lebih pendek dan tekanan yang lebih rendah
-    dibandingkan dengan memompa darah ke seluruh tubuh.
+  m_text: 'Pada bagian yang dihighlight, serambi kabab berada pada bagian atas, sedangkan
+    bilik kanan berada pada bagian bawah.
 
 
-    Serambi kanan (ventriculus
-    dexter) adalah salah satu ruang jantung yang berfungsi sebagai tempat penerimaan
-    darah yang telah mengalami pertukaran gas di jaringan tubuh dan mengandung lebih
-    banyak karbon dioksida. Serambi kanan menerima darah dari dua vena utama, yaitu
-    vena cava superior dan vena cava inferior, yang membawa darah dari seluruh tubuh
-    ke jantung. Setelah menerima darah, serambi kanan akan mengontraksi untuk mendorong
+    Serambi kanan (ventriculus dexter)
+    adalah salah satu ruang jantung yang berfungsi sebagai tempat penerimaan darah
+    yang telah mengalami pertukaran gas di jaringan tubuh dan mengandung lebih banyak
+    karbon dioksida. Serambi kanan menerima darah dari dua vena utama, yaitu vena
+    cava superior dan vena cava inferior, yang membawa darah dari seluruh tubuh ke
+    jantung. Setelah menerima darah, serambi kanan akan mengontraksi untuk mendorong
     darah ke dalam bilik kanan (ventrikel kanan), yang kemudian akan memompanya ke
-    paru-paru melalui arteri pulmonalis untuk dioksigenasi kembali.'
+    paru-paru melalui arteri pulmonalis untuk dioksigenasi kembali.
+
+
+    Bilik kanan
+    (atrium dexter) bertanggung jawab untuk menerima darah yang mengandung karbon
+    dioksida dari serambi kanan dan memompanya ke dalam arteri pulmonalis untuk dioksigenasi
+    kembali di paru-paru. Dinding otot bilik kanan tidak sekuat dinding otot bilik
+    kiri karena bilik kanan hanya perlu memompa darah ke paru-paru, yang merupakan
+    jarak yang lebih pendek dan tekanan yang lebih rendah dibandingkan dengan memompa
+    darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22191,8 +22217,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1638723931}
   m_HandleRect: {fileID: 1638723929}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.6810823
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -22777,7 +22803,7 @@ RectTransform:
   m_Father: {fileID: 1757547891}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4982409}
+  m_AnchorMin: {x: 0, y: 0.099947214}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
