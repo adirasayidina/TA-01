@@ -220,7 +220,7 @@ public class KuisScript : MonoBehaviour
         StaticKuis.jawaban[StaticClass.quizNomor] = jawaban;
         pnlPertanyaan.SetActive(false);
         TimeSpan difference = (DateTime.Now).Subtract(StaticKuis.tempTime);
-        StaticKuis.durasi_per_soal[StaticClass.quizNomor] = Convert.ToInt32(difference.TotalSeconds);
+        StaticKuis.durasi_per_soal[StaticClass.quizNomor] = (int)Math.Ceiling(difference.TotalSeconds);
 
         if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
         {
@@ -277,7 +277,7 @@ public class KuisScript : MonoBehaviour
                 selanjutnya.text = "Lihat Nilai";
             StaticKuis.selesai = DateTime.Now;
             TimeSpan difference2 = (StaticKuis.selesai).Subtract(StaticKuis.mulai);
-            StaticKuis.durasi_keseluruhan = Convert.ToInt32(difference2.TotalSeconds);
+            StaticKuis.durasi_keseluruhan = (int)Math.Ceiling(difference2.TotalSeconds);
             StartCoroutine(insertDataToSupabase());
         }
     }
