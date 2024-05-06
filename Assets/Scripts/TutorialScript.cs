@@ -193,7 +193,7 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     private void CalculateTotalPages()
     {
         int itemCount = gridLayoutGroup.transform.childCount;
-        totalPages = Mathf.CeilToInt((float)itemCount / gridLayoutGroup.constraintCount) -1;
+        totalPages = Mathf.CeilToInt((float)itemCount / gridLayoutGroup.constraintCount) - 1;
     }
 
     private void SetSnapTarget(int page)
@@ -288,7 +288,8 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             else
             {
                 SetLastPageButtonVisibility(false);
-                SetNotLastPageButtonVisibility(true);
+                if (PlayerPrefs.HasKey("FirstTime"))
+                    SetNotLastPageButtonVisibility(true);
             }
         }
     }
@@ -380,15 +381,8 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         PlayerPrefs.SetInt("QuizAttemptGinjal", 1);
         PlayerPrefs.SetInt("QuizAttemptOtak", 1);
         PlayerPrefs.SetInt("QuizAttemptJantung", 1);
-        if (!PlayerPrefs.HasKey("FirstTime"))
-        {
-            pnlTutorial.SetActive(true);
-            pnlIsiNama.SetActive(false);
-        }
-        else
-        {
-            SceneManager.LoadScene("Menu");
-        }
+        pnlTutorial.SetActive(true);
+        pnlIsiNama.SetActive(false);
     }
 
     public void setViewedTutorial()

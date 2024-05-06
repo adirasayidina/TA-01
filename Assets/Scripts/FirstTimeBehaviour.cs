@@ -15,8 +15,6 @@ public class FirstTimeBehaviour : MonoBehaviour
         {
             pnlTutorial.SetActive(true);
             pnlIsiNama.SetActive(false);
-            btnLanjutkan.SetActive(true);
-            btnSkip.SetActive(true);
         }
     }
 
