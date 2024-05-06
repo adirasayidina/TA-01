@@ -19,7 +19,7 @@ public class raycast_script : MonoBehaviour
     private Vector2 initialTouch2Position;
     private float initialDistance;
     private float initialScale;
-    private float zoomSpeed = 0.001f;
+    private float zoomSpeed = 0.01f;
     private GameObject[] objectsWithTag;
 
     [SerializeField]
@@ -88,6 +88,10 @@ public class raycast_script : MonoBehaviour
                 GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(targetTag);
                 if (targetTag == "OtakTag") {
                     zoomSpeed = 0.00001f;
+                }
+                else if (targetTag == "JantungTag")
+                {
+                    zoomSpeed = 0.0002f;
                 }
                 print(initialScale);
                 print(pinchAmount);

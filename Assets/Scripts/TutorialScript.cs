@@ -377,23 +377,34 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     public void setName()
     {
         PlayerPrefs.SetString("Nama", fieldNama.text);
-        PlayerPrefs.SetInt("FirstTime", 1);
+        //PlayerPrefs.SetInt("FirstTime", 1);
         PlayerPrefs.SetInt("QuizAttemptGinjal", 1);
         PlayerPrefs.SetInt("QuizAttemptOtak", 1);
         PlayerPrefs.SetInt("QuizAttemptJantung", 1);
-        SceneManager.LoadScene("Menu");
-    }
-
-    public void checkName()
-    {
-        if (!PlayerPrefs.HasKey("Nama"))
+        //SceneManager.LoadScene("Menu");
+        if (!PlayerPrefs.HasKey("FirstTime"))
         {
-            pnlTutorial.SetActive(false);
-            pnlIsiNama.SetActive(true);
+            pnlTutorial.SetActive(true);
+            pnlIsiNama.SetActive(false);
         }
         else
         {
             SceneManager.LoadScene("Menu");
         }
+    }
+
+    public void setViewedTutorial()
+    {
+        PlayerPrefs.SetInt("FirstTime", 1);
+        SceneManager.LoadScene("Menu");
+        //if (!PlayerPrefs.HasKey("Nama"))
+        //{
+        //    pnlTutorial.SetActive(false);
+        //    pnlIsiNama.SetActive(true);
+        //}
+        //else
+        //{
+        //    SceneManager.LoadScene("Menu");
+        //}
     }
 }

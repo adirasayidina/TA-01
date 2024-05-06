@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class GinjalClick : MonoBehaviour
@@ -15,6 +16,9 @@ public class GinjalClick : MonoBehaviour
     public string targetTag;
     private GameObject[] objectsWithTag;
     private GameObject instantiatedObject;
+    private Vector2 oldTouchPosition;
+    private Vector2 NewTouchPosition;
+
     private void Start()
     {
         // _renderer = GetComponent<Renderer>();
@@ -26,7 +30,24 @@ public class GinjalClick : MonoBehaviour
 
     public void OnMouseDown()
     {
-        StartFlash();
+        if (Input.touchCount == 1)
+        {
+
+            oldTouchPosition = Input.GetTouch(0).position;
+        }
+        //StartFlash();
+    }
+
+    public void OnMouseUp()
+    {
+        NewTouchPosition = Input.GetTouch(0).position;
+        float distance = Vector2.Distance(oldTouchPosition, NewTouchPosition);
+        if (distance < 10f)
+        {
+            print("Tap detected!");
+            StartFlash();
+        }
+        
     }
 
     public void SetObjectClicked()

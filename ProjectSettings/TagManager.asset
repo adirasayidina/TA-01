@@ -26,6 +26,7 @@ TagManager:
   - InferiorVenaCava
   - RightPartOfHeart
   - LeftPartOfHeart
+  - JantungTag
   layers:
   - Default
   - TransparentFX

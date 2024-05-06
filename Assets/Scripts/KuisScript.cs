@@ -101,6 +101,7 @@ public class KuisScript : MonoBehaviour
     {
         StaticKuis.mulai = DateTime.Now;
         StaticKuis.tempTime = DateTime.Now;
+        StaticKuis.durasi_soal_saja = 0;
     }
 
     public void ChangeImage(Button button)

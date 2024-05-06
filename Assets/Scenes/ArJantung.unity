@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70abbc301f4d4e94a4bed81ee1c93f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: GinjalTag
+  targetTag: JantungTag
   rotatespeed: 10
 --- !u!114 &178415752
 MonoBehaviour:
@@ -8801,7 +8801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 48e20191e7b06664c8e7feef813cbdea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e621ff0012333ec48a4ea892afa40c28, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10096,7 +10096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bilik Kiri dan Serambi Kiri
+  m_text: Serambi Kiri dan Bilik Kiri
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20875,7 +20875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 90b1e605c38c12b41a48d413ec0cde3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec1e19d34f9af1145a050640eba89589, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -21372,7 +21372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bilik Kanan dan Serambi Kanan
+  m_text: Serambi Kanan dan Bilik Kanan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23649,7 +23649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293494417106768462, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_TagString
-      value: GinjalTag
+      value: JantungTag
       objectReference: {fileID: 0}
     - target: {fileID: 8537790169589955435, guid: 38fd65d354c924e499a8d0288632dd69, type: 3}
       propertyPath: m_RootOrder
