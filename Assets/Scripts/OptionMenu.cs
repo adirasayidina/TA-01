@@ -10,6 +10,7 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
 using Image = UnityEngine.UI.Image;
+using UnityEngine.XR.ARFoundation;
 
 public class OptionMenu : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class OptionMenu : MonoBehaviour
     public Image imgMateri;
     public Sprite imgOtak;
     public Sprite imgJantung;
+
+    [SerializeField]
+    private ARSession _arSession;
 
     void Start()
     {
@@ -359,19 +363,9 @@ public class OptionMenu : MonoBehaviour
 
     public void QuizMenu(int codeScene)
     {
-        // print(codeScene);
-        // if (codeScene == 0)
-        // {
-        //     StaticClass.quizCode = "Ginjal";
-        // }
-        // else if (codeScene == 1)
-        // {
-        //     StaticClass.quizCode = "Jantung";
-        // }
-        // else
-        // {
-        //     StaticClass.quizCode = "Otak";
-        // }
+        //todo
+        _arSession.Reset();
+
         SceneManager.LoadScene("Quiz");
     }
 

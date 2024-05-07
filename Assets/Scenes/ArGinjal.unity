@@ -13384,6 +13384,7 @@ MonoBehaviour:
   imgMateri: {fileID: 0}
   imgOtak: {fileID: 0}
   imgJantung: {fileID: 0}
+  _arSession: {fileID: 1209698639}
 --- !u!114 &1506313611
 MonoBehaviour:
   m_ObjectHideFlags: 0
