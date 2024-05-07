@@ -376,6 +376,8 @@ public class OptionMenu : MonoBehaviour
 
     public void HomeMenu()
     {
+        _arSession.Reset();
+
         SceneManager.LoadScene("Menu");
     }
 }
