@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -959,10 +959,10 @@ RectTransform:
   m_Father: {fileID: 962124294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 117.59}
-  m_SizeDelta: {x: 255.3359, y: 342.41}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -171.41}
+  m_SizeDelta: {x: 255.3359, y: 342.41003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57266393
 MonoBehaviour:
@@ -11154,8 +11154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000015258578, y: -288.79504}
-  m_SizeDelta: {x: 800, y: 577.5901}
+  m_AnchoredPosition: {x: 0.000015258578, y: -192.99896}
+  m_SizeDelta: {x: 800, y: 385.9979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &994402157
 GameObject:
@@ -19270,6 +19270,7 @@ GameObject:
   - component: {fileID: 1684960692}
   - component: {fileID: 1684960691}
   - component: {fileID: 1684960690}
+  - component: {fileID: 1684960695}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -19386,6 +19387,22 @@ Transform:
   m_Father: {fileID: 178415754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684960695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684960688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1685527261
 GameObject:
   m_ObjectHideFlags: 0
@@ -19623,10 +19640,10 @@ RectTransform:
   m_Father: {fileID: 962124294}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5678978, y: 97.777}
-  m_SizeDelta: {x: 742.8489, y: 382.04}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2.5678978, y: -191.22299}
+  m_SizeDelta: {x: 742.8489, y: 382.04004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702332516
 MonoBehaviour:

@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class GinjalClick : MonoBehaviour
+public class GinjalClick : MonoBehaviour, IPointerClickHandler
 {
     public GameObject txt;
     public GameObject btnCloseUI;
@@ -38,17 +39,17 @@ public class GinjalClick : MonoBehaviour
         //StartFlash();
     }
 
-    public void OnMouseUp()
-    {
-        NewTouchPosition = Input.GetTouch(0).position;
-        float distance = Vector2.Distance(oldTouchPosition, NewTouchPosition);
-        if (distance < 10f)
-        {
-            print("Tap detected!");
-            StartFlash();
-        }
-        
-    }
+    // public void OnMouseUp()
+    // {
+    //     // NewTouchPosition = Input.GetTouch(0).position;
+    //     // float distance = Vector2.Distance(oldTouchPosition, NewTouchPosition);
+    //     // if (distance < 10f)
+    //     // {
+    //     //     print("Tap detected!");
+    //     //     StartFlash();
+    //     // }
+
+    // }
 
     public void SetObjectClicked()
     {
@@ -58,7 +59,6 @@ public class GinjalClick : MonoBehaviour
     public void OnMouseDown2(string tag)
     {
         ginjalPart = GameObject.FindGameObjectsWithTag(tag);
-        print(ginjalPart.Length);
         StartFlash();
     }
 
@@ -116,4 +116,14 @@ public class GinjalClick : MonoBehaviour
         material.SetColor("_EmissionColor", new Color32(0, 0, 0, 0));
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        NewTouchPosition = Input.GetTouch(0).position;
+        float distance = Vector2.Distance(oldTouchPosition, NewTouchPosition);
+        if (distance < 10f)
+        {
+            print("Tap detected!");
+            StartFlash();
+        }
+    }
 }
