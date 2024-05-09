@@ -223,7 +223,7 @@ public class OptionMenu : MonoBehaviour
         string[] otak1 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
         string[] otak2 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
         string[] otak3 = { "Menyimpan memori visual", "Memproses pengenalan wajah", "Menyatukan input visual pada kedua hemisfer", "Semua benar" };
-        string[] otak4 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
+        string[] otak4 = { "Hemisfer", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
         string[] otak5 = { "Mengendalikan rasa sentuhan", "Merasakan tekstur", "Merasakan suhu", "Semua benar" };
         string[] otak6 = { "Lobus frontal", "Lobus oksipital", "Corpus callosum", "Lobus temporal" };
         string[] otak7 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
