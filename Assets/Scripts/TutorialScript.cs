@@ -288,8 +288,8 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             else
             {
                 SetLastPageButtonVisibility(false);
-                if (PlayerPrefs.HasKey("FirstTime"))
-                    SetNotLastPageButtonVisibility(true);
+                //if (PlayerPrefs.HasKey("FirstTime"))
+                SetNotLastPageButtonVisibility(true);
             }
         }
     }
@@ -361,7 +361,10 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     public void SetNotLastPageButtonVisibility(bool isVisible)
     {
         btnLanjutkan.gameObject.SetActive(isVisible);
-        btnSkip.gameObject.SetActive(isVisible);
+        if (!PlayerPrefs.HasKey("FirstTime"))
+            btnSkip.gameObject.SetActive(false);
+        else
+            btnSkip.gameObject.SetActive(isVisible);
     }
 
     public void SetLastPageButtonVisibility(bool isVisible)
