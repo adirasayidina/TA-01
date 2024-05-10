@@ -574,7 +574,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: TA
+  cameraUsageDescription: Akses kamera dibutuhkan untuk menampilkan objek anatomi.
   locationUsageDescription: 
   microphoneUsageDescription: 
   bluetoothUsageDescription: 
