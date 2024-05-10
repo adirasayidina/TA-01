@@ -22,11 +22,6 @@ public class GinjalClick : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        // _renderer = GetComponent<Renderer>();
-        // material = ginjalPart.GetComponent<Renderer>().material;
-        // // print("masuk mulai");
-        // material.EnableKeyword("_EMISSION");
-        // print(material.GetColor("_EmissionColor"));
     }
 
     public void OnMouseDown()
@@ -36,20 +31,7 @@ public class GinjalClick : MonoBehaviour, IPointerClickHandler
 
             oldTouchPosition = Input.GetTouch(0).position;
         }
-        //StartFlash();
     }
-
-    // public void OnMouseUp()
-    // {
-    //     // NewTouchPosition = Input.GetTouch(0).position;
-    //     // float distance = Vector2.Distance(oldTouchPosition, NewTouchPosition);
-    //     // if (distance < 10f)
-    //     // {
-    //     //     print("Tap detected!");
-    //     //     StartFlash();
-    //     // }
-
-    // }
 
     public void SetObjectClicked()
     {
@@ -82,7 +64,6 @@ public class GinjalClick : MonoBehaviour, IPointerClickHandler
 
     IEnumerator FlashObject(Material material)
     {
-        // print("masuk flash obj");
         while (StaticClass.objClicked)
         {
             yield return new WaitForSeconds(0.05f);
