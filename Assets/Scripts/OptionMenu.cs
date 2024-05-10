@@ -23,6 +23,7 @@ public class OptionMenu : MonoBehaviour
     public Image imgMateri;
     public Sprite imgOtak;
     public Sprite imgJantung;
+    public GameObject PanelStart;
 
     [SerializeField]
     private ARSession _arSession;
@@ -275,6 +276,26 @@ public class OptionMenu : MonoBehaviour
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);
     }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            if (SceneManager.GetActiveScene().name == "ArGinjal" || SceneManager.GetActiveScene().name == "ArOtak" || SceneManager.GetActiveScene().name == "ArJantung")
+            {
+                _arSession.Reset();
+                SceneManager.LoadScene("Menu");
+            } else if (SceneManager.GetActiveScene().name == "Quiz" && PanelStart != null && PanelStart.activeSelf)
+            {
+                SceneManager.LoadScene("Ar"+ StaticClass.quizCode);
+            } else if (SceneManager.GetActiveScene().name == "Menu" && PanelInputKode.activeSelf) 
+            {
+                PanelInputKode.SetActive(false);
+                Menu.SetActive(true);
+            }
+        }
+    }
+
     public void ObjectMenu(int codeScene)
     {
         if (codeScene == 0)
