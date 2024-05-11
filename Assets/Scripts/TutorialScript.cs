@@ -6,7 +6,7 @@ using System.Diagnostics;
 using Debug = UnityEngine.Debug;
 using Image = UnityEngine.UI.Image;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Video;
 
 public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 {
@@ -119,6 +119,9 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     public GameObject pnlTutorial;
     public GameObject pnlIsiNama;
 
+    [Header("Video Players")]
+    public VideoPlayer[] videoPlayers;
+
     private void Start()
     {
         scrollRect = GetComponent<ScrollRect>();
@@ -210,6 +213,10 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         }
 
         currentIndex = page;
+        if (page >= 1)
+        {
+            videoPlayers[page-1].Play();
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -288,7 +295,6 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             else
             {
                 SetLastPageButtonVisibility(false);
-                //if (PlayerPrefs.HasKey("FirstTime"))
                 SetNotLastPageButtonVisibility(true);
             }
         }
@@ -315,6 +321,8 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         }
         else
         {
+            if (currentIndex >= 1)
+                videoPlayers[currentIndex - 1].Pause();
             int prevPage = Mathf.Clamp(currentIndex - 1, 0, totalPages - 1);
             SetSnapTarget(prevPage);
         }
@@ -329,6 +337,8 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         }
         else
         {
+            if (currentIndex >= 1)
+                videoPlayers[currentIndex - 1].Pause();
             int nextPage = Mathf.Clamp(currentIndex + 1, 0, totalPages - 1);
             SetSnapTarget(nextPage);
         }
