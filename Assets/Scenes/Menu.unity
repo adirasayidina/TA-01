@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -327,6 +327,8 @@ MonoBehaviour:
   imgMateri: {fileID: 1134176089}
   imgOtak: {fileID: 21300000, guid: 48b62d2b28d9b47d9ab8f4ec7229d528, type: 3}
   imgJantung: {fileID: 21300000, guid: e62805d071a79482280eeaee6413b5df, type: 3}
+  PanelStart: {fileID: 0}
+  _arSession: {fileID: 0}
 --- !u!1 &166284210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Masukan kode untuk membuka materi
+  m_text: Masukkan kode untuk membuka materi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
