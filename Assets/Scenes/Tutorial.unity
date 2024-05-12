@@ -2779,7 +2779,7 @@ RectTransform:
   m_GameObject: {fileID: 658087725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
+  m_LocalScale: {x: 0.54999995, y: 0.54999995, z: 0.54999995}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1349675847}
@@ -4579,8 +4579,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000015258731, y: 51.348022}
-  m_SizeDelta: {x: 685.957, y: 102.696}
+  m_AnchoredPosition: {x: -0.000011444092, y: 51.348022}
+  m_SizeDelta: {x: 791.372, y: 102.696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1172584017
 MonoBehaviour:
@@ -4602,7 +4602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Klik di mana saja untuk menutup panel ini
+  m_text: Tekan bagian mana saja untuk menutup panel ini
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6017,9 +6017,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Marker dalam konteks penggunaan augmented reality marker-based tracking
-    adalah sebuah penanda khusus yang memiliki pola tertentu yang akan menjadi tempat
-    objek tiga dimensi ditampilkan ketika kamera mendeteksi pola tersebut.
+  m_text: Marker dalam konteks augmented reality marker-based tracking adalah sebuah
+    penanda khusus yang memiliki pola tertentu yang akan menjadi tempat objek tiga
+    dimensi ditampilkan ketika kamera mendeteksi pola tersebut.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7748,7 +7748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
