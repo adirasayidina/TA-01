@@ -272,7 +272,7 @@ public class KuisScript : MonoBehaviour
                 else
                     btnPembahasanAll[i].image.sprite = btnWrong;
             }
-            durasiTotal.text = "Durasi pengerjaan: " + StaticKuis.durasi_soal_saja + " detik";
+            durasiTotal.text = "Durasi pengerjaan:\n" + StaticKuis.durasi_soal_saja + " detik";
 
             foreach (TMPro.TextMeshProUGUI selanjutnya in txtPertanyaanSelanjutnya)
                 selanjutnya.text = "Lihat Nilai";

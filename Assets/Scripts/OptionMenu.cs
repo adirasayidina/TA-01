@@ -24,6 +24,7 @@ public class OptionMenu : MonoBehaviour
     public Sprite imgOtak;
     public Sprite imgJantung;
     public GameObject PanelStart;
+    [SerializeField] private TMPro.TextMeshProUGUI txtJudulMateri;
 
     [SerializeField]
     private ARSession _arSession;
@@ -251,8 +252,8 @@ public class OptionMenu : MonoBehaviour
 
         // height soal biasa
         // normal height = 540.8
-        int[] heightGinjal = { 770, 590, 540, 540, 590, 540, 540, 540, 540, 590 };
-        int[] heightOtak = { 540, 590, 540, 540, 540, 540, 653, 540, 617, 1071 };
+        int[] heightGinjal = { 800, 610, 540, 540, 610, 540, 540, 540, 540, 610 };
+        int[] heightOtak = { 540, 590, 540, 540, 540, 540, 693, 540, 767, 1271 };
         int[] heightJantung = { 540, 617, 540, 540, 617, 540, 540, 540, 540, 617 };
         StaticInfoKuis.height.Add("Ginjal", heightGinjal);
         StaticInfoKuis.height.Add("Otak", heightOtak);
@@ -261,17 +262,17 @@ public class OptionMenu : MonoBehaviour
         // height pembahasan tengah (yang habis jawab soal)
         // normal height 1061
         int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1161, 1061, 1061, 1061, 1061, 1061 };
-        int[] heightPembTengahOtak = { 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061, 1061 };
-        int[] heightPembTengahJantung = { 1061, 1061, 1321, 1061, 1061, 1061, 1061, 1321, 1061, 1061 };
+        int[] heightPembTengahOtak = { 1061, 1061, 1011, 1061, 1011, 1061, 1061, 1061, 1161, 1201 };
+        int[] heightPembTengahJantung = { 1061, 1061, 1721, 1061, 1061, 1461, 1061, 1721, 1061, 1061 };
         StaticInfoKuis.height.Add("PembTengahGinjal", heightPembTengahGinjal);
         StaticInfoKuis.height.Add("PembTengahOtak", heightPembTengahOtak);
         StaticInfoKuis.height.Add("PembTengahJantung", heightPembTengahJantung);
 
         // height pembahasan akhir (pertanyaan+pembahasan)
         // normal height 657 (yg pnl salah, ambil min)
-        int[] heightPembGinjal = { 1124, 1390, 657, 757, 1590, 657, 657, 657, 657, 1430 };
-        int[] heightPembOtak = { 657, 1390, 1050, 1090, 957, 1000, 1357, 657, 1557, 1857 };
-        int[] heightPembJantung = { 757, 1390, 1457, 990, 1390, 990, 657, 1457, 657, 1390 };
+        int[] heightPembGinjal = { 1404, 1420, 787, 787, 1740, 657, 657, 737, 687, 1460 };
+        int[] heightPembOtak = { 707, 1490, 1150, 1190, 1057, 1100, 1557, 657, 1657, 2257 };
+        int[] heightPembJantung = { 977, 1490, 1657, 1090, 1490, 1190, 757, 1657, 657, 1490 };
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);
@@ -311,6 +312,7 @@ public class OptionMenu : MonoBehaviour
             else
             {
                 imgMateri.sprite = imgOtak;
+                txtJudulMateri.text = "Otak";
                 PanelInputKode.SetActive(true);
                 Menu.SetActive(false);
             }
@@ -323,6 +325,7 @@ public class OptionMenu : MonoBehaviour
             else
             {
                 imgMateri.sprite = imgJantung;
+                txtJudulMateri.text = "Jantung";
                 PanelInputKode.SetActive(true);
                 Menu.SetActive(false);
             }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -444,12 +444,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cari marker yang sesuai dengan contoh marker. Setelah itu, tinggal buka
-    kamera ponsel, pindai marker-nya, dan langsung masuk ke dunia Augmented Reality
-    dan eksplor materinya!
+  m_text: Cari marker yang sesuai. Setelah itu, buka kamera ponsel dan pindai marker-nya,
+    kamu langsung masuk ke dunia Augmented Reality untuk eksplor materinya!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -901,7 +900,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mulai kuis
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -965,7 +964,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &168191512
@@ -1038,8 +1037,8 @@ MonoBehaviour:
     menggunakan teknologi Augmented Reality (AR). Dengan AR, kamu bisa melihat objek
     anatomi secara tiga dimensi di dunia nyata!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1173,8 +1172,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Uji Pemahamanmu \ndi Kuis! (7/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1309,8 +1308,8 @@ MonoBehaviour:
   m_text: Setelah kamu memilih jawabanmu, jawaban yang tepat beserta pembahasannya
     akan langsung muncul untuk kamu pelajari.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1446,8 +1445,8 @@ MonoBehaviour:
 
     Rotasi (5/8)'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1582,8 +1581,8 @@ MonoBehaviour:
   m_text: Oh iya, organ-organ ini juga kamu bisa zoom-in atau zoom-out dengan menggunakan
     dua jari.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2097,7 +2096,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0abb9e20c50c341f3b6570841a0d6026, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -2153,8 +2152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 273.12}
-  m_SizeDelta: {x: 401.58, y: 88}
+  m_AnchoredPosition: {x: 0.000059128, y: 273.12}
+  m_SizeDelta: {x: 447.2821, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433035189
 MonoBehaviour:
@@ -2178,8 +2177,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Selamat datang di Anatomi AR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2395,8 +2394,8 @@ MonoBehaviour:
   m_text: Setelah selesai belajar, coba deh uji pemahaman kamu dengan ngerjain kuis
     biar tau sejauh mana kamu menguasai materi yang baru aja dipelajari!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3321,8 +3320,8 @@ MonoBehaviour:
   m_text: Kalau kamu bingung mau eksplorasi bagian organ yang mana, kamu juga bisa
     liat daftar materi yang ada. Tinggal klik tombol materi pada halaman tersebut!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3456,7 +3455,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mulai Belajar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3520,7 +3519,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &811396155
@@ -3667,8 +3666,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Eksplorasi Organ: \nMateri (2/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3802,8 +3801,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Uji Pemahamanmu \ndi Kuis! (6/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4019,8 +4018,8 @@ MonoBehaviour:
   m_text: Setelah kamu selesai mengerjakan kuis, rangkuman kuis tadi bisa kamu lihat
     untuk kamu pelajari kembali!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4814,7 +4813,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0abb9e20c50c341f3b6570841a0d6026, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -5200,8 +5199,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Pilih Materi & Pindai \nMarker (1/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5225,8 +5224,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6156,8 +6155,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sebelum kita mulai belajar, yuk simak tutorial berikut
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6292,8 +6291,8 @@ MonoBehaviour:
   m_text: Kamu juga bisa merotasi organ-organ dengan menggeser organ tersebut dengan
     satu jari.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6550,7 +6549,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lewati Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6614,7 +6613,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1567386799
@@ -6686,8 +6685,8 @@ MonoBehaviour:
   m_text: Pilih bagian organ yang mau kamu eksplor lebih dalam. Klik bagian itu,
     dan kamu bisa liat info lengkap tentang struktur dan fungsinya.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7123,8 +7122,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Eksplorasi Organ: \nUkuran (4/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7258,8 +7257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Eksplorasi Organ: \nDaftar Materi (3/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7393,8 +7392,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Uji Pemahamanmu \ndi Kuis! (8/8)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8059,8 +8058,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mulai Belajar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8376,7 +8375,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lanjutkan
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8440,7 +8439,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2035655800
@@ -8633,8 +8632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Kenalan yuk! \nisi nama kamu di bawah ini:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
