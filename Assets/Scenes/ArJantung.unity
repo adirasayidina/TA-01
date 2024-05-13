@@ -23335,7 +23335,7 @@ MonoBehaviour:
         m_MethodName: set_overrideSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: e2b506ff2c9902e418b762fb26db81f2, type: 3}
+          m_ObjectArgument: {fileID: 21300000, guid: e83e03a63da7efd42986fc22eca08bf5, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
