@@ -262,7 +262,7 @@ public class OptionMenu : MonoBehaviour
         // height pembahasan tengah (yang habis jawab soal)
         // normal height 1061
         int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1161, 1061, 1061, 1061, 1061, 1061 };
-        int[] heightPembTengahOtak = { 1061, 1061, 1011, 1061, 1011, 1061, 1061, 1061, 1161, 1201 };
+        int[] heightPembTengahOtak = { 1061, 1061, 1011, 1061, 1011, 1061, 1061, 1061, 1161, 1251 };
         int[] heightPembTengahJantung = { 1061, 1061, 1621, 1061, 1061, 1161, 1061, 1621, 1061, 1061 };
         StaticInfoKuis.height.Add("PembTengahGinjal", heightPembTengahGinjal);
         StaticInfoKuis.height.Add("PembTengahOtak", heightPembTengahOtak);
