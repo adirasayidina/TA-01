@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -852,7 +852,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1036,8 +1036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00029992042}
-  m_SizeDelta: {x: 0, y: 529.5088}
+  m_AnchoredPosition: {x: -0.0001479564, y: -0.00008709242}
+  m_SizeDelta: {x: 0, y: 569.5088}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &81114186
 GameObject:
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_text: Aorta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_text: Arteri Pulmonalis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4500,7 +4500,7 @@ MonoBehaviour:
     darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5196,7 +5196,7 @@ MonoBehaviour:
   m_text: "Serambi Kiri dan \nBilik Kiri"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5303,7 +5303,7 @@ RectTransform:
   m_Father: {fileID: 1457502447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.41956246}
+  m_AnchorMin: {x: 0, y: 0.49354905}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -5381,7 +5381,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.00014204907}
-  m_SizeDelta: {x: 0, y: 460.9887}
+  m_SizeDelta: {x: 0, y: 540.9887}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &436316213
 GameObject:
@@ -5450,7 +5450,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6287,7 +6287,7 @@ MonoBehaviour:
   m_text: Tekan bagian mana saja untuk menutup marker
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6311,8 +6311,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 31
+  m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6350,7 +6350,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &506297968
@@ -6835,7 +6835,7 @@ MonoBehaviour:
     melalui daerah dada dan perut dan akan memasok darah ke seluruh tubuh.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6978,7 +6978,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7353,7 +7353,7 @@ MonoBehaviour:
     jantung untuk selanjutnya dikirimkan ke paru-paru untuk dioksigenasi.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9372,7 +9372,7 @@ MonoBehaviour:
   m_text: Vena Cava Superior
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10785,8 +10785,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1286696687}
   m_HandleRect: {fileID: 1286696686}
   m_Direction: 2
-  m_Value: 1.0000013
-  m_Size: 0.6698253
+  m_Value: 1
+  m_Size: 0.56638813
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10985,8 +10985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00027592754, y: -0.00037186113}
-  m_SizeDelta: {x: 0, y: 711.7507}
+  m_AnchoredPosition: {x: -0.00011836013, y: -0.00006863566}
+  m_SizeDelta: {x: 0, y: 841.7507}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &931161219
 GameObject:
@@ -11270,7 +11270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -198}
+  m_AnchoredPosition: {x: 0, y: -201.69994}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958179831
@@ -11416,7 +11416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00001167, y: -517.99994}
+  m_AnchoredPosition: {x: 0.00001168251, y: -519.6998}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961115619
@@ -11790,7 +11790,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 425488645}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.58043754
+  m_Size: 0.50645095
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13240,8 +13240,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067558566}
   m_HandleRect: {fileID: 2067558564}
   m_Direction: 2
-  m_Value: 1.0000058
-  m_Size: 0.9000528
+  m_Value: 1.0000007
+  m_Size: 0.83703035
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13487,7 +13487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00002334, y: -438}
+  m_AnchoredPosition: {x: -0.00002336502, y: -441.69995}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147352508
@@ -13891,7 +13891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -59.083984}
+  m_AnchoredPosition: {x: 0, y: -61.083984}
   m_SizeDelta: {x: 208.471, y: 41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187377618
@@ -14391,7 +14391,7 @@ MonoBehaviour:
   m_text: "Serambi Kanan dan \nBilik Kanan"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14743,7 +14743,7 @@ RectTransform:
   m_Father: {fileID: 357430182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.33017468}
+  m_AnchorMin: {x: 0, y: 0.43361187}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -15272,7 +15272,7 @@ MonoBehaviour:
   m_text: Vena Pulmonalis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15644,7 +15644,7 @@ MonoBehaviour:
   m_text: Serambi Kanan dan Bilik Kanan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16139,7 +16139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00002334, y: -358}
+  m_AnchoredPosition: {x: -0.00002336502, y: -361.69995}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436955705
@@ -16331,7 +16331,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1802959522}
   m_HandleRect: {fileID: 1802959521}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -17568,6 +17568,7 @@ MonoBehaviour:
   imgOtak: {fileID: 0}
   imgJantung: {fileID: 0}
   PanelStart: {fileID: 0}
+  txtJudulMateri: {fileID: 0}
   _arSession: {fileID: 1209698639}
 --- !u!114 &1506313611
 MonoBehaviour:
@@ -18057,7 +18058,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 196950889}
   m_HandleRect: {fileID: 196950887}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -18745,7 +18746,7 @@ MonoBehaviour:
   m_text: Vena Cava Inferior
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19020,7 +19021,7 @@ MonoBehaviour:
     tekanan yang cukup untuk mendorong darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20012,7 +20013,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.0009270419, y: -0.00007274822}
-  m_SizeDelta: {x: 0, y: 821.3697}
+  m_SizeDelta: {x: 0, y: 941.3697}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1702332514
 GameObject:
@@ -20298,7 +20299,7 @@ MonoBehaviour:
     tekanan yang cukup untuk mendorong darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20574,7 +20575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0, y: -118}
+  m_AnchoredPosition: {x: -0, y: -121.7}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1786809821
@@ -21044,7 +21045,7 @@ MonoBehaviour:
   m_text: "Serambi Kiri dan \nBilik Kiri"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21450,7 +21451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000011671, y: -278}
+  m_AnchoredPosition: {x: 0.00001168251, y: -281.69995}
   m_SizeDelta: {x: 208.471, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824647888
@@ -21776,7 +21777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836681731
@@ -22328,7 +22329,7 @@ MonoBehaviour:
     darah ke seluruh tubuh.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -760415119480358874, guid: 0e33c720f7a784ead9c413ab141e1a4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23229,7 +23230,7 @@ RectTransform:
   m_Father: {fileID: 1757547891}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.099947214}
+  m_AnchorMin: {x: 0, y: 0.16296965}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}

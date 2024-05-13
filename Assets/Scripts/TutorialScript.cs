@@ -126,6 +126,10 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     {
         scrollRect = GetComponent<ScrollRect>();
         gridLayoutGroup = GetComponentInChildren<GridLayoutGroup>();
+        foreach (var videoPlayer in videoPlayers) 
+        {
+            videoPlayer.Play();
+        }
 
         if (gridLayoutGroup == null)
         {
@@ -161,6 +165,10 @@ public class TutorialScript : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         if (prevButton != null)
         {
             prevButton.onClick.AddListener(MoveToPreviousPage);
+        }
+        foreach (var videoPlayer in videoPlayers)
+        {
+            videoPlayer.Pause();
         }
     }
 

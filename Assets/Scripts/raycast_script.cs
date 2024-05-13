@@ -10,7 +10,6 @@ using Debug = UnityEngine.Debug;
 public class raycast_script : MonoBehaviour
 {
     public string targetTag;
-    bool firstClick = true;
     public float rotatespeed = 0.05f;
     private Vector2 oldTouchPosition;
     private Vector2 NewTouchPosition;
@@ -102,10 +101,6 @@ public class raycast_script : MonoBehaviour
                     obj.transform.localScale = new Vector3(newScale, newScale, newScale);
                 }
             }
-        }
-        else if (!StaticClass.objClicked)
-        {
-            firstClick = true;
         }
     }
 

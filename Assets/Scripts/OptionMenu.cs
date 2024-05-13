@@ -263,16 +263,16 @@ public class OptionMenu : MonoBehaviour
         // normal height 1061
         int[] heightPembTengahGinjal = { 1061, 1061, 1061, 1061, 1161, 1061, 1061, 1061, 1061, 1061 };
         int[] heightPembTengahOtak = { 1061, 1061, 1011, 1061, 1011, 1061, 1061, 1061, 1161, 1201 };
-        int[] heightPembTengahJantung = { 1061, 1061, 1721, 1061, 1061, 1461, 1061, 1721, 1061, 1061 };
+        int[] heightPembTengahJantung = { 1061, 1061, 1621, 1061, 1061, 1161, 1061, 1621, 1061, 1061 };
         StaticInfoKuis.height.Add("PembTengahGinjal", heightPembTengahGinjal);
         StaticInfoKuis.height.Add("PembTengahOtak", heightPembTengahOtak);
         StaticInfoKuis.height.Add("PembTengahJantung", heightPembTengahJantung);
 
         // height pembahasan akhir (pertanyaan+pembahasan)
-        // normal height 657 (yg pnl salah, ambil min)
-        int[] heightPembGinjal = { 1404, 1420, 787, 787, 1740, 657, 657, 737, 687, 1460 };
-        int[] heightPembOtak = { 707, 1490, 1150, 1190, 1057, 1100, 1557, 657, 1657, 2257 };
-        int[] heightPembJantung = { 977, 1490, 1657, 1090, 1490, 1190, 757, 1657, 657, 1490 };
+        // normal height 656 (yg pnl salah, ambil min)
+        int[] heightPembGinjal = { 1404, 1420, 787, 787, 1700, 656, 656, 737, 656, 1450 };
+        int[] heightPembOtak = { 707, 1490, 1050, 1190, 980, 1050, 1557, 656, 1607, 2187 };
+        int[] heightPembJantung = { 877, 1490, 1657, 1020, 1490, 1190, 707, 1657, 656, 1490 };
         StaticInfoKuis.height.Add("PembGinjal", heightPembGinjal);
         StaticInfoKuis.height.Add("PembOtak", heightPembOtak);
         StaticInfoKuis.height.Add("PembJantung", heightPembJantung);
@@ -293,6 +293,10 @@ public class OptionMenu : MonoBehaviour
             {
                 PanelInputKode.SetActive(false);
                 Menu.SetActive(true);
+            }
+            else if (SceneManager.GetActiveScene().name == "Menu")
+            {
+                UnityEngine.Application.Quit();
             }
         }
     }

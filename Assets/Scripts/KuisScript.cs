@@ -223,6 +223,9 @@ public class KuisScript : MonoBehaviour
         TimeSpan difference = (DateTime.Now).Subtract(StaticKuis.tempTime);
         StaticKuis.durasi_per_soal[StaticClass.quizNomor] = Convert.ToInt32(difference.TotalSeconds);
 
+        foreach (ScrollRect scr in scrollViewAll)
+            scr.verticalNormalizedPosition = 1f;
+        
         if (jawaban.Equals(StaticInfoKuis.jawabanKuis[StaticClass.quizCode][StaticClass.quizNomor]))
         {
             StaticKuis.jawabanFlag[StaticClass.quizNomor] = true;
