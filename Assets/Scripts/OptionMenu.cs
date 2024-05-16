@@ -29,8 +29,11 @@ public class OptionMenu : MonoBehaviour
     [SerializeField]
     private ARSession _arSession;
 
+    [SerializeField] private TMPro.TextMeshProUGUI nama;
+
     void Start()
     {
+        nama.text = "Halo, "+ PlayerPrefs.GetString("Nama")  + "!\nYuk belajar anatomi!";
         if (!PlayerPrefs.HasKey("FirstTime"))
         {
             SceneManager.LoadScene("Tutorial");
