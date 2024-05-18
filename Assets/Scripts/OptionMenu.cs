@@ -75,7 +75,7 @@ public class OptionMenu : MonoBehaviour
             string[] soalJantung = {
                 "Pembuluh darah yang membawa darah yang tidak mengandung oksigen dari jantung ke paru-paru disebut...",
                 "Nama bagian jantung yang ditunjuk adalah...",
-                "Bagian jantung mana yang bertanggung jawab untuk memompa darah yang mengandung oksigen ke paru-paru?",
+                "Bagian jantung mana yang bertanggung jawab untuk memompa darah yang mengandung karbon dioksida ke paru-paru?",
                 "Vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh kembali ke jantung adalah...",
                 "Nama bagian jantung yang ditunjuk adalah...",
                 "Bagian berikut merupakan bagian dari Aorta, kecuali...",
@@ -163,7 +163,7 @@ public class OptionMenu : MonoBehaviour
                 "Aorta adalah arteri terbesar di tubuh manusia. Bagian-bagian utama aorta adalah ascending aorta, arkus aorta, dan descending aorta. Ascending aorta dimulai dari katup aorta ventrikel kiri dan memiliki panjang sekitar 5 cm. Ascending aorta bertanggung jawab membawa darah langsung dari jantung dan memberikan sirkulasi ke hampir seluruh jaringan tubuh. Arkus aorta (aortic arch) melengkung di atas jantung dan mengeluarkan cabang-cabang yang memasok darah ke kepala, leher, dan anggota tubuh bagian atas. Descending Aorta merupakan lanjutan dari arkus aorta yang berlanjut ke bawah melalui daerah dada dan perut dan akan memasok darah ke seluruh tubuh.",
                 "Vena cava inferior adalah vena besar yang membawa darah yang tidak mengandung oksigen dari bagian bawah tubuh (perut, panggul, dan kaki) kembali ke serambi kanan jantung. Darah yang mengalir melalui vena cava inferior berasal dari berbagai vena di bagian bawah tubuh. Namun, vena subklavia tidak termasuk salah satunya.",
                 "Bilik kiri jantung berperan dalam memompa darah kaya oksigen ke seluruh tubuh melalui aorta, sehingga memberikan oksigen dan nutrisi yang dibutuhkan oleh jaringan dan organ tubuh.\n\nSerambi kiri jantung bertanggung jawab menerima darah yang kaya oksigen dari paru-paru melalui vena pulmonalis dan memompanya ke bilik kiri untuk didistribusikan ke seluruh tubuh.\n\nBilik kanan jantung bertugas memompa darah yang mengandung karbon dioksida ke paru-paru melalui arteri pulmonalis untuk dipenuhi kembali dengan oksigen dan melepaskan karbon dioksida melalui proses pernapasan.\n\nSerambi kanan jantung menerima darah yang mengandung karbon dioksida dari seluruh tubuh melalui vena cava superior dan inferior, lalu memompanya ke bilik kanan untuk dipompa ke paru-paru untuk proses pertukaran gas.",
-                "Vena cava superior adalah vena besar yang membawa darah yang mengandung oksigen dari tubuh bagian atas kembali ke jantung, tepatnya ke atrium kanan jantung. Darah yang mengalir melalui vena cava superior berasal dari bagian atas tubuh, seperti kepala, lengan, dan dada atas.",
+                "Vena cava superior adalah vena besar yang membawa darah yang tidak mengandung oksigen dari tubuh bagian atas kembali ke jantung, tepatnya ke atrium kanan jantung. Darah yang mengalir melalui vena cava superior berasal dari bagian atas tubuh, seperti kepala, lengan, dan dada atas.",
                 "Nama bagian jantung yang ditunjuk adalah vena pulmonalis. Kamu dapat mengacu pada gambar berikut untuk mempelajari kembali bagian-bagian jantung."
             };
 
@@ -245,7 +245,7 @@ public class OptionMenu : MonoBehaviour
         string[] jantung6 = { "Descending Aorta", "Inferior Aorta", "Arkus Aorta", "Ascending Aorta" };
         string[] jantung7 = { "Vena subklavia", "Vena ginjal", "Vena adrenal", "Vena hepatik" };
         string[] jantung8 = { "Bilik Kiri", "Serambi Kiri", "Bilik Kanan", "Serambi Kanan" };
-        string[] jantung9 = { "Darah kaya oksigen dari paru-paru", "Darah kaya oksigen dari aorta", "Darah mengandung oksigen dari tubuh bagian bawah", "Darah mengandung oksigen dari tubuh bagian atas" };
+        string[] jantung9 = { "Darah kaya oksigen dari paru-paru", "Darah kaya oksigen dari aorta", "Darah mengandung CO2 dari tubuh bagian bawah", "Darah mengandung CO2 dari tubuh bagian atas" };
         string[] jantung10 = { "Arteri pulmonalis", "Vena pulmonalis", "Vena cava superior", "Vena cava inferior" };
         string[][] pilganJantung = { jantung1, jantung2, jantung3, jantung4, jantung5, jantung6, jantung7, jantung8, jantung9, jantung10 };
 
