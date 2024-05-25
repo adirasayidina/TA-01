@@ -7,7 +7,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using Debug = UnityEngine.Debug;
 
-public class raycast_script : MonoBehaviour
+public class ScalerRotator: MonoBehaviour
 {
     public string targetTag;
     public float rotatespeed = 0.05f;

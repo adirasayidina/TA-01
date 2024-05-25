@@ -4,7 +4,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GinjalClick : MonoBehaviour, IPointerClickHandler
+public class ObjectClick : MonoBehaviour, IPointerClickHandler
 {
     public GameObject txt;
     public GameObject btnCloseUI;
