@@ -217,7 +217,7 @@ public class OptionMenu : MonoBehaviour
         string[] ginjal2 = { "Ureter", "Korteks", "Vena ginjal", "Medula" };
         string[] ginjal3 = { "Vena ginjal", "Arteri ginjal", "Ureter", "Uretra" };
         string[] ginjal4 = { "Vena ginjal", "Arteri ginjal", "Ureter", "Uretra" };
-        string[] ginjal5 = { "Tempat penyimpanan urine", "Ultrafiltrasi", "Reabsorpsi", "Penyaluran urine dari ginjal ke vena cava interior" };
+        string[] ginjal5 = { "Tempat penyimpanan urine", "Ultrafiltrasi", "Reabsorpsi", "Penyaluran urine dari ginjal ke vena cava" };
         string[] ginjal6 = { "1 juta", "Milyaran", "10 juta", "2 juta" };
         string[] ginjal7 = { "Reabsorpsi", "Penyaluran urine ke ginjal", "Menampung urine", "Penyaluran urine dari ginjal" };
         string[] ginjal8 = { "A dan B benar", "A salah, B benar", "A benar, B salah", "A dan B salah" };
