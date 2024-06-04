@@ -33,7 +33,7 @@ public class OptionMenu : MonoBehaviour
 
     void Start()
     {
-        nama.text = "Halo, "+ PlayerPrefs.GetString("Nama")  + "!\nYuk belajar anatomi!";
+        nama.text = "Halo, " + PlayerPrefs.GetString("Nama") + "!\nYuk belajar anatomi!";
         if (!PlayerPrefs.HasKey("FirstTime"))
         {
             SceneManager.LoadScene("Tutorial");
@@ -289,10 +289,12 @@ public class OptionMenu : MonoBehaviour
             {
                 _arSession.Reset();
                 SceneManager.LoadScene("Menu");
-            } else if (SceneManager.GetActiveScene().name == "Quiz" && PanelStart != null && PanelStart.activeSelf)
+            }
+            else if (SceneManager.GetActiveScene().name == "Quiz" && PanelStart != null && PanelStart.activeSelf)
             {
-                SceneManager.LoadScene("Ar"+ StaticClass.quizCode);
-            } else if (SceneManager.GetActiveScene().name == "Menu" && PanelInputKode.activeSelf) 
+                SceneManager.LoadScene("Ar" + StaticClass.quizCode);
+            }
+            else if (SceneManager.GetActiveScene().name == "Menu" && PanelInputKode.activeSelf)
             {
                 PanelInputKode.SetActive(false);
                 Menu.SetActive(true);
@@ -314,28 +316,28 @@ public class OptionMenu : MonoBehaviour
         else if (codeScene == 1)
         {
             StaticClass.quizCode = "Otak";
-            if (PlayerPrefs.HasKey("UnlockOtak"))
-                SceneManager.LoadScene("ArOtak");
-            else
-            {
-                imgMateri.sprite = imgOtak;
-                txtJudulMateri.text = "Otak";
-                PanelInputKode.SetActive(true);
-                Menu.SetActive(false);
-            }
+            // if (PlayerPrefs.HasKey("UnlockOtak"))
+            SceneManager.LoadScene("ArOtak");
+            // else
+            // {
+            //     imgMateri.sprite = imgOtak;
+            //     txtJudulMateri.text = "Otak";
+            //     PanelInputKode.SetActive(true);
+            //     Menu.SetActive(false);
+            // }
         }
         else if (codeScene == 2)
         {
             StaticClass.quizCode = "Jantung";
-            if (PlayerPrefs.HasKey("UnlockJantung"))
-                SceneManager.LoadScene("ArJantung");
-            else
-            {
-                imgMateri.sprite = imgJantung;
-                txtJudulMateri.text = "Jantung";
-                PanelInputKode.SetActive(true);
-                Menu.SetActive(false);
-            }
+            // if (PlayerPrefs.HasKey("UnlockJantung"))
+            SceneManager.LoadScene("ArJantung");
+            // else
+            // {
+            //     imgMateri.sprite = imgJantung;
+            //     txtJudulMateri.text = "Jantung";
+            //     PanelInputKode.SetActive(true);
+            //     Menu.SetActive(false);
+            // }
         }
     }
 
